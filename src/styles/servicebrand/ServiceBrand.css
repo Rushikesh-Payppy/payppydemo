@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service-brand-header-title {
+  max-width: 55.554rem;
+}
+
+.service-brand-header-para {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .service-brand-header-title {
+    max-width: 41.5rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .service-brand-header-title {
+    max-width: 19rem;
+  }
+  .service-brand-header-para {
+    width: 100%;
+  }
+}
+.service-brand-section-one-title {
+  max-width: 67.5rem;
+}
+
+.service-brand-section-one-para {
+  max-width: 67.5rem;
+}
+
+.servicebrand-section-branding-img {
+  width: 100%;
+  height: 580px;
+}
+
+@media screen and (max-width: 1024px) {
+  .service-brand-section-one-title, .service-brand-section-one-para {
+    max-width: 35.125rem;
+  }
+  .servicebrand-section-branding-img {
+    height: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 640px) {
+  .service-brand-section-one-title, .service-brand-section-one-para {
+    max-width: 100% !important;
+  }
+  .servicebrand-section-branding-img {
+    height: 200px;
+  }
+}
+.brand-identity-process-box {
+  width: 45rem;
+  background: #111111;
+}
+
+.brand-identity-process-title {
+  max-width: 32.5rem;
+}
+
+.brand-product-strategy-box {
+  background: #FAFAFA;
+  width: 45rem;
+}
+
+.brand-product-strategy-bottom-box {
+  border: 1px solid #DDDDDD;
+}
+
+.parent-grid-box {
+  max-width: 90rem;
+}
+
+.grid-box {
+  border: 1px solid #DDDDDD;
+  height: 18.75rem;
+}
+
+.grid-boxex-title, .grid-boxes-para {
+  max-width: 23rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .brand-identity-process-box, .brand-product-strategy-box {
+    width: 100% !important;
+  }
+  .parent-grid-box {
+    max-width: 100%;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .grid-box {
+    height: 17.625rem;
+  }
+  .grid-boxex-title, .grid-boxes-para {
+    max-width: 18.25rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .service-brand-section-one-title {
+    max-width: 18.375rem;
+  }
+  .service-brand-section-one-para {
+    max-width: 18.375rem;
+  }
+  .brand-identity-process-title {
+    max-width: 18.375rem;
+  }
+  .brand-product-strategy-subtitle {
+    max-width: 18.375rem;
+  }
+  .grid-box {
+    height: 13.5rem;
+    border-left: none;
+  }
+  .grid-boxex-title, .grid-boxes-para {
+    max-width: 100%;
+  }
+}
+.deliverables-border-box {
+  border-top: 1px solid #DDDDDD;
+  width: 27.563rem;
+}
+
+@media screen and (max-width: 640px) {
+  .deliverables-border-box {
+    width: 18.375rem;
+  }
+}
+.service-brand-section-5 {
+  border-top: 1px solid #DDDDDD;
+}
+
+.service-brand-bottom-blue-link {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.75rem;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #0057FF;
+}
+
+@media screen and (max-width: 640px) {
+  .service-brand-bottom-blue-link {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}/*# sourceMappingURL=ServiceBrand.css.map */

@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.deck-page-header-title {
+  max-width: 43.75rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .deck-page-header-title {
+    max-width: 41.5rem;
+  }
+}
+@media screen and (max-width: 698px) {
+  .deck-page-header-title {
+    max-width: 19rem;
+  }
+}
+.grid-boxex-brand-website-title {
+  max-width: 20.063rem;
+}
+
+.deckpage-delivery-border-box {
+  max-width: 35.625rem;
+}
+
+@media screen and (max-width: 1290px) {
+  .deckpage-delivery-border-box {
+    max-width: 27.563rem;
+  }
+}
+@media screen and (max-width: 698px) {
+  .deckpage-delivery-border-box {
+    max-width: 18.375rem;
+  }
+}/*# sourceMappingURL=Deckpage.css.map */

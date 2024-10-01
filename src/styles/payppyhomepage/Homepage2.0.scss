@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin for-fonts{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.payppy-homepage-2-main-container{
+    min-height: 100vh;
+    background: #111111;
+}
+                                                                //header
+
+.homepage-2-header{
+    // background-color: #111111;
+    border-bottom: 1px solid #414141;
+    transition:  background-color .5s cubic-bezier(.25,.46,.45,.94);
+}
+.payppy-logo-2-container{
+    padding: 10px 50px 10px 50px;
+    height:100px;
+    width: 50%;
+}
+
+//navbar toggle content
+.toggler-icon-container{
+    width: 50%;
+    padding: 35px 50px 35px 50px;
+}
+.payppyhomepage-header-section{
+    top: 100px;
+    left: 0;
+    z-index: -1;
+    background-color: #111111;
+    width: 100%;
+    min-height: calc( 100vh - 100px);
+    max-height: calc( 100vh - 100px);
+    opacity: 0;
+    transition: z-index cubic-bezier(.25,.46,.45,.94) .5s,opacity cubic-bezier(.25,.46,.45,.94) .5s, background-color .5s cubic-bezier(.25,.46,.45,.94);
+    overflow: scroll;
+}
+.payppy-header-with-height{
+    opacity: 1;
+    z-index: 4;
+    transition: opacity .5s cubic-bezier(.25,.46,.45,.94) .5s, background-color .5s cubic-bezier(.25,.46,.45,.94);
+}
+.payppy-bg-custom-primary{
+    background-color:#0057FF;
+    transition:  background-color .5s cubic-bezier(.25,.46,.45,.94);
+}
+.studio-circle-arrow{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform .5s cubic-bezier(.25,.46,.45,.94);
+}
+.brand-web-app-deck-box-hidden{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s cubic-bezier(.25,.46,.45,.94);
+}
+.brand-web-app-deck-box{
+    max-height: 19.75rem;
+    overflow:visible;
+    transition: max-height .5s cubic-bezier(.25,.46,.45,.94);
+
+}
+.copied-text{
+    top: -1.9rem;
+    right: -0.9rem;
+}
+
+.payppy-header-links{
+    position: relative;
+    display: inline-block;
+}
+.text-opacity{
+    color: #fafafa59;
+}
+.payppy-header-links::after{
+    content: '';
+    position: absolute;
+    bottom: -0.838rem;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: white;
+    z-index: 4;
+    transition: 0.25s ease;
+}
+.payppy-header-links:hover::after{
+    width: 100% !important;
+}
+.payppy-homepage-header-footer{
+    width: 100%;
+    border-top: 1px solid #BBBBBB;
+}
+
+.header-bottom-logos-container{
+    // border: 1px solid blue;
+    border-radius: 50%;
+    padding: 0.9em;
+    &:hover{
+        background-color: #ffffff19;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .payppy-logo-2-container{
+        padding: 10px 20px;
+        height: 72px;
+    }
+    .toggler-icon-container{
+         padding: 35px 20px 35px 20px;
+        //  border: 1px solid white;
+    }
+    .toggler-icon-2{
+        width: 24px;
+        height: 24px;
+        padding: 4px 2.63px 4px 0px;
+
+    }
+
+    //navbar toggle content
+    .payppyhomepage-header-section{
+        top: 72px;
+        min-height: calc( 100vh - 72px);
+        max-height: calc( 100vh - 72px);
+
+    }
+    .studio-circle-arrow{
+        width: 26px;
+        height: 26px;
+    }
+}
+                                                                //section                                            
+.payppy-2-homepage-section{
+    // background: #111111;
+    min-height: 100vh;
+    width: 100%;
+}
+.sensei-studio-box,.payppy-2-store-container{
+    // height: 696px;
+    height: inherit;
+    // gap: 30px;
+    border-top: 1px solid #414141;
+    border-bottom: 1px solid #414141;
+    width: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.store-corner-arrow{
+    // position: absolute;
+    top: 32px;
+    right: 32px;
+    transition: 0.34s;
+}
+.store-corner-arrow-img{
+    opacity: 0.5;
+}
+.payppy-store-img-box,.sensei-img-box{
+    // position: relative;
+    z-index: 2;
+}
+.payppy-store-img{
+    position: inherit;
+    z-index: 2;
+}
+
+.green-gradient-container{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+// common for all gradients
+.green-gradient-1-box,.blue-gradient-1-box{
+    position: absolute;
+    background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
+    z-index: 1;
+    width: 661px;
+    height: 595.91px;
+    transform: scaleX(-1) ;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    opacity: 0.5;
+    left: -510.1px;
+    bottom: -294px;
+    transition: 0.4s;
+    
+}
+.green-gradient-2-box,.blue-gradient-2-box{
+    background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
+    position: absolute;
+    z-index: 1;
+    width: 661px;
+    height: 595.91px;
+    opacity: 0.5;
+    left: 150.8px;
+    bottom: -294px;
+    border: 1px solid none;
+    // box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.06);
+    transition: 0.4s;    
+}
+.blue-gradient-1-box{
+    background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
+    left: -461px;
+    bottom: -78px;
+}
+.blue-gradient-2-box{
+    background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
+    left: 200.03px;
+    bottom: -78px;
+}
+//for hover effect to change linear gradient
+
+.payppy-2-store-container:hover .store-corner-arrow{
+    top: 24px;
+    right: 24px;
+}
+.payppy-2-store-container:hover  .store-corner-arrow-img{
+    opacity: 1;
+    filter: brightness(8000);
+}
+
+.payppy-2-store-container:hover .green-gradient-1-box{
+    opacity: 0.85;
+}
+.payppy-2-store-container:hover .green-gradient-2-box{
+    opacity: 0.85;
+}
+.sensei-studio-box:hover .blue-gradient-1-box{
+    opacity: 0.9;
+}
+.sensei-studio-box:hover .blue-gradient-2-box{
+    opacity: 0.9;
+}
+.sensei-studio-box:hover .store-corner-arrow{
+    top: 24px;
+    right: 24px;
+}
+.sensei-studio-box:hover  .store-corner-arrow-img{
+    opacity: 1;
+    filter: brightness(8000);
+}
+
+.sensei-studio-2-title-para-container{
+    width: 399px;
+    position: relative;
+    z-index: 2;
+}
+.payppy-app-2-title-para-container{
+    width: 347px;
+    position: relative;
+    z-index: 2;
+}
+.payppy-2-store-container{
+    border-right: 1px solid #414141;
+}
+// .payppy-app-2-title{
+//     font-size: 32px;
+//     font-weight: 600;
+//     line-height: 44px;
+//     letter-spacing: -1px;
+//     color: #FFFFFF;
+    
+// }
+// .payppy-app-2-para{
+//     color: #BBBBBB;
+//     @include for-fonts();
+//     font-size: 18px;
+//     // border: 1px solid white;
+// }
+
+.learn-more-link{
+    padding: 4px 0px 4px 0px;
+    color: #E4E0DA;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.063rem;
+    border-bottom: 1px solid #E4E0DA;
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .sensei-studio-box,.payppy-2-store-container{
+        width: 100%;
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width:640px) {
+    .sensei-studio-box,.payppy-2-store-container{
+        padding: 60px 20;
+    }
+    .sensei-img{
+        width: 240px;
+        height: 300px;
+    }
+    .payppy-store-img{
+        width: 240px;
+        height: 294.4px;
+    }
+    .store-corner-arrow{
+        display: none !important;
+    }
+    .payppy-app-2-title{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: -1px;
+        // text-align: center;
+    }
+    .payppy-app-2-para{
+        width: 261px;
+        font-size: 14px;
+        line-height: 24px; 
+        margin: auto;   
+    }
+    .sensei-studio-2-title-para-container .payppy-app-2-para{
+        width: 285px;
+    }
+    .payppy-app-2-title-para-container,.sensei-studio-2-title-para-container{
+        width: 320px;
+    }
+    .learn-more-link{
+        display: inline;
+    }
+
+    .green-gradient-1-box,.blue-gradient-1-box,.green-gradient-2-box,.blue-gradient-2-box{
+        width: 526px;
+        height: 415.91px;
+        // left: 151.03px;
+        // bottom: -294px;
+    }
+    .green-gradient-1-box{
+        left: -404.03px;
+        bottom: -208px;
+    }
+    .green-gradient-2-box{
+        left: 122.03px;
+        bottom: -208px;
+    }
+    .blue-gradient-1-box{
+        left: -365.03px;
+        bottom: 35px;
+    }
+    .blue-gradient-2-box{
+        left: 161.03px;
+        bottom: 35px;
+    }
+}
+                                                                //footer
+
+.payppy-homepage-2-footer{
+    flex-grow: 1;
+    background: #111111;
+    padding: 20px 136px 20px 154px;
+}
+.copyright-2-text{
+    @include for-fonts();
+    color: #7A7A7A;
+}
+.footer-2-links{
+    gap: 20px;
+}
+
+.footer-2-link{
+    @include for-fonts();
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media screen and (max-width:992px) {
+    .payppy-homepage-2-footer{
+        padding: 20px 40px  ;
+    }
+}
+@media screen and (max-width:625px) {
+    .payppy-homepage-2-footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .copyright-2-text{
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+    }
+    .footer-2-link{
+        font-size: 0.75rem;
+        line-height: 1.75rem;
+    }
+    .footer-2-links{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

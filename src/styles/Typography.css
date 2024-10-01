@@ -1,0 +1,300 @@
+.bg-custom-primary {
+  background-color: #0057FF;
+}
+
+.bg-custom-almostblack {
+  background-color: #111111;
+}
+
+.bg-custom-white {
+  background-color: #FFFFFF;
+}
+
+.bg-custom-almostwhite {
+  background-color: #FAFAFA;
+}
+
+.bg-custom-lightgreu {
+  background-color: #DDDDDD;
+}
+
+.bg-custom-green {
+  background-color: #00FF95;
+}
+
+.bg-custom-darkgrey {
+  background-color: #414141;
+}
+
+.bg-custom-placeholder {
+  background-color: #6E757C;
+}
+
+.bg-custom-mediumgrey {
+  background-color: #7A7A7A;
+}
+
+.bg-custom-ghostgrey {
+  background-color: #BBBBBB;
+}
+
+.text-custom-primary {
+  color: #0057FF;
+}
+
+.text-custom-almostblack {
+  color: #111111;
+}
+
+.text-custom-white {
+  color: #FFFFFF;
+}
+
+.text-custom-almostwhite {
+  color: #FAFAFA;
+}
+
+.text-custom-lightgreu {
+  color: #DDDDDD;
+}
+
+.text-custom-green {
+  color: #00FF95;
+}
+
+.text-custom-darkgrey {
+  color: #414141;
+}
+
+.text-custom-placeholder {
+  color: #6E757C;
+}
+
+.text-custom-mediumgrey {
+  color: #7A7A7A;
+}
+
+.text-custom-ghostgrey {
+  color: #BBBBBB;
+}
+
+.common-h1-heading {
+  font-size: 5.25rem;
+  font-weight: 500;
+  line-height: 5.25rem;
+  letter-spacing: -0.1875rem;
+  text-align: center;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(#A9A9A9));
+  background: linear-gradient(90deg, #FFFFFF 50%, #A9A9A9 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-h1-heading {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-h1-heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.125rem;
+  }
+}
+.common-h2-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.75rem;
+  letter-spacing: -0.125rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-h2-heading {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-h2-heading {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+}
+.common-h3-heading {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4.25rem;
+  letter-spacing: -0.125rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-h3-heading {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-h3-heading {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.0625rem;
+  }
+}
+.common-h4-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.75rem;
+  letter-spacing: -0.0625rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-h4-heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-h4-heading {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.0625rem;
+  }
+}
+.common-h5-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.75rem;
+  letter-spacing: -0.03125rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-h5-heading {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-h5-heading {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.0625rem;
+  }
+}
+.common-h6-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-h6-heading {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-h6-heading {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+.common-paragraph {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-paragraph {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-paragraph {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+.common-all-caps {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-all-caps {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-all-caps {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
+.italic-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+}
+
+@media screen and (max-width: 640px) {
+  .italic-text {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+/* From Uiverse.io by Smit-Prajapati */
+.loader {
+  height: 2px;
+  width: 300px;
+  background: rgb(44, 44, 44);
+  position: relative;
+  overflow: hidden;
+}
+
+.loader .black_overlay {
+  background: linear-gradient(87deg, #111111 0%, rgba(0, 0, 0, 0.14) 30%, rgba(0, 0, 0, 0.14) 70%, #111111 100%);
+  position: absolute;
+  inset: 0px;
+}
+
+.loader .light {
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  left: -20%;
+  top: 0px;
+  background: linear-gradient(87deg, rgba(0, 0, 0, 0) 0%, #0057FF 40%, #0057FF 60%, rgba(0, 0, 0, 0) 100%);
+  -webkit-animation: light 1s infinite ease-in-out;
+          animation: light 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes light {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes light {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+.body-scroll-none {
+  overflow: hidden;
+}/*# sourceMappingURL=Typography.css.map */

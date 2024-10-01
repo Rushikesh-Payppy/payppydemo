@@ -1,0 +1,38 @@
+// @import '../TitleAndPara';                       //To use partials for Title and paragraphs
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+                                            //header
+                
+.app-page-header-title{
+    max-width: 50.813rem;
+}
+
+@media screen and (max-width:1024px) {
+    .app-page-header-title{
+        max-width: 41.5rem;
+    }
+}
+@media screen and (max-width:698px) {
+    .app-page-header-title{
+        max-width: 19rem;
+    }
+}
+
+                                            //section 1
+
+.apppage-section-one-title{
+    width: 80rem;
+}
+.apppage-section-one-para{
+    width: 37.688rem;
+}
+
+
+                                            //section 2
+                                          
+                                            //section 3

@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app-page-header-title {
+  max-width: 50.813rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .app-page-header-title {
+    max-width: 41.5rem;
+  }
+}
+@media screen and (max-width: 698px) {
+  .app-page-header-title {
+    max-width: 19rem;
+  }
+}
+.apppage-section-one-title {
+  width: 80rem;
+}
+
+.apppage-section-one-para {
+  width: 37.688rem;
+}/*# sourceMappingURL=AppPage.css.map */

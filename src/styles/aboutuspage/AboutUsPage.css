@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-us-header-title {
+  max-width: 52.875rem; /* 846px / 16 = 52.875rem */
+}
+
+.about-us-header-para {
+  max-width: 39.375rem; /* 630px / 16 = 39.375rem */
+}
+
+@media screen and (max-width: 1024px) { /* 1024px / 16 = 64rem */
+  .about-us-header-title {
+    max-width: 41.5rem; /* 664px / 16 = 41.5rem */
+  }
+  .about-us-header-para {
+    max-width: 41.5rem; /* 664px / 16 = 41.5rem */
+  }
+}
+@media screen and (max-width: 640px) {
+  .about-us-header-title {
+    max-width: 19rem; /* 304px / 16 = 19rem */
+  }
+  .about-us-header-para {
+    max-width: 20rem; /* 320px / 16 = 20rem */
+  }
+}
+.about-us-page-section-one-img {
+  width: 100%;
+}
+
+.about-us-section-one-heading-para-container {
+  max-width: 66.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-us-page-section-one-img {
+    width: 100%;
+    height: auto;
+  }
+  .about-us-section-one-heading-para-container {
+    max-width: 41.5rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .about-us-page-section-one-img {
+    height: auto;
+  }
+  .about-us-section-one-heading-para-container {
+    max-width: 20rem;
+  }
+  .about-us-section-one-heading-para-container {
+    max-width: 100%;
+  }
+}
+.about-us-section-2-content-container {
+  max-width: 66.5rem;
+}
+
+.about-us-section-2-grid-box {
+  border-top: 1px solid #DDDDDD;
+}
+
+.about-us-section-2-grid-title {
+  max-width: 18.125rem;
+}
+
+.about-us-section-2-grid-title-2 {
+  max-width: 13.125rem;
+}
+
+.about-us-section-2-grid-para {
+  max-width: 55%;
+}
+.about-us-section-2-grid-para:nth-child(2), .about-us-section-2-grid-para:nth-child(4) {
+  max-width: 53%;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-us-section-2-content-container {
+    max-width: 41.5rem;
+  }
+  .about-us-section-2-grid-title {
+    max-width: 100%;
+  }
+  .about-us-section-2-grid-title-2 {
+    max-width: 13.125rem;
+  }
+  .about-us-section-2-grid-para {
+    max-width: 16rem !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .about-us-section-2-grid-title-2, .about-us-section-2-content-container {
+    max-width: 100%;
+  }
+  .about-us-section-2-grid-para {
+    max-width: 100% !important;
+  }
+}
+.co-founder-black-box {
+  min-width: 30.875rem;
+}
+
+.co-founder-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.the-man-behind-it-container {
+  max-width: 59.125rem;
+}
+
+.section-3-bottom-content-container {
+  border-right: 1px solid #DDDDDD;
+}
+
+@media screen and (max-width: 1024px) {
+  .co-founder-black-box {
+    min-width: 100%;
+  }
+  .SA-co-found-image {
+    width: 240px;
+    height: 240px;
+  }
+  .the-man-behind-it-container {
+    max-width: 100%;
+  }
+  .section-3-bottom-content-container {
+    border-right: none;
+  }
+}/*# sourceMappingURL=AboutUsPage.css.map */

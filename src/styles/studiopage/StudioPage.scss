@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+                                                    //header
+
+
+.studio-page-title{
+    max-width: 38.749rem;
+}
+.studio-page-header-para{
+    max-width: 35.156rem;
+}
+@media screen and (max-width:1024px) {
+    .studio-page-title{
+        max-width: 41.5rem;
+    }
+    .studio-page-header-para{
+        max-width: 34.239rem;
+    }
+}
+@media screen and (max-width:640px) {
+    .studio-page-title,.studio-page-header-para{
+        max-width: 20rem;
+    }
+}
+
+
+                                                //sections 
+
+                                                //section 1
+.design-branding-img{
+    width: 100%;
+    height: 450px;
+    object-fit:cover;
+    // object-position: top;
+}
+.strategic-product-design-and-get-in-touch-parent-container{
+    max-width: 1440px;
+    margin: auto;
+}
+.strategic-product-design-subheading-container {
+    width: 50%;
+   border-left: 1px solid #DDDDDD;
+   padding: 120px 100px 120px 100px;
+}
+.studio-page-subheading{
+    max-width: 32.5rem;
+}        
+.get-in-touch-container{
+   border-left: 1px solid #DDDDDD;
+   border-right: 1px solid #DDDDDD;
+   width: 50%;
+}
+.get-in-touch-inner-container{
+    padding: 100px 80px 100px 80px !important;              //padding was not working by tailwind css so need to write raw css
+}
+.welcome-to-hottest-design-title,.studio-section-one-para{
+    max-width: 35rem;
+}
+.get-in-touh-btn{
+    background: #0057FF;
+    width: 100%;
+    height: 80px;
+}
+.get-in-touch-txt{
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: 0.063rem;
+    text-align: center;
+    color: #FFFFFF;
+    width: 40.25rem;
+}
+.get-in-touch-img-div{
+    width: 76px;
+// padding: 26px 24px 26px 24px;
+    border-left: 2px solid #FFFFFF;
+    height: 100%;
+}
+@media screen and (max-width:1023px) {
+    .strategic-product-design-subheading-container ,.get-in-touch-container{
+        width: 100%;
+    }
+    .strategic-product-design-subheading-container{
+        border-bottom: 1px solid #DDDDDD;
+    }
+    .get-in-touch-inner-container,.strategic-product-design-subheading-container{
+        padding: 80px 40px 80px 40px !important;
+    }
+    .studio-page-subheading{
+        max-width: 39.188rem;
+    }
+    .welcome-to-hottest-design-title,.studio-section-one-para{
+        max-width: 41.5rem;
+    }
+    .design-branding-img{
+        height: auto;
+    }
+
+
+}
+@media screen and (max-width:640px) {
+    .get-in-touch-inner-container,.strategic-product-design-subheading-container{
+        padding: 56px 20px 56px 20px !important;
+        }
+        .studio-page-subheading{
+            // max-width: 18.75rem;
+            width: 100%;
+        }
+       .welcome-to-hottest-design-title,.studio-section-one-para{
+            // max-width: 20rem;
+            width: 100%;
+        }
+        .get-in-touh-btn{
+            height: 72px;
+        }
+        .get-in-touch-txt{
+            font-size: 1rem;
+        }
+        .get-in-touch-arrow-img{
+            width: 24px;
+            height: 24px;
+        }
+        .get-in-touch-img-div{
+            width: 76px;
+            flex-shrink: 0;
+        }
+}
+
+
+                                                //section 2     our-client
+.studio-our-client-section{
+    border-top: 1px solid #DDDDDD;
+    background: #FAFAFA;
+}
+.our-client-tripersmith-img{
+    width: 259.72px;
+    height: 53.2px;    
+}
+.our-client-payglocal-img{
+    width: 215.85px;
+    height: 52.15px;  
+}
+.our-client-merola-img{
+    width: 207.3px;
+    height: 64.15px; 
+}
+.our-client-pragilis-img{
+    width: 185.4px;
+    height: 67.28px;    
+}
+@media screen and (max-width:1024px) {
+    .our-client-tripersmith-img{
+        width: 158.91px;
+        height: 31.78px;        
+    }
+    .our-client-payglocal-img{
+        width: 131.13px;
+        height: 32.45px;        
+    }
+    .our-client-merola-img{
+        width: 129.57px;
+        height: 40.09px;
+    }
+    .our-client-pragilis-img{
+        width: 115.88px;
+        height: 42.05px;
+    }
+}
+@media screen and (max-width:640px) {
+    .our-client-img-container{
+        width: 100%;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding-bottom: 1em;
+    }
+}
+                                                //section 3    tastic methodology
+.tastic-methodology-section{
+    border-top: 1px solid #DDDDDD;
+}
+
+.how-things-works-inner-section{
+    width:  61.375rem;
+}
+.tastic-methodology-title{
+    max-width: 61.375rem;
+}
+.tastic-methodology-para{
+    max-width: 36.375rem;
+}
+//tablet view
+@media screen and (max-width:1024px) {
+ 
+    .tastic-methodology-title,.tastic-methodology-para{
+        max-width: 41.5rem;
+    }
+
+
+}
+//mobile view
+@media screen and (max-width:640px) {
+  
+    .tastic-methodology-title, .tastic-methodology-para{
+        // max-width: 20rem;
+        width: 100%;
+    }
+
+}
+                                                //section 4
+.brand-pitch-websites-product-section{
+    border: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    max-width: 90rem;
+    margin: auto;
+}
+.brand-arrow{
+    transition: 0.3s;
+}
+.brand-box{
+    border-left: 1px solid #DDDDDD;
+    width: 25%;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    &:hover{
+        background-color: #FAFAFA;
+    }
+    &:hover .brand-arrow{
+        top: 10px;
+        right: 10px;
+    }
+}
+.brand-box:first-child{
+    border: none;
+}
+
+.brand-section-para{
+    max-width: 17.5rem;
+}
+
+//tablet view
+@media screen and (max-width:1024px) {
+    .brand-pitch-websites-product-section{
+        width: 100%;
+    }
+    .brand-box{
+        width: 50%;
+        border-bottom: 1px solid #DDDDDD !important;
+    }
+    .brand-box:nth-child(3){
+        border-left: none !important;
+    }
+    .brand-box:nth-child(4){
+        border-bottom: none !important;
+    }
+
+
+}
+//mobile view
+@media screen and (max-width:640px) {
+    .brand-pitch-websites-product-section{
+        width: 100%;
+    }
+    .brand-box{
+        width: 100%;
+        border-left: none;
+    }
+    .brand-section-para{
+        max-width: 20rem;
+        text-align: center;
+    }
+
+}
+
+
+                                            //section 5
+
+.our-client-backed-tiget-global-img{
+    width: 300px;
+    height: 47.14px;
+}
+.our-client-backed-siquoia-img{
+    width: 277.69px;
+    height: 47px;    
+}
+.our-client-backed-beenext-img{
+    width: 246px;
+    height: 27px;    
+}
+
+
+//tablet view
+@media screen and (max-width:1024px) {
+.our-client-backed-tiget-global-img{
+    width: 204.93px;
+    height: 32.2px;
+}
+.our-client-backed-siquoia-img{
+    width: 189.69px;
+    height: 32.11px;  
+}
+.our-client-backed-beenext-img{
+    width: 168.04px;
+    height: 18.44px;   
+}
+
+}
+//mobile view
+@media screen and (max-width:640px) {
+ .our-client-backed-tiget-global-img{
+    width: 168px;
+    height: 26.4px;
+}
+.our-client-backed-siquoia-img{
+    width: 155.5px;
+    height: 26.32px;
+}
+.our-client-backed-beenext-img{
+    width: 137.76px;
+    height: 15.12px;
+}
+
+}
+
+
+
+                                        
+                                            //section 6
+.creative-design-section{
+    border-top: 1px solid #DDDDDD;
+}
+.creative-design-section-inner-container{
+    max-width: 61.375rem;
+}
+.creative-design-section-title{
+    width: 100%;
+}
+.creative-design-blog-container{
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    max-width: 92.5rem;
+    margin: auto;
+}
+.creative-design-blog{
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    width: 50%;
+}
+
+// .creative-design-blog-title{
+// }
+
+//tablet view
+@media screen and (max-width:1024px) {
+    .creative-design-section-inner-container{
+        width: 41.5rem;
+    }
+    .creative-design-blog{
+        width: 100%;
+        border-right: none;
+    }
+    .creative-design-blog-img{
+        width: 488px;
+        height: 300px;
+    }
+    .creative-design-blog-title,.creative-design-blog-para{
+        max-width:30.5rem;
+    }
+    .creative-design-section-title{
+        text-align: center !important;
+        max-width: 40rem;
+    }
+    .how-things-work-title{
+        width: 100%;
+        text-align: center;
+    }
+}
+    //mobile view
+@media screen and (max-width:640px) {
+    .creative-design-section-inner-container{
+        // width: 20rem    ;
+        width: 100%;
+    }
+    .creative-design-section-title, .how-things-work-title{
+        text-align: left !important;
+    }
+    // .creative-design-blog-title{
+    //     font-size: 24px;
+    //     line-height: 36px;   
+    // }
+    .creative-design-blog-title,.creative-design-blog-para{
+        // max-width:320px;
+        width: 100%;
+    }
+    .creative-design-blog-img{
+        // width: 320px;
+        height: auto;
+    }
+}
+
+                                    

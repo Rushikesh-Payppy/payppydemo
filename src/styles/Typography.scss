@@ -1,0 +1,432 @@
+// Font sizes and line heights in rem
+$h1-desktop-size: 5.25rem;      // 84px
+$h1-desktop-lineheight: 5.25rem; // 84px
+$h1-ipad-size: 4.5rem;          // 72px
+$h1-ipad-lineheight: 5rem;      // 80px
+$h1-mobile-size: 3rem;          // 48px
+$h1-mobile-lineheight: 3.5rem;  // 56px
+
+$h2-desktop-size: 4rem;         // 64px
+$h2-desktop-lineheight: 4.75rem; // 76px
+$h2-ipad-size: 3rem;            // 56px
+$h2-ipad-lineheight: 4.5rem;    // 72px
+$h2-mobile-size: 2.5rem;        // 40px
+$h2-mobile-lineheight: 3.25rem; // 52px
+
+$h3-desktop-size: 3.5rem;       // 56px
+$h3-desktop-lineheight: 4.25rem; // 68px
+$h3-ipad-size: 3rem;            // 48px
+$h3-ipad-lineheight: 3.75rem;   // 60px
+$h3-mobile-size: 2rem;          // 32px
+$h3-mobile-lineheight: 2.75rem; // 44px
+
+$h4-desktop-size: 3rem;         // 48px
+$h4-desktop-lineheight: 3.75rem; // 60px
+$h4-ipad-size: 2.5rem;          // 40px
+$h4-ipad-lineheight: 3rem;      // 48px
+$h4-mobile-size: 1.75rem;       // 28px
+$h4-mobile-lineheight: 2.5rem;  // 40px
+
+$h5-desktop-size: 2rem;         // 32px
+$h5-desktop-lineheight: 2.75rem; // 44px
+$h5-ipad-size: 2rem;            // 32px
+$h5-ipad-lineheight: 2.75rem;   // 44px
+$h5-mobile-size: 1.5rem;        // 24px
+$h5-mobile-lineheight: 2.25rem; // 36px
+
+$h6-desktop-size: 1.5rem;       // 24px
+$h6-desktop-lineheight: 2.25rem; // 36px
+$h6-ipad-size: 1.5rem;          // 24px
+$h6-ipad-lineheight: 2.25rem;   // 36px
+$h6-mobile-size: 1.25rem;       // 20px
+$h6-mobile-lineheight: 2rem;    // 32px
+
+$para-desktop-size: 1.125rem;   // 18px
+$para-desktop-lineheight: 2rem; // 32px
+$para-ipad-size: 1.125rem;      // 18px
+$para-ipad-lineheight: 2rem;    // 32px
+$para-mobile-size: 1rem;        // 16px
+$para-mobile-lineheight: 1.75rem; // 28px
+
+$button-desktop-size: 1.125rem; // 18px
+$button-desktop-lineheight: 1.75rem; // 28px
+$button-ipad-size: 1.125rem;    // 18px
+$button-ipad-lineheight: 1.75rem; // 28px
+$button-mobile-size: 1rem;      // 16px
+$button-mobile-lineheight: 1.5rem;  // 24px
+
+$all-caps-desktop-size: 1rem;   // 16px
+$all-caps-desktop-lineheight: 1.75rem; // 28px
+$all-caps-ipad-size: 1rem;      // 16px
+$all-caps-ipad-lineheight: 1.75rem; // 28px
+$all-caps-mobile-size: 0.875rem; // 14px
+$all-caps-mobile-lineheight: 1.5rem; // 24px
+
+//colors -
+$Primary:#0057FF;
+$AlmostBlack:#111111;
+$White:#FFFFFF;
+$AlmostWhite:#FAFAFA;
+$LightGreu:#DDDDDD;
+$Green:#00FF95;
+$DarkGrey:#414141;
+$Placeholder:#6E757C;
+$MediumGrey:#7A7A7A;
+$GhostGrey:#BBBBBB;
+
+
+//background-color
+.bg-custom-primary{
+    background-color: $Primary;
+}
+.bg-custom-almostblack{
+    background-color: $AlmostBlack;
+}
+.bg-custom-white{
+    background-color: $White;
+}
+.bg-custom-almostwhite{
+    background-color: $AlmostWhite;
+}
+.bg-custom-lightgreu{
+    background-color: $LightGreu;
+}
+.bg-custom-green{
+    background-color: $Green;
+}
+.bg-custom-darkgrey{
+    background-color: $DarkGrey;
+}
+.bg-custom-placeholder{
+    background-color: $Placeholder;
+}
+.bg-custom-mediumgrey{
+    background-color: $MediumGrey;
+}
+.bg-custom-ghostgrey{
+    background-color: $GhostGrey;
+}
+
+//text-color
+.text-custom-primary{
+    color: $Primary;
+}
+.text-custom-almostblack{
+    color: $AlmostBlack;
+}
+.text-custom-white{
+    color: $White;
+}
+.text-custom-almostwhite{
+    color: $AlmostWhite;
+}
+.text-custom-lightgreu{
+    color: $LightGreu;
+}
+.text-custom-green{
+    color: $Green;
+}
+.text-custom-darkgrey{
+    color: $DarkGrey;
+}
+.text-custom-placeholder{
+    color: $Placeholder;
+}
+.text-custom-mediumgrey{
+    color: $MediumGrey;
+}
+.text-custom-ghostgrey{
+    color: $GhostGrey;
+}
+//mixins
+@mixin for-page-small-para{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color:  #3D3E40 ;
+}
+
+                                    //h1 heading
+//page headings
+.common-h1-heading{
+    font-size: $h1-desktop-size;
+    font-weight: 500;
+    line-height: $h1-desktop-lineheight;
+    letter-spacing: -0.1875rem;
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(90deg, #FFFFFF 50%, #A9A9A9 100%);
+    color: transparent;
+    background-clip: text;
+}
+@media screen and (max-width:1024px) {
+    .common-h1-heading {
+        font-size: $h1-ipad-size;
+        line-height: $h1-ipad-lineheight;
+    }
+}
+
+@media screen and (max-width:699px) {
+    .common-h1-heading {
+        font-size: $h1-mobile-size;
+        line-height: $h1-mobile-lineheight;
+        letter-spacing: -0.125rem;
+    }
+}
+
+
+
+
+                                    // h2 heading
+
+.common-h2-heading{
+    font-size: $h2-desktop-size;  // 64px
+    font-weight: 600;
+    line-height: $h2-desktop-lineheight;  // 76px
+    letter-spacing: -0.125rem;  // -2px
+    // text-align: left;
+    // color: #111111;
+}
+@media screen and (max-width:1024px) {
+    .common-h2-heading {
+        font-size: $h2-ipad-size;
+        line-height: $h2-ipad-lineheight;
+    }
+}
+
+@media screen and (max-width:699px) {
+    .common-h2-heading {
+        font-size: $h2-mobile-size;
+        line-height: $h2-mobile-lineheight;
+    }
+}
+
+
+                                        //h3 heading
+
+.common-h3-heading{
+    font-size: $h3-desktop-size;  // 56px
+    font-weight: 600;
+    line-height: $h3-desktop-lineheight;  // 68px
+    letter-spacing: -0.125rem;  // -2px
+    // text-align: left;
+    // color: #111111;
+
+}
+@media screen and (max-width:1024px) {
+    .common-h3-heading {
+        font-size: $h3-ipad-size;  // 56px
+        line-height: $h3-ipad-lineheight;  // 68px
+    
+    }
+}
+
+@media screen and (max-width:699px) {
+    .common-h3-heading {
+        font-size: $h3-mobile-size;
+        line-height: $h3-mobile-lineheight;
+        letter-spacing: -0.0625rem;  // -1px
+
+    }
+}
+
+                                        //h4 heading
+
+.common-h4-heading{
+    font-size: $h4-desktop-size;  // 48px
+    font-weight: 600;
+    line-height: $h4-desktop-lineheight;  // 60px
+    letter-spacing: -0.0625rem;  // -1px
+    // text-align: left;
+    // color: #111111;
+
+}
+@media screen and (max-width:1024px) {
+    .common-h4-heading {
+        font-size: $h4-ipad-size;  // 40px
+        line-height: $h4-ipad-lineheight;  // 48px
+    
+    }
+}
+
+@media screen and (max-width:699px) {
+    .common-h4-heading {
+        font-size: $h4-mobile-size;
+        line-height: $h4-mobile-lineheight;
+        letter-spacing: -0.0625rem;  // -1px
+
+    }
+}
+
+
+                                        //h5 heading
+
+.common-h5-heading{
+    font-size: $h5-desktop-size;  // 32px
+    font-weight: 600;
+    line-height: $h5-desktop-lineheight;  // 44px
+    letter-spacing: -0.03125rem;  // -0.5px
+    // text-align: left;
+    // color: #111111;
+}
+@media screen and (max-width:1024px) {
+    .common-h5-heading {
+        font-size: $h5-ipad-size;  // 56px
+        line-height: $h5-ipad-lineheight;  // 68px
+    
+    }
+}
+
+@media screen and (max-width:699px) {
+    .common-h5-heading {
+        font-size: $h5-mobile-size;
+        line-height: $h5-mobile-lineheight;
+        letter-spacing: -0.0625rem;  // -1px
+
+    }
+}
+
+
+                                            //heading
+
+.common-h6-heading{
+    font-size: $h6-desktop-size;
+    font-weight: 600;
+    line-height: $h6-desktop-lineheight;
+    // text-align: left;
+}
+
+@media screen and (max-width:1024px) {
+    .common-h6-heading {
+        font-size: $h6-ipad-size;  
+        line-height: $h6-ipad-lineheight;  
+    
+    }
+}
+
+@media screen and (max-width:699px) {
+    .common-h6-heading {
+        font-size: $h6-mobile-size;
+        line-height: $h6-mobile-lineheight;
+
+    }
+}
+
+                                                    //paragraph
+.common-paragraph{
+    font-size: $para-desktop-size;
+    font-weight: 400;
+    line-height: $para-desktop-lineheight;
+    // text-align: left;
+    // color:  #3D3E40 ;
+}
+@media screen and (max-width:1024px) {
+    .common-paragraph {
+        font-size: $para-ipad-size;  
+        line-height: $para-ipad-lineheight;  
+    
+    }
+}
+
+@media screen and (max-width:699px) {
+    .common-paragraph {
+        font-size: $para-mobile-size;
+        line-height: $para-mobile-lineheight;
+
+    }
+}
+                                                    //all caps 
+        
+.common-all-caps{
+    font-size: $all-caps-desktop-size;
+    font-weight: 600;
+    line-height: $all-caps-desktop-lineheight;
+    letter-spacing: 1px;
+    // text-align: left;
+    text-transform: uppercase;
+}
+@media screen and (max-width:1024px) {
+    .common-all-caps {
+        font-size: $all-caps-ipad-size;  
+        line-height: $all-caps-ipad-lineheight;  
+    }
+}
+
+@media screen and (max-width:699px) {
+    .common-all-caps {
+        font-size: $all-caps-mobile-size;
+        line-height: $all-caps-mobile-lineheight;
+
+    }
+}
+
+
+                                                //Testomonial Italic 
+                
+.italic-text{
+    font-size: 1.25rem;
+    // font-style: italic;
+    font-weight: 300;
+    line-height: 2.25rem;
+}
+@media screen and (max-width:640px) {
+    .italic-text{
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+
+                                             //loader animation
+                            
+/* From Uiverse.io by Smit-Prajapati */ 
+.loader {
+    height: 2px;
+    width: 300px;
+    background: rgb(44, 44, 44);
+    position: relative;
+    overflow: hidden;
+  }
+  .loader .black_overlay {
+    background: linear-gradient(
+      87deg,
+     $AlmostBlack 0%,
+      rgba(0, 0, 0, 0.14) 30%,
+      rgba(0, 0, 0, 0.14) 70%,
+     $AlmostBlack 100%
+    );
+    position: absolute;
+    inset: 0px;
+  }
+  .loader .light {
+    width: 70px;
+    height: 100%;
+    position: absolute;
+    left: -20%;
+    top: 0px;
+    background: linear-gradient(
+      87deg,
+      rgba(0, 0, 0, 0) 0%,
+      $Primary 40%,
+      $Primary 60%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    animation: light 1s infinite ease-in-out;
+  }
+  
+  @keyframes light {
+    from {
+      left: -30%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  
+
+                                                //to prevent overflow from scroll when navbar open
+
+.body-scroll-none{
+    overflow: hidden;
+}

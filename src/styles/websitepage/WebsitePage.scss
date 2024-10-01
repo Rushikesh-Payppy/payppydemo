@@ -1,0 +1,40 @@
+// @import '../TitleAndPara';                       //To use partials for Title and paragraphs
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+                                            //header
+                
+.website-page-header-title{
+    max-width: 55.818rem;
+}
+
+
+                                            //section 1
+.websitepage-section-one-title{
+    max-width: 52.875rem;
+}
+.websitepage-section-one-para{
+    max-width: 52.25rem;
+}
+@media screen and (max-width:640px) {
+    .websitepage-section-one-para{
+        width: 100% !important;
+    }
+}
+
+
+                                            //section 2
+.grid-boxex-brand-website-title{
+    max-width: 20.063rem;
+}             
+@media screen and (max-width:640px) {
+    .grid-boxex-brand-website-title{
+        max-width: 18.375rem;
+    }  
+}
+                                            
+                                            //section 3

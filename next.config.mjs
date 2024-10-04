@@ -4,6 +4,7 @@ const nextConfig = {
         domains:["www.shutterstock.com",'localhost','strapi.payppy.co']
     },
     // output:'export',
+    productionSourceMaps: false,
 };
 
 export default nextConfig;

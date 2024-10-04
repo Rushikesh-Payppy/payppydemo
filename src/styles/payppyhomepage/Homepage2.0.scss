@@ -32,6 +32,9 @@
     width: 50%;
     padding: 8px 40px 8px 40px;
 }
+.hamburger-react div:nth-child(2){
+    width: 18px !important;
+}
 .payppyhomepage-header-section{
     top: 80px;
     left: 0;
@@ -121,7 +124,6 @@
     }
     .toggler-icon-container{
          padding: 35px 20px 35px 20px;
-        //  border: 1px solid white;
     }
     .toggler-icon-2{
         width: 24px;
@@ -154,37 +156,53 @@
     width: 300px;
     max-width: none;
 }
-.green-gradient-1,.green-gradient-2,.blue-gradient-1,.blue-gradient-2{
-    width: 41.313rem;
+.green-gradient,.blue-gradient{
+    width: 82.626rem;
     height: 37.244rem;
+    left: -32rem;
     bottom: -18.5rem;
+    background-image: url("../../Images/payppyhomepage/green-gradient.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
     opacity: 0.5;
     transition: opacity 0.3s;
-    // transform: translateZ(0);
-    // border: 1px solid inherit;
 }
-//green gradient
-.green-gradient-1,.blue-gradient-1{
-    left: 9.375rem;
-    // left: 50%;
-    // left: 150px;
-    background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
+.blue-gradient{
+    background-image: url("../../Images/payppyhomepage/blue-gradient.png");
 }
+// .green-gradient-1,.green-gradient-2,.blue-gradient-1,.blue-gradient-2{
+//     width: 41.313rem;
+//     height: 37.244rem;
+//     bottom: -18.5rem;
+//     opacity: 0.5;
+//     transition: opacity 0.3s;
 
-.green-gradient-2,.blue-gradient-2{
-    right: 9.375rem;
-    // right: 50%;
-    // right: 150px;
-    background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
-    transform: scaleX(-1) ;
-}
-// blue gradient
-.blue-gradient-1{
-    background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
-}
-.blue-gradient-2{
-    background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
-}
+//     // transform: translateZ(0);
+//     // border: 1px solid inherit;
+// }
+//green gradient
+// .green-gradient-1,.blue-gradient-1{
+//     left: 9.375rem;
+//     // left: 50%;
+//     // left: 150px;
+//     background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
+// }
+
+// .green-gradient-2,.blue-gradient-2{
+//     right: 9.375rem;
+//     // right: 50%;
+//     // right: 150px;
+//     background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
+//     transform: scaleX(-1) ;
+// }
+// // blue gradient
+// .blue-gradient-1{
+//     background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
+// }
+// .blue-gradient-2{
+//     background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%),conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
+// }
 
 
 .payppy-app-main-outer-container{
@@ -197,7 +215,10 @@
         right: 20px;
         filter: brightness(100);
     }
-    &:hover .green-gradient-1, &:hover  .green-gradient-2, &:hover  .blue-gradient-2, &:hover  .blue-gradient-1{
+    // &:hover .green-gradient-1, &:hover  .green-gradient-2, &:hover  .blue-gradient-2, &:hover  .blue-gradient-1{
+    //     opacity: 1;
+    // }
+    &:hover .green-gradient,&:hover .blue-gradient{
         opacity: 1;
     }
    
@@ -229,7 +250,7 @@
     //     min-height: 100vh;
     // }
     .payppy-homepage-main-section{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
    
     .sensei-studio-main-outer-container,.payppy-app-content-container{

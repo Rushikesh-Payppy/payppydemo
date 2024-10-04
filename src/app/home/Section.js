@@ -36,8 +36,9 @@ function Section() {
                     <div className="payppy-app-content-container flex flex-col justify-center items-center gap-7 lg:gap-12 relative absolute">
                         <div className="payppy-store-img-container relative">
                             <Image src={PayppyStore} width={300} height={368} className="max-w-none relative for-center-content payppy-store-img-container"/>
-                            <div className="green-gradient-1 absolute "></div>
-                            <div className="green-gradient-2 absolute "></div>
+                            {/* <div className="green-gradient-1 absolute "></div>
+                            <div className="green-gradient-2 absolute "></div> */}
+                            <div className="green-gradient absolute"></div>
                         </div>
                         <div className="flex flex-col justify-center items-center relative for-center-content gap-3">
                             <h5 className="common-h5-heading text-custom-lightgreu text-center ">Payppy.app</h5>
@@ -56,8 +57,9 @@ function Section() {
                     <div className="sensei-studio-main-outer-container flex flex-col justify-center items-center gap-7 lg:gap-12 relative absolute">
                         <div className="payppy-store-img-container relative">
                             <Image src={SenseiStudio} width={300} height={368} className="max-w-none relative for-center-content"/>
-                            <div className="blue-gradient-1 absolute "></div>
-                            <div className="blue-gradient-2 absolute "></div>
+                            {/* <div className="blue-gradient-1 absolute "></div> */}
+                            {/* <div className="blue-gradient-2 absolute "></div> */}
+                            <div className="blue-gradient absolute"></div>
                         </div>
                         <div className="flex flex-col justify-center items-center relative for-center-content gap-3">
                             <h5 className="common-h5-heading text-custom-lightgreu  text-center ">Sensei Studio</h5>
@@ -72,6 +74,7 @@ function Section() {
                </div>
 
             </section>
+
             <TextRevealComponent/>
         </>
     )

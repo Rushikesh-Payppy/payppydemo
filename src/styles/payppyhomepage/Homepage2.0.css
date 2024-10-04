@@ -28,6 +28,10 @@
   padding: 8px 40px 8px 40px;
 }
 
+.hamburger-react div:nth-child(2) {
+  width: 18px !important;
+}
+
 .payppyhomepage-header-section {
   top: 80px;
   left: 0;
@@ -164,33 +168,22 @@
   max-width: none;
 }
 
-.green-gradient-1, .green-gradient-2, .blue-gradient-1, .blue-gradient-2 {
-  width: 41.313rem;
+.green-gradient, .blue-gradient {
+  width: 82.626rem;
   height: 37.244rem;
+  left: -32rem;
   bottom: -18.5rem;
+  background-image: url("../../Images/payppyhomepage/green-gradient.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   opacity: 0.5;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
-.green-gradient-1, .blue-gradient-1 {
-  left: 9.375rem;
-  background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
-}
-
-.green-gradient-2, .blue-gradient-2 {
-  right: 9.375rem;
-  background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-.blue-gradient-1 {
-  background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
-}
-
-.blue-gradient-2 {
-  background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
+.blue-gradient {
+  background-image: url("../../Images/payppyhomepage/blue-gradient.png");
 }
 
 .payppy-app-main-outer-container {
@@ -205,7 +198,7 @@
   -webkit-filter: brightness(100);
           filter: brightness(100);
 }
-.payppy-app-main-outer-container:hover .green-gradient-1, .payppy-app-main-outer-container:hover .green-gradient-2, .payppy-app-main-outer-container:hover .blue-gradient-2, .payppy-app-main-outer-container:hover .blue-gradient-1 {
+.payppy-app-main-outer-container:hover .green-gradient, .payppy-app-main-outer-container:hover .blue-gradient {
   opacity: 1;
 }
 
@@ -234,10 +227,10 @@
 
 @media screen and (max-width: 1024px) {
   .payppy-homepage-main-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
   }
   .sensei-studio-main-outer-container, .payppy-app-content-container {
     max-width: 20rem;

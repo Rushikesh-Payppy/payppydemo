@@ -22,7 +22,7 @@ import Bookmark from "@/Images/landingpage/bookmark.svg";
 import Delivery from "@/Images/landingpage/deliveryIcon.svg";
 import Sustainability from "@/Images/landingpage/substainabilityIcon.svg";
 //section 5
-import InstaImage from "@/Images/landingpage/insta-image.png";
+import InstaImage from "@/Images/landingpage/insta-image.jpg";
 import InstaCircle from '@/Images/landingpage/insta-circle.png';
 import XCircle from '@/Images/landingpage/x-circle.png';
 import TextRevealComponent from '../TextRevealComponent';

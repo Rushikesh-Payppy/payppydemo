@@ -22,7 +22,7 @@ function LandingPageHeader() {
             <p className="landing-page-para common-paragraph text-center text-custom-ghostgrey" data-aos="fade-up">Drip styles and hottest collections from multiple brands, brought exclusively for the Gen Z and Millennials of India.</p>
             <div className="mt-10 mb-20">
                 <button className={"visit-payppy-btn mx-auto flex  items-center justify-center "+plus_jakarta_sans.className} data-aos="fade-up">
-                    <Link href='https://payppy.app/' className={"visit-payppy-txt " +plus_jakarta_sans.className } >VISIT PAYPPY.APP</Link>
+                    <Link href='https://payppy.app/' target='_blank' className={"visit-payppy-txt " +plus_jakarta_sans.className } >VISIT PAYPPY.APP</Link>
                     <div className="btn-arrow-img-box relative">
                         <Image src={Arrow} 
                         width={28}

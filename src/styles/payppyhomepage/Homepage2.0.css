@@ -7,6 +7,7 @@
 
 .payppy-homepage-2-main-container {
   min-height: 100vh;
+  max-height: 100vh;
   background: #111111;
 }
 
@@ -17,35 +18,35 @@
 }
 
 .payppy-logo-2-container {
-  padding: 10px 50px 10px 50px;
-  height: 100px;
+  padding: 5px 50px 5px 50px;
+  height: 80px;
   width: 50%;
 }
 
 .toggler-icon-container {
   width: 50%;
-  padding: 35px 50px 35px 50px;
+  padding: 8px 40px 8px 40px;
 }
 
 .payppyhomepage-header-section {
-  top: 100px;
+  top: 80px;
   left: 0;
   z-index: -1;
   background-color: #111111;
   width: 100%;
-  min-height: calc(100vh - 100px);
-  max-height: calc(100vh - 100px);
+  min-height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
   opacity: 0;
-  -webkit-transition: z-index cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s, opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s, background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: z-index cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s, opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s, background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: z-index cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: z-index cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   overflow: scroll;
 }
 
 .payppy-header-with-height {
   opacity: 1;
   z-index: 4;
-  -webkit-transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s, background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s, background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .payppy-bg-custom-primary {
@@ -114,6 +115,10 @@
   border-top: 1px solid #BBBBBB;
 }
 
+.text-opacity.payppy-header-links:hover::after {
+  opacity: 0.4;
+}
+
 .header-bottom-logos-container {
   border-radius: 50%;
   padding: 0.9em;
@@ -145,139 +150,76 @@
     height: 26px;
   }
 }
-.payppy-2-homepage-section {
-  min-height: 100vh;
-  width: 100%;
+.payppy-homepage-main-section {
+  min-height: 80vh;
 }
 
-.sensei-studio-box, .payppy-2-store-container {
-  height: inherit;
-  border-top: 1px solid #414141;
-  border-bottom: 1px solid #414141;
-  width: 50%;
-  overflow: hidden;
-  cursor: pointer;
+.homepage-top-arrow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.store-corner-arrow {
-  top: 32px;
-  right: 32px;
-  -webkit-transition: 0.34s;
-  transition: 0.34s;
+.payppy-store-img-container {
+  width: 300px;
+  max-width: none;
 }
 
-.store-corner-arrow-img {
+.green-gradient-1, .green-gradient-2, .blue-gradient-1, .blue-gradient-2 {
+  width: 41.313rem;
+  height: 37.244rem;
+  bottom: -18.5rem;
   opacity: 0.5;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
-.payppy-store-img-box, .sensei-img-box {
-  z-index: 2;
-}
-
-.payppy-store-img {
-  position: inherit;
-  z-index: 2;
-}
-
-.green-gradient-container {
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
-
-.green-gradient-1-box, .blue-gradient-1-box {
-  position: absolute;
+.green-gradient-1, .blue-gradient-1 {
+  left: 9.375rem;
   background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
-  z-index: 1;
-  width: 661px;
-  height: 595.91px;
+}
+
+.green-gradient-2, .blue-gradient-2 {
+  right: 9.375rem;
+  background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-  opacity: 0.5;
-  left: -510.1px;
-  bottom: -294px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
-.green-gradient-2-box, .blue-gradient-2-box {
-  background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #00D46E 360deg, #111111);
-  position: absolute;
-  z-index: 1;
-  width: 661px;
-  height: 595.91px;
-  opacity: 0.5;
-  left: 150.8px;
-  bottom: -294px;
-  border: 1px solid none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.blue-gradient-1-box {
+.blue-gradient-1 {
   background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
-  left: -461px;
-  bottom: -78px;
 }
 
-.blue-gradient-2-box {
+.blue-gradient-2 {
   background: radial-gradient(99.76% 50% at 0% 50%, rgba(17, 17, 17, 0) 0%, #111111 100%), conic-gradient(from 270deg at 22.43% 50%, rgba(0, 2, 18, 0) 0deg, #0057FF 360deg, #111111);
-  left: 200.03px;
-  bottom: -78px;
 }
 
-.payppy-2-store-container:hover .store-corner-arrow {
-  top: 24px;
-  right: 24px;
-}
-
-.payppy-2-store-container:hover .store-corner-arrow-img {
-  opacity: 1;
-  -webkit-filter: brightness(8000);
-          filter: brightness(8000);
-}
-
-.payppy-2-store-container:hover .green-gradient-1-box {
-  opacity: 0.85;
-}
-
-.payppy-2-store-container:hover .green-gradient-2-box {
-  opacity: 0.85;
-}
-
-.sensei-studio-box:hover .blue-gradient-1-box {
-  opacity: 0.9;
-}
-
-.sensei-studio-box:hover .blue-gradient-2-box {
-  opacity: 0.9;
-}
-
-.sensei-studio-box:hover .store-corner-arrow {
-  top: 24px;
-  right: 24px;
-}
-
-.sensei-studio-box:hover .store-corner-arrow-img {
-  opacity: 1;
-  -webkit-filter: brightness(8000);
-          filter: brightness(8000);
-}
-
-.sensei-studio-2-title-para-container {
-  width: 399px;
-  position: relative;
-  z-index: 2;
-}
-
-.payppy-app-2-title-para-container {
-  width: 347px;
-  position: relative;
-  z-index: 2;
-}
-
-.payppy-2-store-container {
+.payppy-app-main-outer-container {
   border-right: 1px solid #414141;
+  overflow: hidden;
+  border-bottom: 1px solid #414141;
+  width: 50%;
+}
+.payppy-app-main-outer-container:hover .homepage-top-arrow {
+  top: 20px;
+  right: 20px;
+  -webkit-filter: brightness(100);
+          filter: brightness(100);
+}
+.payppy-app-main-outer-container:hover .green-gradient-1, .payppy-app-main-outer-container:hover .green-gradient-2, .payppy-app-main-outer-container:hover .blue-gradient-2, .payppy-app-main-outer-container:hover .blue-gradient-1 {
+  opacity: 1;
+}
+
+.for-center-content {
+  z-index: 1;
+}
+
+.payppy-app-content-container {
+  max-width: 21.688rem;
+}
+
+.sensei-studio-main-outer-container {
+  border-right: none;
+  max-width: 24.938rem;
 }
 
 .learn-more-link {
@@ -288,70 +230,24 @@
   line-height: 1.5rem;
   letter-spacing: 0.063rem;
   border-bottom: 1px solid #E4E0DA;
-  display: none;
 }
 
 @media screen and (max-width: 1024px) {
-  .sensei-studio-box, .payppy-2-store-container {
+  .payppy-homepage-main-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sensei-studio-main-outer-container, .payppy-app-content-container {
+    max-width: 20rem;
+  }
+  .payppy-app-main-outer-container {
+    border-right: none;
     width: 100%;
-    padding: 60px 0;
   }
-}
-@media screen and (max-width: 640px) {
-  .sensei-studio-box, .payppy-2-store-container {
-    padding: 60px 20;
-  }
-  .sensei-img {
-    width: 240px;
-    height: 300px;
-  }
-  .payppy-store-img {
-    width: 240px;
-    height: 294.4px;
-  }
-  .store-corner-arrow {
-    display: none !important;
-  }
-  .payppy-app-2-title {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 32px;
-    letter-spacing: -1px;
-  }
-  .payppy-app-2-para {
-    width: 261px;
-    font-size: 14px;
-    line-height: 24px;
-    margin: auto;
-  }
-  .sensei-studio-2-title-para-container .payppy-app-2-para {
-    width: 285px;
-  }
-  .payppy-app-2-title-para-container, .sensei-studio-2-title-para-container {
-    width: 320px;
-  }
-  .learn-more-link {
-    display: inline;
-  }
-  .green-gradient-1-box, .blue-gradient-1-box, .green-gradient-2-box, .blue-gradient-2-box {
-    width: 526px;
-    height: 415.91px;
-  }
-  .green-gradient-1-box {
-    left: -404.03px;
-    bottom: -208px;
-  }
-  .green-gradient-2-box {
-    left: 122.03px;
-    bottom: -208px;
-  }
-  .blue-gradient-1-box {
-    left: -365.03px;
-    bottom: 35px;
-  }
-  .blue-gradient-2-box {
-    left: 161.03px;
-    bottom: 35px;
+  .payppy-app-main-outer-container:hover .homepage-top-arrow {
+    top: 15px;
   }
 }
 .payppy-homepage-2-footer {
@@ -380,13 +276,16 @@
   color: #FFFFFF;
   text-decoration: none;
 }
+.footer-2-link:hover {
+  text-decoration: underline;
+}
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .payppy-homepage-2-footer {
     padding: 20px 40px;
   }
 }
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 640px) {
   .payppy-homepage-2-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

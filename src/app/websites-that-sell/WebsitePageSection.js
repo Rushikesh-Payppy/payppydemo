@@ -12,6 +12,7 @@ import  WebsiteImage from '@/Images/websitepage/Website.jpg';
 //section 3
 import  Arrow from '@/Images/ServiceBrand/arrowlogo.svg';
 import TextRevealComponent from '../TextRevealComponent';
+import { ReadyToLevelUpTitleComponent } from '../our-masterpieces/OurWorkSection';
 const plus_jakarta_sans=Plus_Jakarta_Sans({
     subsets:['latin'],
     display:'swap'
@@ -152,12 +153,18 @@ function WebsitePageSection()
                 </div>
         </section>
 
-        {/* section 4-bottom link box */}
+          {/* section 4  */}
+          <ReadyToLevelUpTitleComponent heading={'See for yourself'} link={'/our-masterpieces'} btntext={"Take me there"}/>
+
+        {/* section 5 -bottom link box */}
         <section className={'pl-5 pr-5 py-14  md:px-24  flex flex-col sm:flex-row justify-center lg:justify-between items-center flex-wrap gap-3 service-brand-section-5 '+plus_jakarta_sans.className}>
             <h4 className="are-you-looking-for-title common-h5-heading text-custom-mediumgrey" data-aos="fade-up">Are you looking for</h4>
             <Link href='/apps-that-make-sense' className='service-brand-bottom-blue-link ' data-aos="fade-up">Digital Product/ App design</Link>
 
         </section>
+
+      
+
 
         <TextRevealComponent/>
         </>

@@ -7,6 +7,7 @@ import '@/styles/Typography.css';
 
 import { Plus_Jakarta_Sans } from "next/font/google";
 import TextRevealComponent from "../TextRevealComponent";
+import Link from "next/link";
 
 
 const plus_jakarta_sans=Plus_Jakarta_Sans({
@@ -14,6 +15,7 @@ const plus_jakarta_sans=Plus_Jakarta_Sans({
     display:'swap'
 })
 function AboutUsPageSection() {
+
     return(
         <>
         <div className={" "+plus_jakarta_sans.className}>
@@ -82,12 +84,14 @@ function AboutUsPageSection() {
                                 <h6 className="common-h6-heading text-center text-custom-white text-center" data-aos="fade-up">Satyen Aghor</h6>
                                 <span className="co-founder-text text-center text-custom-ghostgrey" data-aos="fade-up">Co-founder , Payppy</span>
                             </div>
-                            <Image src={LinkedIn}
-                                width={24}
-                                height={24}
-                                alt='img'
-                                data-aos="fade-up"
-                                />
+                            <Link href='https://www.linkedin.com/in/satyenaghor/' target="_blank">                            
+                                <Image src={LinkedIn}
+                                    width={24}
+                                    height={24}
+                                    alt='img'
+                                    data-aos="fade-up"
+                                    />
+                            </Link>
                         </div>
                     </div>
                     <div className="flex flex-col gap-10 px-4 pt-14 pb-20 sm:py-20 sm:px-10 lg:py-20 lg:px-20 the-man-behind-it-container self-strech">

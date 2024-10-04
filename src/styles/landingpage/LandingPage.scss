@@ -316,7 +316,13 @@
     height: 602.3px;
     overflow: hidden;
 }
-
+.landingpage-insta-twitter-links{
+    border-radius: 50%;
+    border: 1px solid #7A7A7A;
+    &:hover{
+        background-color:#faf7f7;
+    }
+}
 
 
 @media screen and (max-width:1024px) {

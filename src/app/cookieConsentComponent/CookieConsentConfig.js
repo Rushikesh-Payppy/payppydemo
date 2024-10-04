@@ -81,11 +81,11 @@ const getConfig = function() {
               onAccept: function() {},
               onReject: function() {},
             },
-            youtube: {
-              label: 'Youtube Embed',
-              onAccept: function() {},
-              onReject: function() {},
-            },
+            // youtube: {
+            //   label: 'Youtube Embed',
+            //   onAccept: function() {},
+            //   onReject: function() {},
+            // },
           },
         },
         ads: {},

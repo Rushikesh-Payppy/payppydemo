@@ -23,8 +23,8 @@ import Delivery from "@/Images/landingpage/deliveryIcon.svg";
 import Sustainability from "@/Images/landingpage/substainabilityIcon.svg";
 //section 5
 import InstaImage from "@/Images/landingpage/insta-image.png";
-import InstaCircle from '@/Images/landingpage/insta-circle.svg';
-import XCircle from '@/Images/landingpage/x-circle.svg';
+import InstaCircle from '@/Images/landingpage/insta-circle.png';
+import XCircle from '@/Images/landingpage/x-circle.png';
 import TextRevealComponent from '../TextRevealComponent';
 
 const plus_jakarta_sans=Plus_Jakarta_Sans({
@@ -165,18 +165,22 @@ function LandingPageAllMidSections() {
                 <div className="flex flex-col lg:flex-row items-center gap-4">
                     <p className="scrolling-game-para w-auto  common-paaragraph" data-aos="fade-up">Follow us</p>
                     <div className='flex gap-4'>
-                    <Image src={InstaCircle}
-                        width={50}
-                        height={50}
-                        alt="img"
-                        data-aos="fade-up"
-                        className='sustainability-icon-img'/>
-                    <Image src={XCircle}
-                        width={50}
-                        height={50}
-                        alt="img"
-                        data-aos="fade-up"
-                        className='sustainability-icon-img'/>
+                        <Link href='https://www.instagram.com/payppy.app/' target='_blank'  className='landingpage-insta-twitter-links flex justify-center items-center w-12 h-12'>
+                            <Image src={InstaCircle}
+                                width={20}
+                                height={20}
+                                alt="img"
+                                data-aos="fade-up"
+                                className='sustainability-icon-img'/>
+                        </Link>
+                        <Link href='https://x.com/payppy_app?s=21' target='_blank' className='landingpage-insta-twitter-links flex justify-center items-center w-12 h-12'>
+                            <Image src={XCircle}
+                                width={20}
+                                height={20}
+                                alt="img"
+                                data-aos="fade-up"
+                                className='sustainability-icon-img'/>
+                        </Link>
                     </div>
                 </div>
             </main>
@@ -203,7 +207,7 @@ function VisitPayppyButton()
 {
     return(
         <>
-        <Link href='https://payppy.app/' className='visit-payppy-app-section-btn flex flex-row gap-2' data-aos="fade-up">
+        <Link href='https://payppy.app/' target='_blank' className='visit-payppy-app-section-btn flex flex-row gap-2' data-aos="fade-up">
             <span>VISIT PAYPPY.APP</span>
             <Image src={Arrow}
             width={14}

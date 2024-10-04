@@ -32,11 +32,18 @@ import PragilisImage from '@/Images/studiopage/pragilisImage.jpg';
 import TSA from '@/Images/studiopage/TSA.jpg';
 import PayGlocalImage from '@/Images/studiopage/PayGlocalImage.jpg';
 
+import ArrowUp from '@/Images/studiopage/arrow-up.svg';
+
+
 
 import { useRouter } from 'next/navigation';
 
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import Link from 'next/link';
+import { ReadyToLevelUpTitleComponent } from '../our-masterpieces/OurWorkSection';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 const plus_jakarta_sans=Plus_Jakarta_Sans({
     subsets:['latin'],
@@ -46,6 +53,17 @@ const plus_jakarta_sans=Plus_Jakarta_Sans({
 function StudioPageSection() {
 
     let router=useRouter();
+
+    let[accordionState,setAccordionState]=useState(-1);
+
+    function handleAccordion(index)
+    {
+        if(accordionState==index){
+            setAccordionState(-1);
+            return;
+        }
+        setAccordionState(index);
+    }
 
     return(
         <>
@@ -70,12 +88,12 @@ function StudioPageSection() {
                     </div>
                     <a href='mailto:hello@payppy.co'  className='flex flex-row get-in-touh-btn ' data-aos="fade-up">
                         <span className='get-in-touch-txt grow text-center flex justify-center items-center'>GET IN TOUCH</span>
-                        <div className='get-in-touch-img-div flex justify-center items-center'>
+                        <div className='get-in-touch-img-div relative'>
                             <Image src={Arrow} 
                             width={28}
                             height={28}
                             alt="img"
-                            className='get-in-touch-arrow-img'
+                            className='get-in-touch-arrow-img absolute top-6 right-6'
                             />
                         </div>
                     </a>
@@ -148,7 +166,7 @@ function StudioPageSection() {
                 height={40}
                 alt="img"
                 data-aos="fade-up"
-                className='brand-arrow absolute top-5 right-5'
+                className='brand-arrow absolute top-5 right-5  '
                 />
 
                 <Image src={Brand}
@@ -166,7 +184,7 @@ function StudioPageSection() {
                 height={40}
                 alt="img"
                 data-aos="fade-up"
-                className='brand-arrow absolute top-5 right-5'
+                className='brand-arrow absolute top-5 right-5  '
                 />
 
                 <Image src={PitchDeck}
@@ -184,7 +202,7 @@ function StudioPageSection() {
                 height={40}
                 alt="img"
                 data-aos="fade-up"
-                className='brand-arrow absolute top-5 right-5'
+                className='brand-arrow absolute top-5 right-5  '
                 />
 
                 <Image src={Website}
@@ -202,7 +220,7 @@ function StudioPageSection() {
                 height={40}
                 alt="img"
                 data-aos="fade-up"
-                className='brand-arrow absolute top-5 right-5'
+                className='brand-arrow absolute top-5 right-5  '
                 />
 
                 <Image src={Group}
@@ -251,13 +269,137 @@ function StudioPageSection() {
 
         {/* section 6 creative design  */}
         <section className={'creative-design-section '+plus_jakarta_sans.className}>
-            <div className={"flex justify-start items-start sm:justify-center sm:items-center  pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12"+plus_jakarta_sans.className}>
+            <div className={"reative-designs-content-storytelling-box flex justify-start items-start sm:justify-center sm:items-center  pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12 "+plus_jakarta_sans.className}>
                 <div className="creative-design-section-inner-container flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start  gap-4 sm:gap-12">
                     <h5 className="common-all-caps" data-aos="fade-up">Creative Designs, Content & Storytelling  </h5>
                     <h2 className='common-h2-heading creative-design-section-title text-custom-almostblack' data-aos="fade-up">Work that changed the world... ours and theirs </h2>
                 </div>
             </div>
-            <div className="creative-design-blog-container flex flex-wrap ">
+
+            <CraetiveDesignBlogs/>
+          
+        </section>
+
+
+
+        {/* section 7  accordion */}
+        <section className="fuq-section flex justify-center items-center pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12">
+            <div className="fuq-content-container flex flex-col gap-14">
+                <div className="flex flex-col gap-4">
+                    <h2 className="common-h2-heading text-custom-almostblack">FUQ</h2>
+                    <h5 className="common-h5-heading text-custom-darkgrey">Frequently (un)asked questions</h5>
+                    <p className="common-paragraph text-custom-darkgrey">These are questions nobody asks, but we want y’all to!</p>
+                </div>
+
+                <div className="accordion-main-outer-container">
+
+                    <div className="accordion-container pb-5 cursor-pointer" >
+                       
+                        <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(0)}}>
+                            <h6 className="common-h6-heading text-custom-almostblack">Why should we choose you?</h6>
+                            <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==0?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
+                        </div>
+                        
+                        <div className={accordionState==0?"accordion-answer accordion-visible":"accordion-answer"}>
+                            <p className="common-paragraph text-custom-almostblack">Well, we can always read out a list of things that make us the best in town. But you can read our recommendations to know why we are THE agency!</p>
+                        </div>
+
+                    </div>
+
+                    <div className="accordion-container pb-5 cursor-pointer" >
+                       
+                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(1)}}>
+                           <h6 className="common-h6-heading text-custom-almostblack">How much time does it take to complete a project?</h6>
+                           <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==1?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
+                       </div>
+                       
+                       <div className={accordionState==1?"accordion-answer accordion-visible":"accordion-answer"}>
+                           <p className="common-paragraph text-custom-almostblack">From discovery to delivery, our team works zip-zap-zoom. However, you can expect a pitch deck in 7-10 days, a website and brand identity deliverables in 4-5 weeks, and for a product design, we’d take a couple months. This shall be a highly iterative process, so the timeline depends on how satisfied you are by the end of every call. We shall be communicating the progress each day.</p>
+                       </div>
+
+                   </div>
+
+                   <div className="accordion-container pb-5 cursor-pointer" >
+                       
+                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(2)}}>
+                           <h6 className="common-h6-heading text-custom-almostblack">How many people will work on my project?</h6>
+                           <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==2?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
+                       </div>
+                       
+                       <div className={accordionState==2?"accordion-answer accordion-visible":"accordion-answer"}>
+                           <p className="common-paragraph text-custom-almostblack">Payppy Studio has a team of designers, writers, animators and developers. Depending on your project requirement and what service you pick, a team of a minimum of 3 and a maximum of 5 will work to bring your vision to life.</p>
+                       </div>
+
+                   </div>
+
+                   <div className="accordion-container pb-5 cursor-pointer" >
+                       
+                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(3)}}>
+                           <h6 className="common-h6-heading text-custom-almostblack">What do you expect from us, as clients?</h6>
+                           <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==3?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
+                       </div>
+                       
+                       <div className={accordionState==3?"accordion-answer accordion-visible":"accordion-answer"}>
+                           <p className="common-paragraph text-custom-almostblack">Glad you asked! Even though we are absolutely open to working with a diverse clientele, there’s a set of rules we like to give you, before we begin a project together.</p>
+                                <br />
+                                <ol className='list-decimal leading-8 px-5 common-paragraph'>
+                                    <li>We prefer a single point of contact/ stakeholder from your team. All updates, feedback, and iterations shall be communicated from and to this person.</li>
+                                    <li>We work on a 50% advance funds model. As soon as we deliver the project plan, we shall send you an invoice for 50% payment to be done before we kickstart.</li>
+                                    <li>There’s no refund policy once you’ve made the 50% payment. Don’t worry, nobody ever withdraws. However, before we begin, we make you believe why you made the right choice. There shall be plenty of calls and discovery sessions. </li>
+                                    <li>We have a collaborative approach to get the best outcome for your business. However, we are industry experts with a collective experience of 25+ years. So if we put our feet down onto an approach, we’ll make you understand why it is the best for you.</li>
+                                    <li>We are a good fit if you’re ready to cut the crap and get to a no-nonsense business that reaches the right audience, growing and taking leaps. We’re not a good fit if you are not willing to spend money on the right branding, messaging and functioning of your business online, have many opinions on why pink is better than orange and are a micro-manage freak.</li>
+                                </ol>
+                       </div>
+
+                   </div>
+
+                   <div className="accordion-container pb-5 cursor-pointer" >
+                       
+                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(4)}}>
+                           <h6 className="common-h6-heading text-custom-almostblack">How long can Payppy Studio stay in touch for changes, after my project is done?</h6>
+                           <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==4?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
+                       </div>
+                       
+                       <div className={accordionState==4?"accordion-answer accordion-visible":"accordion-answer"}>
+                           <p className="common-paragraph text-custom-almostblack">We make sure the project timeline is inclusive of all your changes, feedback incorporation and suggestions. But we understand that clients can get a Eureka moment after the project completion- so we stay online for 3 more days after the final delivery is made. However, there shall be an hourly basis charges for further changes and consultation*</p>
+                       </div>
+
+                   </div>
+
+                   <div className="accordion-container pb-5 cursor-pointer" >
+                       
+                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(5)}}>
+                           <h6 className="common-h6-heading text-custom-almostblack">Will my data be safe in the case of pitch decks and business numbers?</h6>
+                           <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==5?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
+                       </div>
+                       
+                       <div className={accordionState==5?"accordion-answer accordion-visible":"accordion-answer"}>
+                           <p className="common-paragraph text-custom-almostblack">A 100% yes! We understand your privacy and once the project is delivered, we delete your data from our systems in the next few days, deploying all credentials to your respective team. However, in the case of websites, branding and product design, we retain the work as a proud case study 🙂 </p>
+                       </div>
+
+                   </div>
+
+
+                </div>
+            </div>
+        </section>
+
+         {/* section 8 */}
+         <ReadyToLevelUpTitleComponent heading={'Ready to level up your online presence like a pro?'} btntext={"Let's talk!"}/>
+
+
+        </>
+    )
+}
+
+export default StudioPageSection;
+
+
+function CraetiveDesignBlogs()          //we want this blogs on case study so have to make a component
+{   
+    return(
+        <>
+              <div className="creative-design-blog-container flex flex-wrap ">
                 <div className="creative-design-blog  pt-10 px-8 pb-14 md:pb-20 sm:px-10 flex flex-col sm:justify-center sm:items-center gap-8  sm:gap-12">
                     <Image src={Merlot}
                     width={640}
@@ -332,9 +474,8 @@ function StudioPageSection() {
                 </div>
 
             </div>
-        </section>
         </>
     )
 }
 
-export default StudioPageSection;
+export {CraetiveDesignBlogs};

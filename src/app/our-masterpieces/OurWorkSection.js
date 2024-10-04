@@ -18,6 +18,7 @@ import Link from 'next/link';
 import OurWorkClientInfoCompo from './OurWorkClientInfoCompo';
 import axios from 'axios';
 import TextRevealComponent from '../TextRevealComponent';
+import { CraetiveDesignBlogs } from '../sensei-studio/StudioPageSection';
 
 const plus_jakarta_sans=Plus_Jakarta_Sans({
     subsets:['latin'],
@@ -54,44 +55,58 @@ function OurWorkSection({apidata})
 
     return(
         <>
-        <div className={" "+plus_jakarta_sans.className}>
+            <div className={" " + plus_jakarta_sans.className}>
 
-            <section className="our-work-section-one">
+                <section className="our-work-section-one">
 
-                {/* filter buttons */}
-                <div className="flex justify-center">
+                    {/* filter buttons */}
+                    {/* <div className="flex justify-center">
                     <div className="flex items-center our-work-section-filter-btn-container">
-                        {/* oncllick on any filter the clicked filter is added dynamically  */}
                         <button className={btnActiveIndex==0?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(0,'ALL')}} >ALL</button>
                         <button className={btnActiveIndex==1?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(1,'Branding')}} >Branding</button>
                         <button className={btnActiveIndex==2?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(2,'pitch deck')}} >pitch decks</button>
                         <button className={btnActiveIndex==3?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(3,'website')}} >websites</button>
                         <button className={btnActiveIndex==4?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(4,'App')}} >Apps</button>
                     </div>
-                </div>
+                </div> */}
 
-                {apiTempData?<OurWorkClientInfoCompo apidata={apiTempData}/>:null}
-            </section>
+                    {/* {apiTempData?<OurWorkClientInfoCompo apidata={apiTempData}/>:null} */}
 
-            <section className='our-work-section-two flex flex-col justify-center items-center gap-10 px-5 py-20 sm:px-10 md:py-28 md:px-0'>
-                <h2 className="common-h2-heading our-work-section-two-subheading  text-center text-custom-almostblack" data-aos="fade-up">Ready to level up your online presence like a pro?</h2>
-                <a href='mailto:hello@payppy.co' className='flex flex-row our-work-lets-talk-btn get-in-touh-btn ' data-aos="fade-up">
-                        <span className='our-work-lets-talk-text get-in-touch-txt  grow text-center flex justify-center items-center'>LET'S TALK</span>
-                        <div className='get-in-touch-img-div flex justify-center items-center'>
-                            <Image src={Arrow} 
-                            width={28}
-                            height={28}
-                            alt='img'
-                            className='get-in-touch-arrow-img'
-                            />
-                        </div>
-                    </a>
-            </section>
+                    <CraetiveDesignBlogs />
+                </section>
 
-            <TextRevealComponent/>
-        </div>
+                <ReadyToLevelUpTitleComponent heading={'Ready to level up your online presence like a pro?'} btntext={"Let's talk!"}/>
+
+
+                <TextRevealComponent />
+            </div>
         </>
     )
 }
 
 export default OurWorkSection;
+
+
+function ReadyToLevelUpTitleComponent({heading,link='mailto:hello@payppy.co',btntext})                 //we want this section in sensei-studio page so have to make a component
+{
+    return(
+        <>
+              <section className='our-work-section-two flex flex-col justify-center items-center gap-10 px-5 py-20 sm:px-10 md:py-28 md:px-0'>
+                <h2 className="common-h2-heading our-work-section-two-subheading  text-center text-custom-almostblack" data-aos="fade-up">{heading}</h2>
+                <a href={link} className='flex flex-row our-work-lets-talk-btn get-in-touh-btn ' data-aos="fade-up">
+                        <span className='our-work-lets-talk-text get-in-touch-txt  grow text-center flex justify-center items-center'>{btntext}</span>
+                        <div className='get-in-touch-img-div relative'>
+                            <Image src={Arrow} 
+                            width={28}
+                            height={28}
+                            alt='img'
+                            className='get-in-touch-arrow-img absolute top-6 right-6'
+                            />
+                        </div>
+                    </a>
+            </section>
+        </>
+    )
+}
+
+export {ReadyToLevelUpTitleComponent};

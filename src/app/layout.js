@@ -1,10 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";  
 import CookieConsentComponent from "./cookieConsentComponent/CookieConsent";
-// import LenisScroll from "./LenisScroll";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.min.js';
-
+import '@/styles/Typography.css';
+import '@/styles/tailwindcss.css';
 
 const inter = Inter({ subsets: ["latin"] });
 

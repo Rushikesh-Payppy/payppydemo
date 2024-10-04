@@ -19,7 +19,8 @@ async function fetchDataofClients()
 
 async function Page()
 {
-    let apidata=await fetchDataofClients();
+    // let apidata=await fetchDataofClients();
+    let apidata={};
 
     return(
          <>

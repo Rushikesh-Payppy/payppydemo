@@ -63,15 +63,19 @@
     background: #0057FF;
     width: 100%;
     height: 80px;
+    transition: background 0.3s;
+    &:hover{
+        background: #004ADA;
+    }
 }
 .get-in-touch-txt{
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 2.25rem;
-    letter-spacing: 0.063rem;
+    // font-size: 1.125rem;
+    // font-weight: 700;
+    // line-height: 2.25rem;
+    // letter-spacing: 0.063rem;
     text-align: center;
     color: #FFFFFF;
-    width: 40.25rem;
+    // width: 40.25rem;
 }
 .get-in-touch-img-div{
     width: 76px;
@@ -417,7 +421,10 @@
                                     
 
                                             //section 7
-
+.fuq-section{
+    // border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+}
 .fuq-content-container{
     max-width: 61.375rem;
     width: 100%;
@@ -440,6 +447,6 @@
     transition:  0.5s !important;
 }
 .accordion-answer.accordion-visible{
-    max-height: 1200px ;
+    max-height: 1300px ;
     overflow: visible ;
 }

@@ -1,5 +1,5 @@
 'use client';
-// import '@/styles/tailwindcss.css';
+import '@/styles/tailwindcss.css';
 import '@/styles/studiopage/StudioPage.css';
 import '@/styles/Typography.css';
 
@@ -56,6 +56,8 @@ function StudioPageSection() {
 
     let[accordionState,setAccordionState]=useState(-1);
 
+    // let accordionDivs=document.querySelectorAll('.accordion-container');
+
     function handleAccordion(index)
     {
         if(accordionState==index){
@@ -63,6 +65,16 @@ function StudioPageSection() {
             return;
         }
         setAccordionState(index);
+
+        // accordionDivs.forEach((element,arrindex)=>{
+        //     if(index==arrindex){
+        //         element.querySelector('.accordion-answer').classList.toggle('accordion-visible');
+        //         return;
+        //     }
+        //     else{
+        //         element.querySelector('.accordion-answer').classList.remove('accordion-visible');
+        //     }
+        // })
     }
 
     return(
@@ -270,20 +282,20 @@ function StudioPageSection() {
         {/* section 6 creative design  */}
         <section className={'creative-design-section '+plus_jakarta_sans.className}>
             <div className={"reative-designs-content-storytelling-box flex justify-start items-start sm:justify-center sm:items-center  pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12 "+plus_jakarta_sans.className}>
-                <div className="creative-design-section-inner-container flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start  gap-4 sm:gap-12">
+                <div className="creative-design-section-inner-container flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start  gap-4 sm:gap-8">
                     <h5 className="common-all-caps" data-aos="fade-up">Creative Designs, Content & Storytelling  </h5>
                     <h2 className='common-h2-heading creative-design-section-title text-custom-almostblack' data-aos="fade-up">Work that changed the world... ours and theirs </h2>
                 </div>
             </div>
 
-            <CraetiveDesignBlogs/>
+            {/* <CraetiveDesignBlogs/> */}
           
         </section>
 
 
 
         {/* section 7  accordion */}
-        <section className="fuq-section flex justify-center items-center pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12">
+        <section className={"fuq-section flex justify-center items-center pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12 "+plus_jakarta_sans.className}>
             <div className="fuq-content-container flex flex-col gap-14">
                 <div className="flex flex-col gap-4">
                     <h2 className="common-h2-heading text-custom-almostblack">FUQ</h2>
@@ -293,53 +305,53 @@ function StudioPageSection() {
 
                 <div className="accordion-main-outer-container">
 
-                    <div className="accordion-container pb-5 cursor-pointer" >
+                    <div className="accordion-container  cursor-pointer py-6" >
                        
-                        <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(0)}}>
+                        <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(0)}}>
                             <h6 className="common-h6-heading text-custom-almostblack">Why should we choose you?</h6>
                             <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==0?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
                         </div>
                         
-                        <div className={accordionState==0?"accordion-answer accordion-visible":"accordion-answer"}>
+                        <div className= {accordionState==0?"accordion-answer accordion-visible":"accordion-answer"} >
                             <p className="common-paragraph text-custom-almostblack">Well, we can always read out a list of things that make us the best in town. But you can read our recommendations to know why we are THE agency!</p>
                         </div>
 
                     </div>
 
-                    <div className="accordion-container pb-5 cursor-pointer" >
+                    <div className="accordion-container  cursor-pointer py-6" >
                        
-                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(1)}}>
+                       <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(1)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">How much time does it take to complete a project?</h6>
                            <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==1?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
                        </div>
                        
-                       <div className={accordionState==1?"accordion-answer accordion-visible":"accordion-answer"}>
+                       <div className= {accordionState==1?"accordion-answer accordion-visible":"accordion-answer"} >
                            <p className="common-paragraph text-custom-almostblack">From discovery to delivery, our team works zip-zap-zoom. However, you can expect a pitch deck in 7-10 days, a website and brand identity deliverables in 4-5 weeks, and for a product design, we’d take a couple months. This shall be a highly iterative process, so the timeline depends on how satisfied you are by the end of every call. We shall be communicating the progress each day.</p>
                        </div>
 
                    </div>
 
-                   <div className="accordion-container pb-5 cursor-pointer" >
+                   <div className="accordion-container  cursor-pointer py-6" >
                        
-                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(2)}}>
+                       <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(2)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">How many people will work on my project?</h6>
                            <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==2?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
                        </div>
                        
-                       <div className={accordionState==2?"accordion-answer accordion-visible":"accordion-answer"}>
+                       <div className= {accordionState==2?"accordion-answer accordion-visible":"accordion-answer"} >
                            <p className="common-paragraph text-custom-almostblack">Payppy Studio has a team of designers, writers, animators and developers. Depending on your project requirement and what service you pick, a team of a minimum of 3 and a maximum of 5 will work to bring your vision to life.</p>
                        </div>
 
                    </div>
 
-                   <div className="accordion-container pb-5 cursor-pointer" >
+                   <div className="accordion-container  cursor-pointer py-6" >
                        
-                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(3)}}>
+                       <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(3)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">What do you expect from us, as clients?</h6>
                            <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==3?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
                        </div>
                        
-                       <div className={accordionState==3?"accordion-answer accordion-visible":"accordion-answer"}>
+                       <div className= {accordionState==3?"accordion-answer accordion-visible":"accordion-answer"} >
                            <p className="common-paragraph text-custom-almostblack">Glad you asked! Even though we are absolutely open to working with a diverse clientele, there’s a set of rules we like to give you, before we begin a project together.</p>
                                 <br />
                                 <ol className='list-decimal leading-8 px-5 common-paragraph'>
@@ -353,27 +365,27 @@ function StudioPageSection() {
 
                    </div>
 
-                   <div className="accordion-container pb-5 cursor-pointer" >
+                   <div className="accordion-container  cursor-pointer py-6" >
                        
-                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(4)}}>
+                       <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(4)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">How long can Payppy Studio stay in touch for changes, after my project is done?</h6>
                            <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==4?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
                        </div>
                        
-                       <div className={accordionState==4?"accordion-answer accordion-visible":"accordion-answer"}>
+                       <div className= {accordionState==4?"accordion-answer accordion-visible":"accordion-answer"} >
                            <p className="common-paragraph text-custom-almostblack">We make sure the project timeline is inclusive of all your changes, feedback incorporation and suggestions. But we understand that clients can get a Eureka moment after the project completion- so we stay online for 3 more days after the final delivery is made. However, there shall be an hourly basis charges for further changes and consultation*</p>
                        </div>
 
                    </div>
 
-                   <div className="accordion-container pb-5 cursor-pointer" >
+                   <div className="accordion-container  cursor-pointer py-6" >
                        
-                       <div className="accordion-question flex justify-between items-baseline py-4" onClick={()=>{handleAccordion(5)}}>
+                       <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(5)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">Will my data be safe in the case of pitch decks and business numbers?</h6>
                            <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==5?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
                        </div>
                        
-                       <div className={accordionState==5?"accordion-answer accordion-visible":"accordion-answer"}>
+                       <div className= {accordionState==5?"accordion-answer accordion-visible":"accordion-answer"} >
                            <p className="common-paragraph text-custom-almostblack">A 100% yes! We understand your privacy and once the project is delivered, we delete your data from our systems in the next few days, deploying all credentials to your respective team. However, in the case of websites, branding and product design, we retain the work as a proud case study 🙂 </p>
                        </div>
 
@@ -399,7 +411,7 @@ function CraetiveDesignBlogs()          //we want this blogs on case study so ha
 {   
     return(
         <>
-              <div className="creative-design-blog-container flex flex-wrap ">
+              <div className={"creative-design-blog-container flex flex-wrap "+plus_jakarta_sans.className}>
                 <div className="creative-design-blog  pt-10 px-8 pb-14 md:pb-20 sm:px-10 flex flex-col sm:justify-center sm:items-center gap-8  sm:gap-12">
                     <Image src={Merlot}
                     width={640}

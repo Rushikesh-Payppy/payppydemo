@@ -28,6 +28,10 @@ function ServcideBrandSection()
                 <h4 className='service-brand-section-one-title common-h5-heading text-custom-almostblack' data-aos="fade-up">We are driven by research, informed discovery and empathetic understanding of what brands and their end consumers need, want, desire. This process helps us with strategic design solutions. </h4>
                 <p className="service-brand-section-one-para common-paragraph text-custom-darkgrey" data-aos="fade-up">We help you to tell your story in an instant. It builds an emotional connection, represents a promise while building confidence and trust. In short, you’re in for a treat 🤑</p>
             </div>
+            {/* <div className="servicebrand-section-branding-img-container">
+                <div className="servicebrand-section-branding-img" style={{backgroundImage:BrandingImage}}></div>
+            </div> */}
+
             <Image src={BrandingImage}
             width={1440}
             height={580}
@@ -93,7 +97,7 @@ function ServcideBrandSection()
         </section>
 
         {/* section 3  */}
-        <section className=" py-20 px-5 sm:px-40 lg:p-24 flex flex-col  justify-center items-center gap-20 ">
+        <section className=" py-20 px-5 sm:px-40 lg:p-24 flex flex-col  justify-center items-center gap-20 deliverables-section bg-custom-almostwhite">
                 <h3 className="deliverables-title common-h3-heading text-custom-almostblack text-center" data-aos="fade-up">Deliverables</h3>
                
                 <div className="flex flex-col lg:flex-row lg:gap-24">

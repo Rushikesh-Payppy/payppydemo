@@ -86,7 +86,7 @@ function Header(){
                 <Turn toggled={togglerState} toggle={setToglerState} color="#FFFFFF"  easing="ease-in" size={24}/>
             </div>
         </nav>
-        <section className={`payppyhomepage-header-section absolute pt-16 sm:pt-10 pb-10 px-5 sm:px-20 flex flex-col justify-between gap-4 items-start lg:items-center ${togglerState?"payppy-header-with-height":""} ${senseiStudioState?'payppy-bg-custom-primary ':''}`}>
+        <section className={`payppyhomepage-header-section absolute pt-16 sm:pt-10 pb-6 px-5 sm:px-20 flex flex-col justify-between gap-4 items-start lg:items-center ${togglerState?"payppy-header-with-height":""} ${senseiStudioState?'payppy-bg-custom-primary ':''}`}>
             
             <main className='flex flex-col items-start lg:items-center gap-8 sm:gap-11 flex-wrap'>
 
@@ -116,16 +116,16 @@ function Header(){
               <Link href='/payppy-india' prefetch={true} className={senseiStudioState?"common-h3-heading  text-opacity text-left lg:text-center payppy-header-links":"common-h3-heading text-custom-almostwhite text-left lg:text-center payppy-header-links"} >Payppy.app</Link>
             </main>
 
-            <footer className="payppy-homepage-header-footer pt-5 pb-4 flex flex-col gap-4 sm:flex-row justify-between items-start sm:items-center ">
+            <footer className="payppy-homepage-header-footer  pt-5 pb-5 lg:pb-0  flex flex-col gap-4 sm:flex-row justify-between items-start sm:items-center ">
               <div className='flex gap-1.5 relative'>
                 <p className="common-paragraph text-custom-ghostgrey">Contact us:</p>
                 <p className="common-paragraph text-custom-white font-bold">hello@payppy.co</p>
                 <CopyToClipboard text='hello@payppy.co'>
                   <Image src={Copy}
                     width={24}
-                    height={24}
+                    height={18}
                     alt='img'
-                    className='cursor-pointer'
+                    className='cursor-pointer max-w-none'
                     onClick={handleCopyToClipboard}
                   />
                 </CopyToClipboard>

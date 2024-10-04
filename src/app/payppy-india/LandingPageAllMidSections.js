@@ -117,41 +117,43 @@ function LandingPageAllMidSections() {
         </section>
 
         {/* section four  */}
-        <section className={'landing-page-section-four flex flex-col lg:flex-row  items-center justify-center  gap-14 sm:gap-20 px-5 py-20 md:px-10 lg:pt-28 '+plus_jakarta_sans.className}>
-            <div className='flex flex-col gap-4 items-center lg:items-start '>
-                <Image src={Bookmark}
-                width={80}
-                height={80}
-                alt="img"
-                data-aos="fade-up"
-                className='bookmark-icon-img'/>
-                <div>
-                    <h3 className="bookmark-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Bookmark, don't download</h3>
-                    <p className="bookmark-para common-paaragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">We've made lives easier for you and your phone! Simply tap install or the "add to home screen" button on your browser.</p>
+        <section className={'landing-page-section-four  flex  items-center justify-center   '+plus_jakarta_sans.className}>
+            <div className="flex flex-col lg:flex-row gap-14 sm:gap-20 px-5 py-20 md:px-10 lg:pt-28 landing-page-section-four-inner-container ">
+                <div className='flex flex-col gap-4 items-center lg:items-start '>
+                    <Image src={Bookmark}
+                    width={80}
+                    height={80}
+                    alt="img"
+                    data-aos="fade-up"
+                    className='bookmark-icon-img'/>
+                    <div>
+                        <h3 className="bookmark-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Bookmark, don't download</h3>
+                        <p className="bookmark-para common-paaragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">We've made lives easier for you and your phone! Simply tap install or the "add to home screen" button on your browser.</p>
+                    </div>
                 </div>
-            </div>
-            <div className='flex flex-col gap-4 items-center lg:items-start'>
-                <Image src={Delivery}
-                width={80}
-                height={80}
-                alt="img"
-                data-aos="fade-up"
-                className='delivery-icon-img'/>
-                <div>
-                    <h3 className="delivery-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Enjoy deliveries, everywhere</h3>
-                    <p className="delivery-para  common-paaragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">We ship across India within 3-6 days so you can get your hands on the Payppy cool stuff at the earliest.</p>
+                <div className='flex flex-col gap-4 items-center lg:items-start'>
+                    <Image src={Delivery}
+                    width={80}
+                    height={80}
+                    alt="img"
+                    data-aos="fade-up"
+                    className='delivery-icon-img'/>
+                    <div>
+                        <h3 className="delivery-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Enjoy deliveries, everywhere</h3>
+                        <p className="delivery-para  common-paaragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">We ship across India within 3-6 days so you can get your hands on the Payppy cool stuff at the earliest.</p>
+                    </div>
                 </div>
-            </div>
-            <div className='flex flex-col gap-4 items-center lg:items-start'>
-                <Image src={Sustainability}
-                width={80}
-                height={80}
-                alt="img"
-                data-aos="fade-up"
-                className='sustainability-icon-img'/>
-                <div>
-                    <h3 className="sustainability-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Choose sustainability</h3>
-                    <p className="sustainability-para  common-paaragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">With exclusive, one-of-a-kind packaging, we make sure you reuse more packets unharm Earth a lil.</p>
+                <div className='flex flex-col gap-4 items-center lg:items-start'>
+                    <Image src={Sustainability}
+                    width={80}
+                    height={80}
+                    alt="img"
+                    data-aos="fade-up"
+                    className='sustainability-icon-img'/>
+                    <div>
+                        <h3 className="sustainability-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Choose sustainability</h3>
+                        <p className="sustainability-para  common-paaragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">With exclusive, one-of-a-kind packaging, we make sure you reuse more packets unharm Earth a lil.</p>
+                    </div>
                 </div>
             </div>
         </section>

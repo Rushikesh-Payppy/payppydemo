@@ -81,7 +81,7 @@ function AppPageSection()
         </section>
 
         {/* section 3  */}
-        <section className={"py-20 px-5 md:px-40 lg:p-24 flex flex-col  justify-center items-center gap-20 "+plus_jakarta_sans.className}>
+        <section className={"py-20 px-5 md:px-40 lg:p-24 flex flex-col  justify-center items-center gap-20 deliverables-section  bg-custom-almostwhite "+plus_jakarta_sans.className}>
                 <h2 className="deliverables-title common-h3-heading text-custom-almostblack text-center" data-aos="fade-up">Deliverables</h2>
                
                 <div className="flex flex-col lg:flex-row lg:gap-24">

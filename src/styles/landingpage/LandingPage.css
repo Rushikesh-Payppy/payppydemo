@@ -228,12 +228,12 @@
   border-bottom: 1px solid #DDDDDD;
 }
 
-.bookmark-title {
-  max-width: 15.5rem;
+.landing-page-section-four-inner-container {
+  max-width: 80rem;
 }
 
-.bookmark-para, .delivery-para, .sustainability-para {
-  max-width: 23rem;
+.bookmark-title {
+  max-width: 15.5rem;
 }
 
 .delivery-title {

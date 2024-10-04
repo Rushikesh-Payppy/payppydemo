@@ -239,12 +239,15 @@
 .landing-page-section-four {
     border-bottom:1px solid #DDDDDD;
 }
+.landing-page-section-four-inner-container{
+    max-width: 80rem;
+}
 .bookmark-title{
     max-width: 15.5rem;
 }
-.bookmark-para,.delivery-para,.sustainability-para{
-    max-width: 23rem;
-}
+// .bookmark-para,.delivery-para,.sustainability-para{
+//     max-width: 23rem;
+// }
 .delivery-title{
     max-width: 16.606rem;
 }

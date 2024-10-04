@@ -101,7 +101,7 @@
 }
 .payppy-homepage-header-footer{
     width: 100%;
-    border-top: 1px solid #BBBBBB;
+    border-top: 1px solid rgba(255, 255, 255, 0.492);
 }
 .text-opacity.payppy-header-links:hover::after{             //if the text color opacity is low after clicking on sensei-studio 
     opacity: 0.4;
@@ -147,7 +147,7 @@
                                                                 //section                                            
 
 .payppy-homepage-main-section{
-    min-height: 80vh;
+    min-height: calc(100vh - 80px - 72px);
 }
 .homepage-top-arrow{
     transition: 0.3s;
@@ -273,7 +273,7 @@
 .payppy-homepage-2-footer{
     flex-grow: 1;
     background: #111111;
-    padding: 20px 136px 20px 154px;
+    // padding: 20px 136px 20px 154px;
 }
 .copyright-2-text{
     @include for-fonts();
@@ -293,9 +293,9 @@
 }
 
 @media screen and (max-width:1024px) {
-    .payppy-homepage-2-footer{
-        padding: 20px 40px  ;
-    }
+    // .payppy-homepage-2-footer{
+    //     padding: 20px 40px  ;
+    // }
 }
 @media screen and (max-width:640px) {
     .payppy-homepage-2-footer{

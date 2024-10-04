@@ -91,10 +91,10 @@ function ReadyToLevelUpTitleComponent({heading,link='mailto:hello@payppy.co',btn
 {
     return(
         <>
-              <section className='our-work-section-two flex flex-col justify-center items-center gap-10 px-5 py-20 sm:px-10 md:py-28 md:px-0'>
+              <section className={'our-work-section-two flex flex-col justify-center items-center gap-10 px-5 py-20 sm:px-10 md:py-28 md:px-0 '+plus_jakarta_sans.className}>
                 <h2 className="common-h2-heading our-work-section-two-subheading  text-center text-custom-almostblack" data-aos="fade-up">{heading}</h2>
                 <a href={link} className='flex flex-row our-work-lets-talk-btn get-in-touh-btn ' data-aos="fade-up">
-                        <span className='our-work-lets-talk-text get-in-touch-txt  grow text-center flex justify-center items-center'>{btntext}</span>
+                        <span className='our-work-lets-talk-text get-in-touch-txt  grow text-center flex justify-center items-center common-all-caps '>{btntext}</span>
                         <div className='get-in-touch-img-div relative'>
                             <Image src={Arrow} 
                             width={28}

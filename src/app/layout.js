@@ -9,7 +9,7 @@ import '@/styles/tailwindcss.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Payppy",
+  title: "Payppy.co",
   description: "Payppy.co",
 };
 

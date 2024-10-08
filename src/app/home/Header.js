@@ -120,12 +120,12 @@ function Header(){
               <div className='flex gap-1.5 relative'>
                 <p className="common-paragraph text-custom-ghostgrey">Contact us:</p>
                 <p className="common-paragraph text-custom-white font-bold">hello@payppy.co</p>
-                <CopyToClipboard text='hello@payppy.co'>
+                <CopyToClipboard text='hello@payppy.co' >
                   <Image src={Copy}
                     width={24}
-                    height={18}
+                    height={26}
                     alt='img'
-                    className='cursor-pointer max-w-none'
+                    className='cursor-pointer max-w-none max-h-none copytoclipboard-btn'
                     onClick={handleCopyToClipboard}
                   />
                 </CopyToClipboard>

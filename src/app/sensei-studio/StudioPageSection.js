@@ -248,9 +248,9 @@ function StudioPageSection() {
         </section>
 
         {/* section 5 -our-client-backed-by */}
-        <section className={'studio-our-client-section py-14 px-5 sm:py-20 sm:px-0 md:py-24 flex flex-col justify-center items-center gap-4 sm:gap-8 md:gap-10 '+plus_jakarta_sans.className}>
+        <section className={'studio-our-client-section py-14 px-5 sm:py-20 sm:px-0 md:py-24 flex flex-col justify-center items-center gap-5 sm:gap-8 md:gap-10 '+plus_jakarta_sans.className}>
             <h5 className=' common-all-caps text-custom-darkgrey ' data-aos="fade-up">- OUR CLIENTS BACKED BY-</h5>
-            <div className="flex flex-col sm:flex-row justify-center sm:justify-between gap-4 sm:gap-10 md:gap-14 items-center">
+            <div className="flex flex-row flex-wrap justify-center sm:justify-between gap-5 sm:gap-10 md:gap-14 items-center">
                 <Image src={TigerGlobal}
                 width={300}
                 height={47}

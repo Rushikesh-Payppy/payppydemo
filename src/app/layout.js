@@ -17,9 +17,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <link rel="icon" href="https://payppy.co/icon.ico" type="image/x-icon" />
-      <link rel="icon" href="/icon.ico" type="image/x-icon" />
 
+      <link rel="icon" href="icon.ico" type="image/x-icon" />
       <body className={inter.className}>
       {/* <h1>Root Layout</h1> */}
         {children}

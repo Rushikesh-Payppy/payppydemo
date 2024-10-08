@@ -163,6 +163,14 @@
     width: 185.4px;
     height: 67.28px;    
 }
+@keyframes scrollBar {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 @media screen and (max-width:1024px) {
     .our-client-tripersmith-img{
         width: 158.91px;
@@ -182,11 +190,18 @@
     }
 }
 @media screen and (max-width:640px) {
+    .studio-our-client-section{
+        overflow: hidden;
+    }
     .our-client-img-container{
-        width: 100%;
+        width: 200%;
         overflow-x: auto;
         scroll-behavior: smooth;
         padding-bottom: 1em;
+        animation: scrollBar 6.5s linear infinite;
+        &::-webkit-scrollbar{
+            display: none;
+        }
     }
 }
                                                 //section 3    tastic methodology

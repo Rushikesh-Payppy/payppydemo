@@ -167,31 +167,28 @@ function LandingPageAllMidSections() {
                 <div className="flex flex-col lg:flex-row items-center gap-4">
                     <p className="scrolling-game-para w-auto  common-paaragraph" data-aos="fade-up">Follow us</p>
                     <div className='flex gap-4'>
-                        <Link href='https://www.instagram.com/payppy.app/' target='_blank'  className='landingpage-insta-twitter-links flex justify-center items-center w-12 h-12'>
+                        <Link href='https://www.instagram.com/payppy.app/' target='_blank'  className='landingpage-insta-twitter-links flex justify-center items-center w-12 h-12'  data-aos="fade-up">
                             <Image src={InstaCircle}
                                 width={20}
                                 height={20}
                                 alt="img"
-                                data-aos="fade-up"
                                 className='sustainability-icon-img'/>
                         </Link>
-                        <Link href='https://x.com/payppy_app?s=21' target='_blank' className='landingpage-insta-twitter-links flex justify-center items-center w-12 h-12'>
+                        <Link href='https://x.com/payppy_app?s=21' target='_blank' className='landingpage-insta-twitter-links flex justify-center items-center w-12 h-12'  data-aos="fade-up">
                             <Image src={XCircle}
                                 width={20}
                                 height={20}
                                 alt="img"
-                                data-aos="fade-up"
                                 className='sustainability-icon-img'/>
                         </Link>
                     </div>
                 </div>
             </main>
-            <main className='insta-img-container'>
+            <main className='insta-img-container' data-aos="fade-up">
                 <Image src={InstaImage}
                 width={400}
                 height={608.3}
                 alt="img"
-                data-aos="fade-up"
                 className='insta-img'/>
             </main>
 

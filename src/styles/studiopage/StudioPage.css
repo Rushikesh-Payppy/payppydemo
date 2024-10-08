@@ -167,6 +167,27 @@
   height: 67.28px;
 }
 
+@-webkit-keyframes scrollBar {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollBar {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
 @media screen and (max-width: 1024px) {
   .our-client-tripersmith-img {
     width: 158.91px;
@@ -186,11 +207,19 @@
   }
 }
 @media screen and (max-width: 640px) {
+  .studio-our-client-section {
+    overflow: hidden;
+  }
   .our-client-img-container {
-    width: 100%;
+    width: 200%;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding-bottom: 1em;
+    -webkit-animation: scrollBar 6.5s linear infinite;
+            animation: scrollBar 6.5s linear infinite;
+  }
+  .our-client-img-container::-webkit-scrollbar {
+    display: none;
   }
 }
 .tastic-methodology-section {

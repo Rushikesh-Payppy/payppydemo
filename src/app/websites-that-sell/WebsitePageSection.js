@@ -29,7 +29,7 @@ function WebsitePageSection()
             </div>
             <Image src={WebsiteImage}
             width={1440}
-            height={510}
+            height={500}
             alt="img"
             className='servicebrand-section-branding-img'/>
         </section>
@@ -64,15 +64,15 @@ function WebsitePageSection()
                     <h5 className="grid-boxex-title common-h5-heading text-center sm:text-left  text-custom-almostblack" data-aos="fade-up">Visual Design</h5>
                     <p className="grid-boxes-para text-center sm:text-left common-paragraph text-custom-darkgrey" data-aos="fade-up">An appealing, drool-worthy identity for your website</p>
                 </div>
-                <div className="flex flex-col   gap-3 lg:gap-4 grid-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
+                <div className="flex flex-col   gap-3 lg:gap-4 grid-box grid-last-3-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
                     <h5 className="grid-boxex-title common-h5-heading text-center sm:text-left  text-custom-almostblack" data-aos="fade-up">Web Development</h5>
                     <p className="grid-boxes-para text-center sm:text-left common-paragraph text-custom-darkgrey" data-aos="fade-up">An optimised website that’s developed with finesse </p>
                 </div>
-                <div className="flex flex-col   gap-3 lg:gap-4 grid-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
+                <div className="flex flex-col   gap-3 lg:gap-4 grid-box grid-last-3-box grid-last-second-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
                     <h5 className="grid-boxex-title common-h5-heading text-center sm:text-left  text-custom-almostblack" data-aos="fade-up">Basic SEO</h5>
                     <p className="grid-boxes-para text-center sm:text-left common-paragraph text-custom-darkgrey" data-aos="fade-up">To make you standout in those search results</p>
                 </div>
-                <div className="flex flex-col   gap-3 lg:gap-4 grid-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
+                <div className="flex flex-col   gap-3 lg:gap-4 grid-box grid-last-3-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
                     <h5 className="grid-boxex-title common-h5-heading text-center sm:text-left  text-custom-almostblack grid-boxex-brand-website-title " data-aos="fade-up">Brand Guide for website</h5>
                     <p className="grid-boxes-para text-center sm:text-left common-paragraph text-custom-darkgrey" data-aos="fade-up">Set of guidelines that define the consistent visual and tonal elements</p>
                 </div>

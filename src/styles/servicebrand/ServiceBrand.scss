@@ -44,7 +44,8 @@
 }
 .servicebrand-section-branding-img{
     width: 100% ;
-    height: 580px;
+    height: 500px;
+    object-fit: cover;
 }
 
 //for tablet view
@@ -54,7 +55,6 @@
     }
     .servicebrand-section-branding-img{
         height: 360px ;
-        object-fit: cover;
     }
 }
 //for mobile view
@@ -71,7 +71,8 @@
                                             //section 2
 
 .brand-identity-process-box{
-    width: 45rem;
+    max-width: 50rem;
+    width: 100%;
     background: #111111;
 }
 .brand-identity-process-title{
@@ -80,7 +81,9 @@
 }
 .brand-product-strategy-box{
     background: #FAFAFA;
-    width: 45rem;
+    max-width: 50rem;
+    width: 100%;
+    border-right: 1px solid #DDDDDD;
 }
 
 .brand-product-strategy-bottom-box{
@@ -88,33 +91,47 @@
 }
 
 .parent-grid-box{
-    max-width: 90rem;
+    max-width: 100rem;
+    border-right: 1px solid #DDDDDD;
 }
 .grid-box{
     border: 1px solid #DDDDDD;
+    border-top: none;
+    border-right: none;
     height: 18.75rem;
+    &:last-child{
+        border-bottom: none ;
+    }
 }
 .grid-boxex-title,.grid-boxes-para{
     max-width: 23rem;
 }
 
-
+.grid-last-3-box{
+    border-bottom: none;
+}
 
 //for tablet view
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
     .brand-identity-process-box,.brand-product-strategy-box{
-        width: 100% !important;
+        max-width: 100% !important;
     }
   
     .parent-grid-box{
         max-width: 100%;
-        border-bottom: 1px solid #DDDDDD;
+        // border-bottom: 1px solid #DDDDDD;
     }
     .grid-box{
         height: 17.625rem;
     }
     .grid-boxex-title,.grid-boxes-para{
         max-width: 18.25rem;
+    }
+    .grid-last-3-box{
+        border-bottom: 1px solid #DDDDDD;
+    }
+    .grid-last-second-box{
+        border-bottom: none;
     }
     
 }
@@ -138,10 +155,14 @@
         height: 13.5rem;
         border-left: none;
     }
+    .grid-last-second-box{
+        border-bottom: 1px solid #DDDDDD;
+    }
   
     .grid-boxex-title,.grid-boxes-para{
         max-width: 100%;
     }
+  
 }
 
 

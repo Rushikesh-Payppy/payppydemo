@@ -36,7 +36,9 @@
 
 .servicebrand-section-branding-img {
   width: 100%;
-  height: 580px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {
@@ -45,8 +47,6 @@
   }
   .servicebrand-section-branding-img {
     height: 360px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 @media screen and (max-width: 640px) {
@@ -58,7 +58,8 @@
   }
 }
 .brand-identity-process-box {
-  width: 45rem;
+  max-width: 50rem;
+  width: 100%;
   background: #111111;
 }
 
@@ -68,7 +69,9 @@
 
 .brand-product-strategy-box {
   background: #FAFAFA;
-  width: 45rem;
+  max-width: 50rem;
+  width: 100%;
+  border-right: 1px solid #DDDDDD;
 }
 
 .brand-product-strategy-bottom-box {
@@ -76,31 +79,46 @@
 }
 
 .parent-grid-box {
-  max-width: 90rem;
+  max-width: 100rem;
+  border-right: 1px solid #DDDDDD;
 }
 
 .grid-box {
   border: 1px solid #DDDDDD;
+  border-top: none;
+  border-right: none;
   height: 18.75rem;
+}
+.grid-box:last-child {
+  border-bottom: none;
 }
 
 .grid-boxex-title, .grid-boxes-para {
   max-width: 23rem;
 }
 
-@media screen and (max-width: 1024px) {
+.grid-last-3-box {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 1023px) {
   .brand-identity-process-box, .brand-product-strategy-box {
-    width: 100% !important;
+    max-width: 100% !important;
   }
   .parent-grid-box {
     max-width: 100%;
-    border-bottom: 1px solid #DDDDDD;
   }
   .grid-box {
     height: 17.625rem;
   }
   .grid-boxex-title, .grid-boxes-para {
     max-width: 18.25rem;
+  }
+  .grid-last-3-box {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .grid-last-second-box {
+    border-bottom: none;
   }
 }
 @media screen and (max-width: 640px) {
@@ -119,6 +137,9 @@
   .grid-box {
     height: 13.5rem;
     border-left: none;
+  }
+  .grid-last-second-box {
+    border-bottom: 1px solid #DDDDDD;
   }
   .grid-boxex-title, .grid-boxes-para {
     max-width: 100%;

@@ -22,7 +22,8 @@
     transition:  background-color .5s cubic-bezier(.25,.46,.45,.94);
 }
 .payppy-logo-2-container{
-    padding: 5px 50px 5px 50px;
+    padding: 0px 50px 0px 50px;
+    // padding: 5px 50px 5px 50px;
     height:80px;
     width: 50%;
 }
@@ -30,10 +31,13 @@
 //navbar toggle content
 .toggler-icon-container{
     width: 50%;
-    padding: 8px 40px 8px 40px;
+    padding: 0px 40px 0px 40px;
+    // padding: 8px 40px 8px 40px;
 }
+
 .hamburger-react div:nth-child(2){
     width: 18px !important;
+    margin-left: 6px !important;
 }
 .payppyhomepage-header-section{
     top: 80px;
@@ -45,12 +49,13 @@
     max-height: calc( 100vh - 80px);
     opacity: 0;
     transition: z-index cubic-bezier(.25,.46,.45,.94) .3s,opacity cubic-bezier(.25,.46,.45,.94) .3s, background-color .3s cubic-bezier(.25,.46,.45,.94);
-    overflow: scroll;
+    overflow: hidden;
 }
+
 .payppy-header-with-height{
     opacity: 1;
     z-index: 4;
-    transition: opacity .3s cubic-bezier(.25,.46,.45,.94) .3s, background-color .3s cubic-bezier(.25,.46,.45,.94);
+    transition:  z-index cubic-bezier(.25,.46,.45,.94) .3s,opacity .3s cubic-bezier(.25,.46,.45,.94) .3s, background-color .3s cubic-bezier(.25,.46,.45,.94);
 }
 .payppy-bg-custom-primary{
     background-color:#0057FF;
@@ -73,11 +78,10 @@
     transition: max-height .5s cubic-bezier(.25,.46,.45,.94);
 
 }
-.copied-text{
-    top: -1.9rem;
-    right: -0.9rem;
+.copytoclipboard-btn{
+    width: 24px;
+    height: 26px;
 }
-
 .payppy-header-links{
     position: relative;
     display: inline-block;
@@ -119,11 +123,12 @@
 
 @media screen and (max-width:640px) {
     .payppy-logo-2-container{
-        padding: 10px 20px;
+        // padding: 10px 20px;
         height: 72px;
     }
     .toggler-icon-container{
-         padding: 35px 20px 35px 20px;
+         padding: 0 20px 0 20px;
+        //  padding: 35px 20px 35px 20px;
     }
     .toggler-icon-2{
         width: 24px;
@@ -137,7 +142,7 @@
         top: 72px;
         min-height: calc( 100vh - 72px);
         max-height: calc( 100vh - 72px);
-
+        overflow: auto;
     }
     .studio-circle-arrow{
         width: 26px;
@@ -213,7 +218,7 @@
     &:hover .homepage-top-arrow{
         top: 20px;
         right: 20px;
-        filter: brightness(100);
+        // filter: brightness(100);
     }
     // &:hover .green-gradient-1, &:hover  .green-gradient-2, &:hover  .blue-gradient-2, &:hover  .blue-gradient-1{
     //     opacity: 1;
@@ -285,10 +290,10 @@
 
 .footer-2-link{
     @include for-fonts();
-    color: #FFFFFF;
     text-decoration: none;
     &:hover{
         text-decoration: underline;
+        color: white;
     }
 }
 

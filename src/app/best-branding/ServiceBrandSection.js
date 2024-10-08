@@ -34,7 +34,7 @@ function ServcideBrandSection()
 
             <Image src={BrandingImage}
             width={1440}
-            height={580}
+            height={500}
             alt='img'
             className='servicebrand-section-branding-img'/> 
         </section>
@@ -43,7 +43,7 @@ function ServcideBrandSection()
         <section className="brand-identity-section ">
             <div className="flex justify-center flex-col lg:flex-row brand-black-box-and-right-box-container">
                 <div className="brand-identity-process-box bg-custom-almostblack flex justify-center items-center py-14 px-5 md:py-20 md:px-10 lg:py-28 lg:px-24 ">
-                    <h3 className='brand-identity-process-title common-h3-heading text-custom-white' data-aos="fade-up">Brand Identity Process</h3>
+                    <h3 className='brand-identity-process-title common-h3-heading text-custom-white text-center lg:text-left' data-aos="fade-up">Brand Identity Process</h3>
                 </div>
                 <div>
                     <div className='py-14 px-10  md:py-24 md:px-20 flex justify-center items-center brand-product-strategy-box'>
@@ -81,18 +81,19 @@ function ServcideBrandSection()
                     <h5 className="grid-boxex-title common-h5-heading text-center sm:text-left  text-custom-almostblack" data-aos="fade-up">Target Audience(s)</h5>
                     <p className="grid-boxes-para text-center sm:text-left common-paragraph text-custom-darkgrey" data-aos="fade-up">Your ideal buyers or users</p>
                 </div>
-                <div className="flex flex-col  gap-3 lg:gap-4 grid-box  justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
+                <div className="flex flex-col  gap-3 lg:gap-4 grid-box grid-last-3-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
                     <h5 className="grid-boxex-title common-h5-heading text-center sm:text-left  text-custom-almostblack" data-aos="fade-up">SMART Goals</h5>
                     <p className="grid-boxes-para text-center sm:text-left common-paragraph text-custom-darkgrey" data-aos="fade-up">Your short-term and long-term goals</p>
                 </div>
-                <div className="flex flex-col  gap-3 lg:gap-4 grid-box  justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
+                <div className="flex flex-col  gap-3 lg:gap-4 grid-box grid-last-3-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
                     <h5 className="grid-boxex-title common-h5-heading text-center sm:text-left  text-custom-almostblack" data-aos="fade-up">Tone of Voice</h5>
                     <p className="grid-boxes-para text-center sm:text-left common-paragraph text-custom-darkgrey" data-aos="fade-up">How you sound to your customers in different situations matters the most</p>
                 </div>
-                <div className="flex flex-col  gap-3 lg:gap-4 grid-box  justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
+                <div className="flex flex-col  gap-3 lg:gap-4 grid-box grid-last-3-box grid-last-second-box justify-center items-center sm:justify-start sm:items-start py-14 px-5 sm:px-10 lg:px-14">
                     <h5 className="grid-boxex-title common-h5-heading text-center sm:text-left  text-custom-almostblack" data-aos="fade-up">Elevator Pitch</h5>
                     <p className="grid-boxes-para text-center sm:text-left common-paragraph text-custom-darkgrey" data-aos="fade-up">A 30-second description of your value proposition</p>
                 </div>
+                <div className="grid-box grid-last-3-box hidden sm:block lg:hidden"></div>
             </div>
         </section>
 

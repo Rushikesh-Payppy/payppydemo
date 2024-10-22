@@ -9,6 +9,10 @@
   max-width: 55.818rem;
 }
 
+.website-section-img {
+  background-image: url("../../Images/websitepage/Website.jpg") !important;
+}
+
 .websitepage-section-one-title {
   max-width: 52.875rem;
 }

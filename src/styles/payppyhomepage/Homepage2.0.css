@@ -132,6 +132,11 @@
   background-color: rgba(255, 255, 255, 0.0980392157);
 }
 
+@media screen and (max-width: 1024px) {
+  .payppyhomepage-header-section {
+    overflow-y: auto;
+  }
+}
 @media screen and (max-width: 640px) {
   .payppy-logo-2-container {
     height: 72px;
@@ -199,6 +204,9 @@
 }
 .payppy-app-main-outer-container:hover .green-gradient, .payppy-app-main-outer-container:hover .blue-gradient {
   opacity: 1;
+}
+.payppy-app-main-outer-container:nth-child(2) {
+  border-right: none;
 }
 
 .for-center-content {

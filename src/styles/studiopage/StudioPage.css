@@ -26,11 +26,14 @@
     max-width: 20rem;
   }
 }
-.design-branding-img {
+.senseistudio-page-section-img {
   width: 100%;
   height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../../Images/studiopage/design-branding.jpg");
 }
 
 .strategic-product-design-and-get-in-touch-parent-container {
@@ -454,8 +457,8 @@
 .accordion-answer {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: 0.5s !important;
-  transition: 0.5s !important;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
 }
 
 .accordion-answer.accordion-visible {

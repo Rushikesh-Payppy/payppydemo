@@ -19,6 +19,10 @@
     max-width: 19rem;
   }
 }
+.apppage-section-img {
+  background-image: url("../../Images/apppage/App.jpg") !important;
+}
+
 .apppage-section-one-title {
   width: 80rem;
 }

@@ -100,6 +100,10 @@
     z-index: 4;
     transition: 0.25s ease;
 }
+// .border-bottom-white::after{
+//     width: 100%;
+// }
+
 .payppy-header-links:hover::after{
     width: 100% !important;
 }
@@ -118,6 +122,11 @@
     padding: 0.9em;
     &:hover{
         background-color: #ffffff19;
+    }
+}
+@media screen and (max-width:1024px) {
+    .payppyhomepage-header-section{
+        overflow-y: auto ;
     }
 }
 
@@ -154,6 +163,7 @@
 .payppy-homepage-main-section{
     min-height: calc(100vh - 80px - 72px);
 }
+
 .homepage-top-arrow{
     transition: 0.3s;
 }
@@ -226,6 +236,10 @@
     &:hover .green-gradient,&:hover .blue-gradient{
         opacity: 1;
     }
+    &:nth-child(2)
+    {
+        border-right: none;
+    }
    
 }
 .for-center-content{
@@ -254,6 +268,7 @@
     // .payppy-homepage-main-section{
     //     min-height: 100vh;
     // }
+   
     .payppy-homepage-main-section{
         flex-direction: column-reverse !important;
     }

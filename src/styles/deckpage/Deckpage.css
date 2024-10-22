@@ -19,6 +19,10 @@
     max-width: 19rem;
   }
 }
+.deckpage-section-img {
+  background-image: url("../../Images/deckpage/PitchDeck.jpg") !important;
+}
+
 .grid-boxex-brand-website-title {
   max-width: 20.063rem;
 }

@@ -8,10 +8,10 @@ import { useEffect } from "react";
 
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import Copy from '@/Images/payppyhomepage/file-copy-line.png';
-import LinkedIn from '@/Images/payppyhomepage/mdi_linkedin.png';
-import Instagram from '@/Images/payppyhomepage/instagram.png';
-import Twitter from '@/Images/payppyhomepage/twitter.png';
-import Map from '@/Images/payppyhomepage/map.png';
+import LinkedIn from '@/Images/payppyhomepage/mdi_linkedin.svg';
+import Instagram from '@/Images/payppyhomepage/instagram.svg';
+import Twitter from '@/Images/payppyhomepage/twitter.svg';
+import Map from '@/Images/payppyhomepage/map.svg';
 import Arrow from '@/Images/payppyhomepage/arrow-down-s-line.png';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
@@ -33,6 +33,10 @@ function Header(){
 
   let[togglerState,setToglerState]=useState(false);
   let[senseiStudioState,setSenseiStudioState]=useState(false);
+
+  let currentPath=window.location.pathname;
+
+  
 
   useEffect(()=>{
     if(togglerState)
@@ -65,6 +69,14 @@ function Header(){
           });
   }
 
+  //if user click a link in navbar of current active page link again 
+  function toRefreshPage(path)
+  {
+    if(currentPath===path)
+    {
+      window.location.reload();
+    }
+  }
 
   return (
     <header className={`homepage-2-header relative ${senseiStudioState&&togglerState?' payppy-bg-custom-primary ':' bg-custom-almostblack '}`+plus_jakarta_sans.className}  >
@@ -90,12 +102,12 @@ function Header(){
             
             <main className='flex flex-col items-start lg:items-center gap-8 sm:gap-11 flex-wrap'>
 
-              <Link href='/our-masterpieces' prefetch={true} className="common-h3-heading  text-custom-almostwhite text-left lg:text-center payppy-header-links" >Work</Link>
+              <Link href='/our-masterpieces' prefetch={true} className={`common-h3-heading  text-custom-almostwhite text-left lg:text-center payppy-header-links `} onClick={()=>{toRefreshPage('/our-masterpieces')}}>Work</Link>
               
               {/* center sensei studio content  */}
               <div className={`flex flex-col gap-4  sm:gap-5`} >
                 <div className="flex gap-x-5 items-baseline justify-start lg:justify-center">
-                  <Link href='/sensei-studio' prefetch={true} className="common-h3-heading text-custom-almostwhite text-left lg:text-center payppy-header-links" >Sensei Studio</Link>
+                  <Link href='/sensei-studio' prefetch={true} className={`common-h3-heading text-custom-almostwhite text-left lg:text-center payppy-header-links `} onClick={()=>{toRefreshPage('/sensei-studio')}}>Sensei Studio</Link>
                   <Image src={Arrow}
                     width={40}
                     height={40}
@@ -105,15 +117,15 @@ function Header(){
                   />
                 </div>
                 <div className={`flex gap-x-14 gap-y-4 sm:gap-14 pb-2 flex-wrap items-center ${senseiStudioState?" brand-web-app-deck-box ":" brand-web-app-deck-box-hidden"}` }>
-                    <Link href='/best-branding' prefetch={true} className='common-h5-heading text-custom-almostwhite text-center payppy-header-links'>Brand</Link>
-                    <Link href='/websites-that-sell' prefetch={true} className='common-h5-heading text-custom-almostwhite text-center payppy-header-links'>Website</Link>
-                    <Link href='/apps-that-make-sense' prefetch={true} className='common-h5-heading text-custom-almostwhite text-center payppy-header-links'>App</Link>
-                    <Link href='/decks-that-convert' prefetch={true} className='common-h5-heading text-custom-almostwhite text-center payppy-header-links'>Deck</Link>
+                    <Link href='/best-branding' prefetch={true} className={`common-h5-heading text-custom-almostwhite text-center payppy-header-links `} onClick={()=>{toRefreshPage('/best-branding')}}>Brand</Link>
+                    <Link href='/websites-that-sell' prefetch={true} className={`common-h5-heading text-custom-almostwhite text-center payppy-header-links `} onClick={()=>{toRefreshPage('/websites-that-sell')}}>Website</Link>
+                    <Link href='/apps-that-make-sense' prefetch={true} className={`common-h5-heading text-custom-almostwhite text-center payppy-header-links `} onClick={()=>{toRefreshPage('/apps-that-make-sense')}}>App</Link>
+                    <Link href='/decks-that-convert' prefetch={true} className={`common-h5-heading text-custom-almostwhite text-center payppy-header-links `} onClick={()=>{toRefreshPage('/decks-that-convert')}}>Deck</Link>
                 </div>
               </div>
 
-              <Link href='/get-to-know-us' prefetch={true} className={senseiStudioState?"common-h3-heading  text-opacity text-left lg:text-center payppy-header-links":"common-h3-heading text-custom-almostwhite text-left lg:text-center payppy-header-links"} >About</Link>
-              <Link href='/payppy-india' prefetch={true} className={senseiStudioState?"common-h3-heading  text-opacity text-left lg:text-center payppy-header-links":"common-h3-heading text-custom-almostwhite text-left lg:text-center payppy-header-links"} >Payppy.app</Link>
+              <Link href='/get-to-know-us' prefetch={true} className={`common-h3-heading  text-left lg:text-center payppy-header-links ${senseiStudioState?' text-opacity ':' text-custom-almostwhite '} `} onClick={()=>{toRefreshPage('/get-to-know-us')}} >About</Link>
+              <Link href='/payppy-india' prefetch={true} className={`common-h3-heading  text-left lg:text-center payppy-header-links ${senseiStudioState?' text-opacity ':' text-custom-almostwhite '} `} onClick={()=>{toRefreshPage('/payppy-india')}}>Payppy.app</Link>
             </main>
 
             <footer className="payppy-homepage-header-footer  pt-5 pb-5 lg:pb-0  flex flex-col gap-4 sm:flex-row justify-between items-start sm:items-center ">

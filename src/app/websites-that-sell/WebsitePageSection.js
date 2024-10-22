@@ -27,11 +27,14 @@ function WebsitePageSection()
                 <h4 className='service-brand-section-one-title common-h5-heading text-custom-almostblack' data-aos="fade-up">We're all about driving sales, leads, and business growth through your website. Our team crafts a killer website that's both visually appealing and captivating.</h4>
                 <p className="service-brand-section-one-para common-paragraph text-custom-darkgrey" data-aos="fade-up">Think of your website as a powerful magnet. When you master the art of storytelling, you'll create meaningful human connections, not just customers. Get ready for an exciting journey! 💸</p>
             </div>
-            <Image src={WebsiteImage}
+            <div className='servicebrand-section-branding-img website-section-img'>
+
+            </div>
+            {/* <Image src={WebsiteImage}
             width={1440}
             height={500}
             alt="img"
-            className='servicebrand-section-branding-img'/>
+            className='servicebrand-section-branding-img'/> */}
         </section>
 
         {/* section 2 - brand-identity-process */}

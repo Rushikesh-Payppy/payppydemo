@@ -27,11 +27,14 @@ function AppPageSection()
                 <h4 className='service-brand-section-one-title common-h5-heading text-custom-almostblack' data-aos="fade-up">We excel in expertise, prioritizing the user experience, meticulous attention to detail, a collaborative approach, brand consistency, timely delivery, and driving your business success.</h4>
                 <p className="service-brand-section-one-para common-paragraph text-custom-darkgrey" data-aos="fade-up">Level up user satisfaction and engagement with an intuitive, visually stunning app that delivers a seamless experience. Get ready to leave customers amazed and coming back for more! 🚀</p>
             </div>
-            <Image src={App}
+            <div className='servicebrand-section-branding-img apppage-section-img'>
+
+            </div>
+            {/* <Image src={App}
             width={1440}
             height={500}
             alt='img'
-            className='servicebrand-section-branding-img'/>
+            className='servicebrand-section-branding-img'/> */}
         </section>
 
         {/* section 2 - brand-identity-process */}

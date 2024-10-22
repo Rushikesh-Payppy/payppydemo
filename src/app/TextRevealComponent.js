@@ -10,6 +10,7 @@ function TextRevealComponent()
     useEffect(()=>{
         AOS.init({
             duration: 700, // Set the default duration for all animations
+            once:true
           });
       },[]);
 

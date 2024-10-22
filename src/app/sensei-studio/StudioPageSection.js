@@ -81,13 +81,16 @@ function StudioPageSection() {
         <>
         {/* section 1 */}
         <section className={'studio-page-section-one '+plus_jakarta_sans.className}>
-            <div className="design-branding-box">
+            <div className='senseistudio-page-section-img'>
+
+            </div>
+            {/* <div className="design-branding-box">
                 <Image src={DesignBranding}
                 width={1400}
                 height={500}
                 alt="img"
                 className='design-branding-img'/>
-            </div>
+            </div> */}
             <div className="flex flex-col lg:flex-row justify-center strategic-product-design-and-get-in-touch-parent-container">
                 <div className='strategic-product-design-subheading-container flex items-center justify-start lg:justify-center'>
                     <h2 className='common-h2-heading studio-page-subheading text-custom-almostblack' data-aos="fade-up">Strategic product design and branding for global brands</h2>
@@ -99,7 +102,7 @@ function StudioPageSection() {
                         <p className="common-paragraph studio-section-one-para text-custom-darkgrey"  data-aos="fade-up">Ready for the coolest vibes?  👊</p>
                     </div>
                     <a href='mailto:hello@payppy.co'  className='flex flex-row get-in-touh-btn ' data-aos="fade-up">
-                        <span className='get-in-touch-txt grow text-center flex justify-center items-center'>GET IN TOUCH</span>
+                        <span className='get-in-touch-txt grow text-center flex justify-center items-center common-all-caps'>GET IN TOUCH</span>
                         <div className='get-in-touch-img-div relative'>
                             <Image src={Arrow} 
                             width={28}
@@ -298,14 +301,14 @@ function StudioPageSection() {
         <section className={"fuq-section flex justify-center items-center pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12 "+plus_jakarta_sans.className}>
             <div className="fuq-content-container flex flex-col gap-14">
                 <div className="flex flex-col gap-4">
-                    <h2 className="common-h2-heading text-custom-almostblack">FUQ</h2>
-                    <h5 className="common-h5-heading text-custom-darkgrey">Frequently (un)asked questions</h5>
-                    <p className="common-paragraph text-custom-darkgrey">These are questions nobody asks, but we want y’all to!</p>
+                    <h2 className="common-h2-heading text-custom-almostblack" data-aos="fade-up">FUQ</h2>
+                    <h5 className="common-h5-heading text-custom-darkgrey" data-aos="fade-up">Frequently (un)asked questions</h5>
+                    <p className="common-paragraph text-custom-darkgrey" data-aos="fade-up">These are questions nobody asks, but we want y’all to!</p>
                 </div>
 
                 <div className="accordion-main-outer-container">
 
-                    <div className="accordion-container  cursor-pointer py-6" >
+                    <div className="accordion-container  cursor-pointer py-6" data-aos="fade-up">
                        
                         <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(0)}}>
                             <h6 className="common-h6-heading text-custom-almostblack">Why should we choose you?</h6>
@@ -318,7 +321,7 @@ function StudioPageSection() {
 
                     </div>
 
-                    <div className="accordion-container  cursor-pointer py-6" >
+                    <div className="accordion-container  cursor-pointer py-6" data-aos="fade-up">
                        
                        <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(1)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">How much time does it take to complete a project?</h6>
@@ -331,7 +334,7 @@ function StudioPageSection() {
 
                    </div>
 
-                   <div className="accordion-container  cursor-pointer py-6" >
+                   <div className="accordion-container  cursor-pointer py-6" data-aos="fade-up">
                        
                        <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(2)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">How many people will work on my project?</h6>
@@ -344,7 +347,7 @@ function StudioPageSection() {
 
                    </div>
 
-                   <div className="accordion-container  cursor-pointer py-6" >
+                   <div className="accordion-container  cursor-pointer py-6" data-aos="fade-up">
                        
                        <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(3)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">What do you expect from us, as clients?</h6>
@@ -365,7 +368,7 @@ function StudioPageSection() {
 
                    </div>
 
-                   <div className="accordion-container  cursor-pointer py-6" >
+                   <div className="accordion-container  cursor-pointer py-6" data-aos="fade-up">
                        
                        <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(4)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">How long can Payppy Studio stay in touch for changes, after my project is done?</h6>
@@ -378,7 +381,7 @@ function StudioPageSection() {
 
                    </div>
 
-                   <div className="accordion-container  cursor-pointer py-6" >
+                   <div className="accordion-container  cursor-pointer py-6" data-aos="fade-up">
                        
                        <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(5)}}>
                            <h6 className="common-h6-heading text-custom-almostblack">Will my data be safe in the case of pitch decks and business numbers?</h6>

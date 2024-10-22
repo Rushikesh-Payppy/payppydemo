@@ -32,11 +32,14 @@ function ServcideBrandSection()
                 <div className="servicebrand-section-branding-img" style={{backgroundImage:BrandingImage}}></div>
             </div> */}
 
-            <Image src={BrandingImage}
+            <div className='servicebrand-section-branding-img'>
+
+            </div>
+            {/* <Image src={BrandingImage}
             width={1440}
             height={500}
             alt='img'
-            className='servicebrand-section-branding-img'/> 
+            className='servicebrand-section-branding-img'/>  */}
         </section>
 
         {/* section 2 - brand-identity-process */}

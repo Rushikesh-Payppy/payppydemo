@@ -36,9 +36,12 @@
 
 .servicebrand-section-branding-img {
   width: 100%;
+  background-image: url("../../Images/ServiceBrand/branding-img.jpg");
   height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1024px) {

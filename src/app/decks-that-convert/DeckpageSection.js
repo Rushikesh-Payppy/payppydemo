@@ -6,8 +6,6 @@ import '@/styles/servicebrand/ServiceBrand.css';        //this page structure is
 import '@/styles/deckpage/Deckpage.css';
 import '@/styles/Typography.css';
 
-//section 1
-import  App from '@/Images/deckpage/Pitch Deck.jpg';
 
 //section 3
 import  Arrow from '@/Images/ServiceBrand/arrowlogo.svg';
@@ -27,11 +25,14 @@ function DeckpageSection()
                 <h4 className='service-brand-section-one-title common-h5-heading text-custom-almostblack' data-aos="fade-up">We design and curate investor pitch decks with industry's best practices and relevant formats . From clear propositions to persuasive content, we make sure you bag those funds at every stage.  </h4>
                 <p className="service-brand-section-one-para common-paragraph text-custom-darkgrey" data-aos="fade-up">A solid pitch deck shows how our product can scale big-time, handles risks like a boss, and proves we're all about financial success. It's your ticket to attracting investors, securing funding, and taking your business to the next level 💪</p>
             </div>
-            <Image src={App}
+            <div className='servicebrand-section-branding-img deckpage-section-img' >
+
+            </div>
+            {/* <Image src={Deck}
             width={1440}
             height={500}
             alt='img'
-            className='servicebrand-section-branding-img'/>
+            className='servicebrand-section-branding-img'/> */}
         </section>
 
         {/* section 2 - brand-identity-process */}

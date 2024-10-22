@@ -34,9 +34,16 @@ function Header(){
   let[togglerState,setToglerState]=useState(false);
   let[senseiStudioState,setSenseiStudioState]=useState(false);
 
-  let currentPath=window.location.pathname;
+  let[currentPath,setCurrentPath]=useState('');
+  // let currentPath=window.location.pathname;
 
-  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      //this code runs only on the client-side so it will not create problem during build process
+      setCurrentPath(window.location.pathname);
+    }
+  }, []);
+
 
   useEffect(()=>{
     if(togglerState)

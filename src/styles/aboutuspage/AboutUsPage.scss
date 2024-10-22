@@ -37,7 +37,15 @@
 
 
                                             //section 1
-    
+.about-us-page-section-one-img{
+    width: 100% ;
+    background-image: url('../../Images/aboutuspage/team.jpg');
+    height: 426px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .about-us-page-section-one-img{
     width: 100%;
 }

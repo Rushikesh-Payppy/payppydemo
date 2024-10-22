@@ -165,6 +165,7 @@ function ServcideBrandSection()
                             <Image src={Arrow}
                             width={36}
                             height={36}
+                            alt="img"
                             />
     
                             <h5 className="deliverables-box-content common-h6-heading text-custom-almostblack">Typography options</h5>
@@ -173,6 +174,7 @@ function ServcideBrandSection()
                             <Image src={Arrow}
                             width={36}
                             height={36}
+                            alt="img"
                             />
     
                             <h5 className="deliverables-box-content common-h6-heading text-custom-almostblack">Business cards </h5>
@@ -181,6 +183,7 @@ function ServcideBrandSection()
                             <Image src={Arrow}
                             width={36}
                             height={36}
+                            alt="img"
                             />
     
                             <h5 className="deliverables-box-content common-h6-heading text-custom-almostblack">Letterhead</h5>
@@ -189,6 +192,7 @@ function ServcideBrandSection()
                             <Image src={Arrow}
                             width={36}
                             height={36}
+                            alt="img"
                             />
     
                             <h5 className="deliverables-box-content common-h6-heading text-custom-almostblack">Presentation templates </h5>
@@ -197,6 +201,7 @@ function ServcideBrandSection()
                             <Image src={Arrow}
                             width={36}
                             height={36}
+                            alt="img"
                             />
     
                             <h5 className="deliverables-box-content common-h6-heading text-custom-almostblack">LinkedIn profile cover </h5>

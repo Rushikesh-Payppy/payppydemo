@@ -211,6 +211,7 @@ function VisitPayppyButton()
             <Image src={Arrow}
             width={14}
             height={14}
+            alt="img"
             className='visit-payppy-section-btn-arrow'
             />
         </Link>

@@ -21,12 +21,15 @@ function AboutUsPageSection() {
         <div className={" "+plus_jakarta_sans.className}>
         {/* section 1 */}
             <section className="about-us-page-section-one ">
-                <Image 
+                <div className='about-us-page-section-one-img'>
+
+                </div>
+                {/* <Image 
                 src={TeamImg}
                 width={2400}
                 height={426}
                 alt='img'
-                className="about-us-page-section-one-img"/>
+                className="about-us-page-section-one-img"/> */}
 
                 <div className="py-20 px-5 sm:py-28 sm:px-10 lg:px-20 ">
                     <div className="about-us-section-one-heading-para-container flex flex-col justify-center items-center gap-10 m-auto">

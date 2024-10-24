@@ -106,13 +106,13 @@ function CaseStudySection({apiData})
                     </div>
             </section>  
 
-            <div className="casestudy-exploremore-section bg-custom-almostwhite flex flex-col justify-center items-center gap-10 pt-24 pb-10 px-5  lg:pt-40 sm:px-24 lg:pb-20">
+            <div className="casestudy-exploremore-section bg-custom-almostwhite flex flex-col justify-center items-center gap-10 pt-24 pb-10 px-5  lg:pt-40 sm:px-18 lg:pb-20">
                 <h2 className="common-h2-heading text-custom-almostblack " data-aos="fade-up">Explore more</h2>
-                <div className="flex justify-center items-center gap-10">
-                    <Link href={`/our-masterpieces?catagory=Branding`} className='casestudy-blue-link common-h5-heading text-custom-primary' data-aos="fade-up">Branding</Link>
-                    <Link href={`/our-masterpieces?catagory=Website`} className='casestudy-blue-link common-h5-heading text-custom-primary' data-aos="fade-up">Website</Link>
-                    <Link href={`/our-masterpieces?catagory=Pitch decks`} className='casestudy-blue-link common-h5-heading text-custom-primary' data-aos="fade-up">Pitch Decks</Link>
-                    <Link href={`/our-masterpieces?catagory=App`} className='casestudy-blue-link common-h5-heading text-custom-primary' data-aos="fade-up">App</Link>
+                <div className="flex justify-center flex-wrap items-center gap-10">
+                    <Link href={`/our-masterpieces?catagory=Branding`} className='casestudy-blue-link common-h5-heading text-custom-primary ' data-aos="fade-up">Branding</Link>
+                    <Link href={`/our-masterpieces?catagory=Website`} className='casestudy-blue-link common-h5-heading text-custom-primary ' data-aos="fade-up">Website</Link>
+                    <Link href={`/our-masterpieces?catagory=Pitch decks`} className='casestudy-blue-link common-h5-heading text-custom-primary ' data-aos="fade-up">Pitch Decks</Link>
+                    <Link href={`/our-masterpieces?catagory=App`} className='casestudy-blue-link common-h5-heading text-custom-primary ' data-aos="fade-up">App</Link>
                 </div>
             </div>
 

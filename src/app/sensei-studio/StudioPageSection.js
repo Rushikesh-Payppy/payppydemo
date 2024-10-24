@@ -285,9 +285,20 @@ function StudioPageSection() {
         {/* section 6 creative design  */}
         <section className={'creative-design-section '+plus_jakarta_sans.className}>
             <div className={"reative-designs-content-storytelling-box flex justify-start items-start sm:justify-center sm:items-center  pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12 "+plus_jakarta_sans.className}>
-                <div className="creative-design-section-inner-container flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start  gap-4 sm:gap-8">
+                <div className="creative-design-section-inner-container flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start  gap-4 sm:gap-12">
                     <h5 className="common-all-caps" data-aos="fade-up">Creative Designs, Content & Storytelling  </h5>
                     <h2 className='common-h2-heading creative-design-section-title text-custom-almostblack' data-aos="fade-up">Work that changed the world... ours and theirs </h2>
+                    <Link href='/our-masterpieces' className='flex flex-row our-work-lets-talk-btn get-in-touh-btn ' data-aos="fade-up">
+                        <span className='our-work-lets-talk-text get-in-touch-txt  grow text-center flex justify-center items-center common-all-caps '>See Our Work</span>
+                        <div className='get-in-touch-img-div relative'>
+                            <Image src={Arrow} 
+                            width={28}
+                            height={28}
+                            alt='img'
+                            className='get-in-touch-arrow-img absolute top-6 right-6'
+                            />
+                        </div>
+                    </Link>
                 </div>
             </div>
 
@@ -311,7 +322,7 @@ function StudioPageSection() {
                     <div className="accordion-container  cursor-pointer py-6" data-aos="fade-up">
                        
                         <div className="accordion-question flex justify-between items-baseline mb-2.5" onClick={()=>{handleAccordion(0)}}>
-                            <h6 className="common-h6-heading text-custom-almostblack">Why should we choose you?</h6>
+                            <h6 className="common-h6-heading text-custom-almostblack">Why should you choose us?</h6>
                             <FontAwesomeIcon icon={faAngleDown} style={{color: "#000000"}} className={accordionState==0?'accordion-arrow rotate-arrow':'accordion-arrow'}/>
                         </div>
                         
@@ -357,7 +368,7 @@ function StudioPageSection() {
                        <div className= {accordionState==3?"accordion-answer accordion-visible":"accordion-answer"} >
                            <p className="common-paragraph text-custom-almostblack">Glad you asked! Even though we are absolutely open to working with a diverse clientele, there’s a set of rules we like to give you, before we begin a project together.</p>
                                 <br />
-                                <ol className='list-decimal leading-8 px-5 common-paragraph'>
+                                <ol className='list-decimal leading-8 px-8 common-paragraph'>
                                     <li>We prefer a single point of contact/ stakeholder from your team. All updates, feedback, and iterations shall be communicated from and to this person.</li>
                                     <li>We work on a 50% advance funds model. As soon as we deliver the project plan, we shall send you an invoice for 50% payment to be done before we kickstart.</li>
                                     <li>There’s no refund policy once you’ve made the 50% payment. Don’t worry, nobody ever withdraws. However, before we begin, we make you believe why you made the right choice. There shall be plenty of calls and discovery sessions. </li>

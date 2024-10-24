@@ -123,12 +123,12 @@
    width: 100%;
    background: linear-gradient(to top right,#111111,#111111);
    z-index: -1;
-   transition:  .3s ease;
+   transition:  .3s ease-in-out;
    height: 100%;
 }
 .visit-payppy-section-btn-arrow{
     transform: translate(-100%,100%);
-    transition:  .3s ease;
+    transition:  .3s ease-in-out;
 }
 .visit-payppy-app-section-btn:hover::before{
     top: 0;
@@ -138,6 +138,7 @@
     padding: 10px 12px;
     color: #FFFFFF !important;
     width: 228px;
+    transition: .3s ease-in-out;
 }
 .visit-payppy-app-section-btn:hover .visit-payppy-section-btn-arrow{
     transform: translate(0,0);

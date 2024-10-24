@@ -36,6 +36,7 @@
                                                         //section 1
 .our-work-section-filter-btn-container{
     overflow-x: scroll;
+
     &::-webkit-scrollbar-thumb{
         background-color: rgba(128, 128, 128, 0.083);
         border-radius: 10px;
@@ -55,19 +56,30 @@
     border-bottom: 2px solid #000000;
 }
 
+.dynamic-casestudies-list-container{
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+.our-work-section-img-parent-grid{
+    max-width: 93.75rem;
+    margin: 0 auto;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
 //image grid boxes
 .our-work-section-img-grid{
-    border: 1px solid #DDDDDD;
-    border-left: none;
     width: 100%;
     overflow: hidden !important;
-    &:nth-child(2),&:nth-child(4){
-        border-right: none;
-    }
-    &:nth-child(3),&:nth-child(4){
-        border-top: none;
-    }
     cursor: pointer;
+}
+.our-work-section-img-grid-border-left{
+    border-left: 1px solid #DDDDDD;
+}
+.our-work-section-img-grid-border-bottom{
+    border-bottom: 1px solid #DDDDDD;
+}
+.our-work-section-img-grid-border-top{
+    border-top: 1px solid #DDDDDD;
 }
 .our-work-section-img-grid:hover .our-work-section-Arrow-img{
     top: 15px;
@@ -92,14 +104,13 @@
     height: 100%;
     z-index: 1;
     // background: #ab1f2dc2;
-    // background: #AB1F2D;
-    transition: 0.3s;
+    transition: 0.4s ease;
     opacity: 0;
 }
-.our-work-img-container:hover .for-overlay-effect{
+// .our-work-img-container:hover .for-overlay-effect
+.our-work-section-img-grid:hover .for-overlay-effect{
     // height:100%;
-    // background: #ab1f2da5;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 
@@ -117,13 +128,26 @@
     transition: 0.3s;
 }
 
-.our-work-img-container:hover .our-work-section-logo-img{
+// .our-work-img-container:hover .our-work-section-logo-img{
+.our-work-section-img-grid:hover .our-work-section-logo-img{
     // top: 50%;
     opacity: 1;
 }
 
 // for-tablet-view
 @media screen and (max-width:1024px) {
+    .our-work-section-img-parent-grid{
+        border: none;
+    }
+    .our-work-section-img-grid-border-left{
+        border-left: none;
+    }
+    .our-work-section-img-grid:last-child{
+        border-top: 1px solid #DDDDDD;
+    }
+    .our-work-section-img-grid:nth-last-child(3){
+        border-bottom: 1px solid #DDDDDD;
+    }
 }
 //for-mobile-view
 @media screen and (max-width:640px) {
@@ -132,7 +156,7 @@
         // height: 25.21px;
     // }
     .our-work-section-img-grid{
-        border-right: none;
+        // border-right: none;
         &:nth-child(2)
         {
             border-top: none;

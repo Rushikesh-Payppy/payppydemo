@@ -471,6 +471,9 @@
     transition:  0.3s !important;
 }
 .accordion-answer.accordion-visible{
-    max-height: 1500px ;
+    max-height: 1700px ;
     overflow: auto ;
+    &::-webkit-scrollbar{
+        opacity: 0.2;
+    }
 }

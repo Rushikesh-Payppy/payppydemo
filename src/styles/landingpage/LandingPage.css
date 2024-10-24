@@ -119,16 +119,16 @@
   background: -webkit-gradient(linear, left bottom, right top, from(#111111), to(#111111));
   background: linear-gradient(to top right, #111111, #111111);
   z-index: -1;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   height: 100%;
 }
 
 .visit-payppy-section-btn-arrow {
   -webkit-transform: translate(-100%, 100%);
           transform: translate(-100%, 100%);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .visit-payppy-app-section-btn:hover::before {
@@ -140,6 +140,8 @@
   padding: 10px 12px;
   color: #FFFFFF !important;
   width: 228px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .visit-payppy-app-section-btn:hover .visit-payppy-section-btn-arrow {

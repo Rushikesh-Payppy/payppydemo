@@ -6,7 +6,7 @@ import Header from '../home/Header';
 import Merlot from '@/Images/studiopage/Merlot.jpg';
 import Logo from '@/Images/ourworkpage/our-work-page-logo.svg';
 import { Plus_Jakarta_Sans } from 'next/font/google';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 //arrow image from studio page 
@@ -19,6 +19,7 @@ import OurWorkClientInfoCompo from './OurWorkClientInfoCompo';
 import axios from 'axios';
 import TextRevealComponent from '../TextRevealComponent';
 import { CraetiveDesignBlogs } from '../sensei-studio/StudioPageSection';
+import { useSearchParams } from 'next/navigation';
 
 const plus_jakarta_sans=Plus_Jakarta_Sans({
     subsets:['latin'],
@@ -33,6 +34,29 @@ function OurWorkSection({apidata})
     let[apiallData,setAllApiData]=useState(apidata);
     let[apiTempData,setApiTempData]=useState(apidata);
 
+    let parameters=useSearchParams();
+
+    let btnContainer=useRef();
+
+    //if user click catagories on signle case study page then according to that catagory client data is showed usually visible on filter btn click
+    let btnIndexObj={
+        'Branding':1,
+        'Pitch decks':2,
+        'Website':3,
+        'App':4,
+    }
+
+    //if catagory of signle case study page matches then this useEffect will calll the filter function
+    useEffect(()=>{
+        let catagory=parameters.get('catagory');
+        if(catagory in btnIndexObj&&btnContainer.current)
+            {
+                handleFilter(btnIndexObj[catagory],catagory);
+                btnContainer.current.scrollIntoView({behavior:'smooth'});
+            }
+    },[])
+
+    //to filter the client case study info based on btn clicks
     function handleFilter(index,value)
     {
         setBtnActiveIndex(index);
@@ -60,19 +84,19 @@ function OurWorkSection({apidata})
                 <section className="our-work-section-one">
 
                     {/* filter buttons */}
-                    {/* <div className="flex justify-center">
-                    <div className="flex items-center our-work-section-filter-btn-container">
+                    <div className="flex justify-center">
+                    <div className="flex items-center our-work-section-filter-btn-container" ref={btnContainer}>
                         <button className={btnActiveIndex==0?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(0,'ALL')}} >ALL</button>
                         <button className={btnActiveIndex==1?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(1,'Branding')}} >Branding</button>
                         <button className={btnActiveIndex==2?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(2,'pitch deck')}} >pitch decks</button>
                         <button className={btnActiveIndex==3?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(3,'website')}} >websites</button>
                         <button className={btnActiveIndex==4?"our-work-section-filter-btn common-all-caps text-custom-darkgrey py-6 px-5 md:py-7 sm:px-8 clicked-filter":"our-work-section-filter-btn common-all-caps text-custom-mediumgrey py-6 px-5 md:py-7 sm:px-8"} onClick={()=>{handleFilter(4,'App')}} >Apps</button>
                     </div>
-                </div> */}
+                </div>
 
-                    {/* {apiTempData?<OurWorkClientInfoCompo apidata={apiTempData}/>:null} */}
+                    {apiTempData?<OurWorkClientInfoCompo apidata={apiTempData}/>:null}
 
-                    <CraetiveDesignBlogs />
+                    {/* <CraetiveDesignBlogs /> */}
                 </section>
 
                 <ReadyToLevelUpTitleComponent heading={'Ready to level up your online presence like a pro?'} btntext={"Let's talk!"}/>

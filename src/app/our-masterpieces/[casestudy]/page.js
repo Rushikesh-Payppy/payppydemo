@@ -8,13 +8,14 @@ import Loader from "@/app/LoaderComponent";
 let apiFetched=false;
 async function getCaseStudyInfo(id)
 {
-    let baseURL='http://strapi.payppy.co';
+    let baseURL='https://strapi.payppy.co/';
     try {
         console.log('api is calling')
-        let APIResponse= await axios.get('http://strapi.payppy.co/api/case-studies/eje3oader9thnlm56ca42wg9?populate=*');
+
+        let APIResponse= await axios.get(`${baseURL}/api/case-studies/${id}?populate=*`);
 
         console.log('data is fetched :',APIResponse.data);
-        apiFetched=true;
+
         return APIResponse.data.data;               //fetched data will return 
     } catch (error) {
         console.error(error);   
@@ -24,7 +25,7 @@ async function getCaseStudyInfo(id)
 async function Page({params})
 {
     console.log(params);
-    let data=await getCaseStudyInfo(params.casestudypage);          //fetching the data from the server
+    let data=await getCaseStudyInfo(params.casestudy);          //fetching the data from the server
 
     return(
         <>

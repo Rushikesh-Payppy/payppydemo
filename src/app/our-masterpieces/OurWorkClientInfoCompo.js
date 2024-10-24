@@ -24,14 +24,14 @@ function OurWorkClientInfoCompo({apidata})
         router.push('/our-masterpieces/'+id);
     }
 
+    const baseURL = 'https://strapi.payppy.co'; //my current server
     // Helper function to get the best available image URL
     function getValidImageUrl(imageObj, alternateImage) {
-        const baseURL = 'http://strapi.payppy.co'; //my current server
         
-        const imageUrl = imageObj.formats.large?.url ||     //if the url is present then it i will store in imageUrl variable else it store alternate image
-                         imageObj.formats.medium?.url || 
-                         imageObj.formats.small?.url || 
-                         imageObj.formats.thumbnail.url;
+        const imageUrl = imageObj.formats?.large?.url ||     //if the url is present then it i will store in imageUrl variable else it store alternate image
+                         imageObj.formats?.medium?.url || 
+                         imageObj.formats?.small?.url || 
+                         imageObj.formats?.thumbnail.url;
         
         // Check if the URL is relative which mean comes from api, and i will add baseURL if needed
         return `${baseURL}${imageUrl}` ;
@@ -39,52 +39,59 @@ function OurWorkClientInfoCompo({apidata})
 
     return(
         <>
-            <div className={" "+plus_jakarta_sans.className}>
+            <div className={"dynamic-casestudies-list-container "+plus_jakarta_sans.className}>
             <div className="our-work-section-img-parent-grid grid grid-cols-1 lg:grid-cols-2" >
 
-                {apidata.length>0&&apidata.map((element)=>{
-                    return   <div key={element.documentId} className="py-8 px-5 sm:py-10 sm:px-10 md:py-14 md:px-14 our-work-section-img-grid  flex flex-col gap-6 relative" onClick={()=>{handleNavigation(element.documentId)}}>
-                                <div>
-                                    <h5 className="common-h5-heading text-custom-almostblack" data-aos="fade-up">{element.clientName}</h5>
-                                    <div className="flex gap-3 mt-2.5">
-                                        {element.casestudyCatagory.split(',').map((catagory,index)=>{
-                                             
-                                           return <>
-                                                <div key={catagory+134213} className="common-all-caps text-custom-mediumgrey" data-aos="fade-up">{catagory}</div>
-                                                <div key={index+178} className="for-between-content-border" data-aos="fade-up"></div>
-                                            </>
-                                        })}
+                {apidata.length>0&&apidata.map((element,index)=>{
+                    return   <>
+                        <div key={element.documentId} className={`py-8 px-5 sm:py-10 sm:px-10 md:py-14 md:px-14 our-work-section-img-grid  flex flex-col gap-6 relative ${index%2==1?' our-work-section-img-grid-border-left ':''} ${index+1<=apidata.length-2?' our-work-section-img-grid-border-bottom':''}`} onClick={()=>{handleNavigation(element.documentId)}}>
+                                    <div>
+                                        <h5 className="common-h5-heading text-custom-almostblack" data-aos="fade-up">{element.clientName}</h5>
+                                        <div className="flex gap-3 mt-2.5">
+                                            {element.casestudyCatagory.split(',').map((catagory,index)=>{
+                                                
+                                            return <>
+                                                    <div key={catagory+134213} className="common-all-caps text-custom-mediumgrey" data-aos="fade-up">{catagory}</div>
+                                                    <div key={index+178} className="for-between-content-border" data-aos="fade-up"></div>
+                                                </>
+                                            })}
+                                        </div>
                                     </div>
-                                </div>
 
-                                <Image
-                                    src={Arrow}
-                                    width={40}
-                                    height={40}
-                                    alt='img'
-                                    className='our-work-section-Arrow-img absolute right-7 top-7 duration-300'/>
-
-
-                                <div className="our-work-img-container relative">
                                     <Image
-                                    src={getValidImageUrl(element.caseStudyFeaturedImage)}
-                                    width={2400}
-                                    height={400}
-                                    alt='img'
-                                    className='our-work-section-img' data-aos="fade-up"/>
+                                        src={Arrow}
+                                        width={40}
+                                        height={40}
+                                        alt='img'
+                                        className='our-work-section-Arrow-img absolute right-7 top-7 duration-300'/>
 
-                                    <Image 
-                                    src={getValidImageUrl(element.clientLogo)}
-                                    // width={245}
-                                    width={element.clientLogo.formats.thumbnail.width}
-                                    height={element.clientLogo.formats.thumbnail.height}
-                                    // height={60}
-                                    alt='img'
-                                    className='our-work-section-logo-img absolute'/>
 
-                                    <div className="for-overlay-effect absolute top-0 left-0" style={{background:element.brandColor}} ></div>
-                                </div>
-                            </div>
+                                    <div className="our-work-img-container relative">
+                                        <Image
+                                        src={getValidImageUrl(element.caseStudyFeaturedImage)}
+                                        width={2400}
+                                        height={400}
+                                        alt='img'
+                                        className='our-work-section-img' data-aos="fade-up"/>
+
+                                        <Image 
+                                        src={baseURL+element.clientLogo.url}
+                                        // width={245}
+                                        width={element.clientLogo.width}
+                                        height={element.clientLogo.height}
+                                        // height={60}
+                                        alt='img'
+                                        className='our-work-section-logo-img absolute'/>
+
+                                        <div className="for-overlay-effect absolute top-0 left-0" style={{background:element.brandColor}} ></div>
+                                    </div>
+                        </div>
+                        {apidata.length%2==1&&index==apidata.length-1?
+                        <div key={element.documentId+2} className={`py-8 px-5 sm:py-10 sm:px-10 md:py-14 md:px-14 our-work-section-img-grid  flex flex-col gap-6 relative our-work-section-img-grid-border-left hidden lg:block ${apidata.length>1?' our-work-section-img-grid-border-top':''}`}>
+
+                        </div>:null
+                        }
+                    </>
                 })}
                    
                    

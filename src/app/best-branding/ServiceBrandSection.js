@@ -221,7 +221,7 @@ function ServcideBrandSection()
         {/* section 5-bottom link box */}
         <section className='pl-5 pr-5 py-14  md:px-24  flex flex-col sm:flex-row justify-center md:justify-between items-center flex-wrap gap-3 service-brand-section-5 '>
             <h4 className="are-you-looking-for-title common-h5-heading text-custom-mediumgrey" data-aos="fade-up">Are you looking for</h4>
-            <Link href='/websites-that-sell' className='service-brand-bottom-blue-link' data-aos="fade-up">A kick-ass website</Link>
+            <Link href='/websites-that-sell' className='service-brand-bottom-blue-link common-h5-heading text-custom-primary' data-aos="fade-up">A kick-ass website</Link>
 
         </section>
 

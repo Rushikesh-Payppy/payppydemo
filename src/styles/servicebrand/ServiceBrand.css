@@ -167,13 +167,20 @@
   border-top: 1px solid #DDDDDD;
 }
 
-.service-brand-bottom-blue-link {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 2.75rem;
-  letter-spacing: -0.5px;
-  text-align: left;
-  color: #0057FF;
+.service-brand-bottom-blue-link::after {
+  content: "";
+  position: absolute;
+  background-color: #0057FF;
+  height: 3px;
+  width: 0%;
+  left: 0%;
+  bottom: -0.4rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-brand-bottom-blue-link:hover:after {
+  width: 100%;
 }
 
 @media screen and (max-width: 640px) {

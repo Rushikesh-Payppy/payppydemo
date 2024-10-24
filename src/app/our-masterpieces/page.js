@@ -6,10 +6,10 @@ import OurWorkSection from "./OurWorkSection";
 
 async function fetchDataofClients()
 {
-    let baseURL='http://strapi.payppy.co/';
+    let baseURL='https://strapi.payppy.co/';
 
     try {
-        let APIResponse= await axios.get(`${baseURL}api/case-studies?populate=*`);
+        let APIResponse= await axios.get(`${baseURL}/api/case-studies?populate=*`);
         let data=APIResponse.data.data;
         return data;
     } catch (error) {
@@ -19,8 +19,8 @@ async function fetchDataofClients()
 
 async function Page()
 {
-    // let apidata=await fetchDataofClients();
-    let apidata={};
+    let apidata=await fetchDataofClients();
+
 
     return(
          <>

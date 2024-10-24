@@ -162,7 +162,7 @@ function WebsitePageSection()
         {/* section 5 -bottom link box */}
         <section className={'pl-5 pr-5 py-14  md:px-24  flex flex-col sm:flex-row justify-center lg:justify-between items-center flex-wrap gap-3 service-brand-section-5 '+plus_jakarta_sans.className}>
             <h4 className="are-you-looking-for-title common-h5-heading text-custom-mediumgrey" data-aos="fade-up">Are you looking for</h4>
-            <Link href='/apps-that-make-sense' className='service-brand-bottom-blue-link ' data-aos="fade-up">Digital Product/ App design</Link>
+            <Link href='/apps-that-make-sense' className='service-brand-bottom-blue-link common-h5-heading text-custom-primary' data-aos="fade-up">Digital Product/ App design</Link>
 
         </section>
 

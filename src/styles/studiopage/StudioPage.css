@@ -462,6 +462,9 @@
 }
 
 .accordion-answer.accordion-visible {
-  max-height: 1500px;
+  max-height: 1700px;
   overflow: auto;
+}
+.accordion-answer.accordion-visible::-webkit-scrollbar {
+  opacity: 0.2;
 }/*# sourceMappingURL=StudioPage.css.map */

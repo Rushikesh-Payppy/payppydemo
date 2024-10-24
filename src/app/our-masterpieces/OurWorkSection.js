@@ -54,7 +54,7 @@ function OurWorkSection({apidata})
                 handleFilter(btnIndexObj[catagory],catagory);
                 btnContainer.current.scrollIntoView({behavior:'smooth'});
             }
-    },[])
+    },[parameters])
 
     //to filter the client case study info based on btn clicks
     function handleFilter(index,value)

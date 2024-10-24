@@ -8,7 +8,7 @@ import Loader from "@/app/LoaderComponent";
 let apiFetched=false;
 async function getCaseStudyInfo(id)
 {
-    let baseURL='https://strapi.payppy.co/';
+    let baseURL='https://strapi.payppy.co';
     try {
         console.log('api is calling')
 

@@ -2,11 +2,11 @@ import axios from "axios";
 import Footer from "../home/Footer";
 import OurWorkPageHeader from "./OurWorkPageHeader";
 import OurWorkSection from "./OurWorkSection";
-
+import { Suspense } from "react";
 
 async function fetchDataofClients()
 {
-    let baseURL='https://strapi.payppy.co/';
+    let baseURL='https://strapi.payppy.co';
 
     try {
         let APIResponse= await axios.get(`${baseURL}/api/case-studies?populate=*`);
@@ -25,7 +25,9 @@ async function Page()
     return(
          <>
          <OurWorkPageHeader/>
-         <OurWorkSection apidata={apidata}/>
+         <Suspense>
+             <OurWorkSection apidata={apidata}/>
+         </Suspense>
          <Footer/>
 
          </>

@@ -45,10 +45,10 @@ function CaseStudySection({apiData})
                 <div className=" casestudy-section-content-width flex flex-col gap-6 sm:gap-8">
                     <h4 className={"italic-text text-custom-almostblack "+merriweather.className} data-aos="fade-up">{apiData.testimonialText}</h4>
                     <div className="flex gap-4 items-center">
-                        <Image src={getValidImageUrl(apiData.testimonialClientImage)} alt="img" width={80} height={80} className='usecase-section-dp-img' data-aos="fade-up"/>
+                        <Image src={getValidImageUrl(apiData.testimonialClientImage)} alt="img" width={80} height={80} className='usecase-section-dp-img' data-aos="fade-up" quality={100}/>
 
                         <div className="">
-                            <p className="text-custom-almostblack font-bold common-paragraph" data-aos="fade-up">{apiData.testimonialClientName}</p>
+                            <p className="text-custom-almostblack font-weight-bold common-paragraph" data-aos="fade-up">{apiData.testimonialClientName}</p>
                             <p className="common-paragraph" data-aos="fade-up">{apiData.testimonialClientDesignation}</p>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ function CaseStudySection({apiData})
                     })} </p>
                 </div>
 
-                <Image src={getValidImageUrl(apiData.overviewImage)} width={1076} height={690} alt="img"  className='casestudies-section-image' data-aos="fade-up"/>
+                <Image src={getValidImageUrl(apiData.overviewImage)} width={1076} height={690} alt="img"  className='casestudies-section-image' data-aos="fade-up" quality={100}/>
 
                 <div className=" casestudy-section-content-width flex flex-col gap-6 sm:gap-8 justify-center items-start">
                     <h4 className="common-h4-heading text-custom-almostblack " data-aos="fade-up">Our Process</h4>
@@ -80,7 +80,7 @@ function CaseStudySection({apiData})
                     })}</p>
                 </div>
 
-                <Image src={getValidImageUrl(apiData.ourProcessImage)} width={1076} height={690} alt="img" className='casestudies-section-image' data-aos="fade-up"/>
+                <Image src={getValidImageUrl(apiData.ourProcessImage)} width={1076} height={690} alt="img" className='casestudies-section-image' data-aos="fade-up" quality={100}/>
 
                 <div className=" casestudy-section-content-width flex flex-col gap-6 sm:gap-8 ">
                     <h4 className="common-h4-heading text-custom-almostblack " data-aos="fade-up">Our Result</h4>
@@ -106,7 +106,7 @@ function CaseStudySection({apiData})
                     </div>
             </section>  
 
-            <div className="casestudy-exploremore-section bg-custom-almostwhite flex flex-col justify-center items-center gap-10 pt-24 pb-10 px-5  lg:pt-40 sm:px-18 lg:pb-20">
+            <div className="casestudy-exploremore-section bg-custom-almostwhite flex flex-col justify-center items-center gap-10 py-24 pb-10 px-5  lg:py-40 sm:px-18 ">
                 <h2 className="common-h2-heading text-custom-almostblack " data-aos="fade-up">Explore more</h2>
                 <div className="flex justify-center flex-wrap items-center gap-10">
                     <Link href={`/our-masterpieces?catagory=Branding`} className='casestudy-blue-link common-h5-heading text-custom-primary ' data-aos="fade-up">Branding</Link>

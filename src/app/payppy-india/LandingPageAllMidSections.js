@@ -43,6 +43,7 @@ function LandingPageAllMidSections() {
                 alt="img"
                 data-aos="fade-up"
                 className='fav-brands-img'
+                quality={100}
                 />
             </main>
             <main className='landing-section-one-info flex flex-col items-center items-center lg:items-start gap-3 md:gap-6'>
@@ -53,6 +54,7 @@ function LandingPageAllMidSections() {
                     alt="img"
                     data-aos="fade-up"
                     className='fav-brand-icon'
+                    quality={100}
                     />
                     <h5 className="landing-page-section-heading common-h5-heading text-cutom-almostblack text-center lg:text-left " data-aos="fade-up">Follow your favourite brands</h5>
                     <p className="landing-page-section-one-para common-paragraph text-custom-darkgrey text-center lg:text-left " data-aos="fade-up">Choose what you see, with follow option on every brand.</p>
@@ -70,6 +72,7 @@ function LandingPageAllMidSections() {
                     alt="img"
                     data-aos="fade-up"
                     className='earn-reward-icon'
+                    quality={100}
                 />
                 <h5 className="landing-page-section-heading  common-h5-heading text-cutom-almostblack text-center lg:text-left" data-aos="fade-up">Earn sensible rewards</h5>
                 <p className="landing-page-section-two-para common-paragraph text-custom-darkgrey text-center lg:text-left" data-aos="fade-up">Get equivalent Pepcoins as your checkout value to redeem for your next purchase.</p>
@@ -82,7 +85,7 @@ function LandingPageAllMidSections() {
                 alt="img"
                 data-aos="fade-up"
                 className='earn-reward-img'
-
+                quality={100}
                 />
             </main>
         </section>
@@ -96,7 +99,7 @@ function LandingPageAllMidSections() {
                 alt="img"
                 data-aos="fade-up"
                 className='earn-reward-img'
-
+                quality={100}
                 />
             </main>
             <main className={'landing-section-one-info flex flex-col gap-3 md:gap-6 items-center lg:items-start '+plus_jakarta_sans.className}>
@@ -107,7 +110,7 @@ function LandingPageAllMidSections() {
                     alt="img"
                     data-aos="fade-up"
                     className='earn-reward-icon'
-
+                    quality={100}
                     />
                     <h5 className="landing-page-section-heading  common-h5-heading text-cutom-almostblack text-center lg:text-left" data-aos="fade-up">Refer a friend</h5>
                     <p className="landing-page-section-three-para common-paragraph text-custom-darkgrey text-center lg:text-left" data-aos="fade-up">Invite your friends on Payppy.app to  get 2500 Pepcoins when they make their first purchase.</p>
@@ -125,7 +128,9 @@ function LandingPageAllMidSections() {
                     height={80}
                     alt="img"
                     data-aos="fade-up"
-                    className='bookmark-icon-img'/>
+                    className='bookmark-icon-img'
+                    quality={100}
+                    />
                     <div>
                         <h3 className="bookmark-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Bookmark, don't download</h3>
                         <p className="bookmark-para common-paragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">We've made lives easier for you and your phone! Simply tap install or the "add to home screen" button on your browser.</p>
@@ -137,7 +142,9 @@ function LandingPageAllMidSections() {
                     height={80}
                     alt="img"
                     data-aos="fade-up"
-                    className='delivery-icon-img'/>
+                    className='delivery-icon-img'
+                    quality={100}
+                    />
                     <div>
                         <h3 className="delivery-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Enjoy deliveries, everywhere</h3>
                         <p className="delivery-para  common-paragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">We ship across India within 3-6 days so you can get your hands on the Payppy cool stuff at the earliest.</p>
@@ -149,7 +156,9 @@ function LandingPageAllMidSections() {
                     height={80}
                     alt="img"
                     data-aos="fade-up"
-                    className='sustainability-icon-img'/>
+                    className='sustainability-icon-img'
+                    quality={100}
+                    />
                     <div>
                         <h3 className="sustainability-title common-h5-heading text-custom-almostblack mb-2.5 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">Choose sustainability</h3>
                         <p className="sustainability-para  common-paragraph text-custom-darkgrey text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">With exclusive, one-of-a-kind packaging, we make sure you reuse more packets unharm Earth a lil.</p>
@@ -172,14 +181,18 @@ function LandingPageAllMidSections() {
                                 width={20}
                                 height={20}
                                 alt="img"
-                                className='sustainability-icon-img'/>
+                                className='sustainability-icon-img'
+                                quality={100}
+                            />
                         </Link>
                         <Link href='https://x.com/payppy_app?s=21' target='_blank' className='landingpage-insta-twitter-links flex justify-center items-center w-12 h-12'  data-aos="fade-up">
                             <Image src={XCircle}
                                 width={20}
                                 height={20}
                                 alt="img"
-                                className='sustainability-icon-img'/>
+                                className='sustainability-icon-img'
+                                quality={100}
+                                />
                         </Link>
                     </div>
                 </div>
@@ -189,7 +202,9 @@ function LandingPageAllMidSections() {
                 width={400}
                 height={608.3}
                 alt="img"
-                className='insta-img'/>
+                className='insta-img'
+                quality={100}
+                />
             </main>
 
         </section>

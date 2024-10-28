@@ -63,14 +63,15 @@
    width: 50%;
 }
 .get-in-touch-inner-container{
-    padding: 100px 80px 100px 80px !important;              //padding was not working by tailwind css so need to write raw css
+    padding: 100px 80px 30px 80px !important;              //padding was not working by tailwind css so need to write raw css
 }
 .welcome-to-hottest-design-title,.studio-section-one-para{
     max-width: 35rem;
 }
 .get-in-touh-btn{
     background: #0057FF;
-    width: 100%;
+    // width: 100%;
+    width: 268px;
     height: 80px;
     transition: background 0.3s;
     &:hover{
@@ -99,6 +100,11 @@
 .get-in-touh-btn:hover .get-in-touch-arrow-img{
     top: 15px;
     right: 15px;
+}
+@media screen and (max-width:1366px) {
+    .senseistudio-page-section-img{
+        background-attachment:scroll;
+    }
 }
 @media screen and (max-width:1023px) {
     .strategic-product-design-subheading-container ,.get-in-touch-container{

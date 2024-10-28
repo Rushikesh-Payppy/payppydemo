@@ -10,49 +10,50 @@ import { Plus_Jakarta_Sans } from 'next/font/google';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import TextRevealComponent from '../TextRevealComponent';
+import Link from 'next/link';
 
-const plus_jakarta_sans=Plus_Jakarta_Sans({
-    subsets:['latin'],
-    display:'swap'
+const plus_jakarta_sans = Plus_Jakarta_Sans({
+    subsets: ['latin'],
+    display: 'swap'
 })
-function OurWorkClientInfoCompo({apidata})
-{
-    let router=useRouter();
+function OurWorkClientInfoCompo({ apidata }) {
+    let router = useRouter();
 
-    function handleNavigation(id)
-    {
-        router.push('/our-masterpieces/'+id);
+    function handleNavigation(id) {
+            router.push('/our-masterpieces/' + id);
     }
 
     const baseURL = 'https://strapi.payppy.co'; //my current server
     // Helper function to get the best available image URL
     function getValidImageUrl(imageObj, alternateImage) {
-        
+
         const imageUrl = imageObj.formats?.large?.url ||     //if the url is present then it i will store in imageUrl variable else it store alternate image
-                         imageObj.formats?.medium?.url || 
-                         imageObj.formats?.small?.url || 
-                         imageObj.formats?.thumbnail.url;
-        
+            imageObj.formats?.medium?.url ||
+            imageObj.formats?.small?.url ||
+            imageObj.formats?.thumbnail.url;
+
         // Check if the URL is relative which mean comes from api, and i will add baseURL if needed
-        return `${baseURL}${imageUrl}` ;
-      }
+        return `${baseURL}${imageUrl}`;
+    }
 
-    return(
+    return (
         <>
-            <div className={"dynamic-casestudies-list-container "+plus_jakarta_sans.className}>
-            <div className="our-work-section-img-parent-grid grid grid-cols-1 lg:grid-cols-2" >
+            <div className={"dynamic-casestudies-list-container " + plus_jakarta_sans.className}>
+                <div className="our-work-section-img-parent-grid grid grid-cols-1 lg:grid-cols-2" >
 
-                {apidata.length>0&&apidata.map((element,index)=>{
-                    return   <>
-                        <div key={element.documentId} className={`py-8 px-5 sm:py-10 sm:px-10 md:py-14 md:px-14 our-work-section-img-grid  flex flex-col gap-6 relative ${index%2==1?' our-work-section-img-grid-border-left ':''} ${index+1<=apidata.length-2?' our-work-section-img-grid-border-bottom':''}`} onClick={()=>{handleNavigation(element.documentId)}}>
+                    {apidata.length > 0 && apidata.map((element, index) => {
+                        return <>
+
+                                <div key={element.documentId} className={`py-8 px-5 sm:py-10 sm:px-10 md:py-14 md:px-14 our-work-section-img-grid  flex flex-col gap-6 relative ${index % 2 == 1 ? ' our-work-section-img-grid-border-left ' : ''} ${index + 1 <= apidata.length - 2 ? ' our-work-section-img-grid-border-bottom' : ''}`} onClick={()=>{handleNavigation(element.documentId)}} >
+
                                     <div>
                                         <h5 className="common-h5-heading text-custom-almostblack" data-aos="fade-up">{element.clientName}</h5>
                                         <div className="flex gap-3 mt-2.5">
-                                            {element.casestudyCatagory.split(',').map((catagory,index)=>{
-                                                
-                                            return <>
-                                                    <div key={catagory+134213} className="common-all-caps text-custom-mediumgrey" data-aos="fade-up">{catagory}</div>
-                                                    <div key={index+178} className="for-between-content-border" data-aos="fade-up"></div>
+                                            {element.casestudyCatagory.split(',').map((catagory, index) => {
+
+                                                return <>
+                                                    <div key={catagory + 134213} className="common-all-caps text-custom-mediumgrey" data-aos="fade-up">{catagory}</div>
+                                                    <div key={index + 178} className="for-between-content-border" data-aos="fade-up"></div>
                                                 </>
                                             })}
                                         </div>
@@ -63,38 +64,46 @@ function OurWorkClientInfoCompo({apidata})
                                         width={40}
                                         height={40}
                                         alt='img'
-                                        className='our-work-section-Arrow-img absolute right-7 top-7 duration-300'/>
+                                        className='our-work-section-Arrow-img absolute right-7 top-7 duration-300'
+                                        quality={100}
+                                    />
 
 
                                     <div className="our-work-img-container relative">
                                         <Image
-                                        src={getValidImageUrl(element.caseStudyFeaturedImage)}
-                                        width={2400}
-                                        height={400}
-                                        alt='img'
-                                        className='our-work-section-img' data-aos="fade-up"/>
+                                            src={getValidImageUrl(element.caseStudyFeaturedImage)}
+                                            width={2400}
+                                            height={400}
+                                            alt='img'
+                                            className='our-work-section-img' data-aos="fade-up"
+                                            quality={100}
+                                        />
 
-                                        <Image 
-                                        src={baseURL+element.clientLogo.url}
-                                        // width={245}
-                                        width={element.clientLogo.width}
-                                        height={element.clientLogo.height}
-                                        // height={60}
-                                        alt='img'
-                                        className='our-work-section-logo-img absolute'/>
+                                        <Image
+                                            src={baseURL + element.clientLogo.url}
+                                            // width={245}
+                                            width={element.clientLogo.width}
+                                            height={element.clientLogo.height}
+                                            // height={60}
+                                            alt='img'
+                                            className='our-work-section-logo-img absolute'
+                                            quality={100}
+                                        />
 
-                                        <div className="for-overlay-effect absolute top-0 left-0" style={{background:element.brandColor}} ></div>
+                                        <div className="for-overlay-effect absolute top-0 left-0" style={{ background: element.brandColor }} ></div>
                                     </div>
-                        </div>
-                        {apidata.length%2==1&&index==apidata.length-1?
-                        <div key={element.documentId+2} className={`py-8 px-5 sm:py-10 sm:px-10 md:py-14 md:px-14 our-work-section-img-grid  flex flex-col gap-6 relative our-work-section-img-grid-border-left hidden lg:block ${apidata.length>1?' our-work-section-img-grid-border-top':''}`}>
+                                </div>
 
-                        </div>:null
-                        }
-                    </>
-                })}
-                   
-                   
+
+                            {apidata.length % 2 == 1 && index == apidata.length - 1 ?
+                                <div key={element.documentId + 2} className={`py-8 px-5 sm:py-10 sm:px-10 md:py-14 md:px-14 our-work-section-img-grid  flex flex-col gap-6 relative our-work-section-img-grid-border-left hidden lg:block ${apidata.length > 1 ? ' our-work-section-img-grid-border-top' : ''}`}>
+
+                                </div> : null
+                            }
+                        </>
+                    })}
+
+
                     {/* <div className="py-8 px-5 sm:py-10 sm:px-10 md:py-14 md:px-14 our-work-section-img-grid  flex flex-col gap-6 relative">
                         <div>
                             <h5 className="common-h5-heading text-custom-almostblack">Pragilis</h5>
@@ -129,9 +138,9 @@ function OurWorkClientInfoCompo({apidata})
                         </div>
                     </div>*/}
 
-                   
+
                 </div>
-                <TextRevealComponent/>
+                <TextRevealComponent />
             </div>
         </>
     )

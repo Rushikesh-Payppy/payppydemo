@@ -53,6 +53,11 @@
 }
 
 //for tablet view
+@media screen and (max-width:1366px) {
+    .servicebrand-section-branding-img{
+        background-attachment:scroll;
+    }
+}
 @media screen and (max-width:1024px){
     .service-brand-section-one-title,.service-brand-section-one-para{
         max-width: 35.125rem;

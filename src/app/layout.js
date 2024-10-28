@@ -5,6 +5,7 @@ import CookieConsentComponent from "./cookieConsentComponent/CookieConsent";
 // import 'bootstrap/dist/js/bootstrap.min.js';
 import '@/styles/Typography.css';
 import '@/styles/tailwindcss.css';
+import UseLenisScroll from "./LennisScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
 
@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         
           <CookieConsentComponent/>
           {/* <LenisScroll/> */}
+          <UseLenisScroll/>
         </body>
     </html>
   );

@@ -6,27 +6,27 @@
 }
 
 .our-work-header-title {
-  max-width: 736px;
+  max-width: 46rem;
 }
 
 .our-work-header-para {
-  max-width: 546px;
+  max-width: 34.125rem;
 }
 
 @media screen and (max-width: 1024px) {
   .our-work-header-title {
-    max-width: 664px;
+    max-width: 41.5rem;
   }
   .our-work-header-para {
-    max-width: 547.83px;
+    max-width: 34.239rem;
   }
 }
 @media screen and (max-width: 640px) {
   .our-work-header-title {
-    max-width: 304px;
+    max-width: 13.625rem;
   }
   .our-work-header-para {
-    max-width: 320px;
+    max-width: 20rem;
   }
 }
 .our-work-section-filter-btn-container {

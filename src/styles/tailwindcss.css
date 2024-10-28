@@ -680,6 +680,16 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mb-2\.5 {
   margin-bottom: 0.625rem;
 }
@@ -718,6 +728,18 @@ body {
 
 .-mb-3 {
   margin-bottom: -0.75rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .block {
@@ -991,6 +1013,16 @@ body {
   padding-bottom: 2rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1053,6 +1085,30 @@ body {
 
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
+.pb-80 {
+  padding-bottom: 20rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -1152,6 +1208,10 @@ body {
   }
 }
 
+.fade-in {
+  --tw-enter-opacity: 0;
+}
+
 .duration-300 {
   animation-duration: 300ms;
 }
@@ -1181,6 +1241,28 @@ body {
   .sm\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  .sm\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .sm\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .sm\:ml-10 {
+    margin-left: 2.5rem;
   }
 
   .sm\:block {
@@ -1328,6 +1410,10 @@ body {
 
   .sm\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
   }
 
   .sm\:text-left {
@@ -1483,6 +1569,15 @@ body {
     margin-right: 0px;
   }
 
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .lg\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1628,6 +1723,10 @@ body {
     padding-top: 6rem;
   }
 
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1660,5 +1759,9 @@ body {
 
   .xl\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .xl\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 }

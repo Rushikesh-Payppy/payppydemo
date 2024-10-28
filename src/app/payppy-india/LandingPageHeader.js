@@ -29,6 +29,7 @@ function LandingPageHeader() {
                         height={28}
                         alt="img"
                         className="btn-arrow-img"
+                        quality={100}
                         />
                     </div>
                 </button>
@@ -41,6 +42,7 @@ function LandingPageHeader() {
                 alt="img"
                 data-aos="fade-up"
                 className="landing-head-store-img"
+                quality={100}
                 />
                 <Image src={LandingHeadSmallStore}
                 width={240}
@@ -48,6 +50,7 @@ function LandingPageHeader() {
                 alt="img"
                 data-aos="fade-up"
                 className="landing-head-store-small-img"
+                quality={100}
                 />
             </div>
         </header>

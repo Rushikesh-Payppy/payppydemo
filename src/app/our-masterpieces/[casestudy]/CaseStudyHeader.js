@@ -105,6 +105,7 @@ function CaseStudyHeader({apiData})
                             alt='img'
                             data-aos="fade-up"
                             className='casestudy-header-second-div-img lg:absolute lg:left-0 lg:top-7 -mb-3'
+                            quality={100}
                             />
                     </div>
                 </main>

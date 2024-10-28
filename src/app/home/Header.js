@@ -5,6 +5,7 @@ import LOGO from '@/Images/payppyhomepage/navbarPayppyLogo.svg';
 import TogglerIcon from '@/Images/payppyhomepage/navbarTogglerIcon.svg';
 import "@/styles/payppyhomepage/Homepage2.0.css";
 import { useEffect } from "react";
+import '@/styles/Typography.css';
 
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import Copy from '@/Images/payppyhomepage/file-copy-line.png';
@@ -53,7 +54,7 @@ function Header(){
     else{
       document.body.classList.remove('body-scroll-none');   //if the navbar toggler icon is clicked again body will scroll
     }
-    
+
     return ()=>{
       document.body.classList.remove('body-scroll-none');   //when the component will unmount then this body scroll class will get removed
     }
@@ -105,7 +106,7 @@ function Header(){
                 <Turn toggled={togglerState} toggle={setToglerState} color="#FFFFFF"  easing="ease-in" size={24}/>
             </div>
         </nav>
-        <section className={`payppyhomepage-header-section absolute pt-16 sm:pt-10 pb-6 px-5 sm:px-20 flex flex-col justify-between gap-4 items-start lg:items-center ${togglerState?"payppy-header-with-height":""} ${senseiStudioState?'payppy-bg-custom-primary ':''}`}>
+        <section className={`payppyhomepage-header-section absolute pt-12 sm:pt-16 pb-24 lg:pt-10 xl:pb-6 px-5 sm:px-20 flex flex-col justify-between gap-8 items-start lg:items-center ${togglerState?"payppy-header-with-height":""} ${senseiStudioState?'payppy-bg-custom-primary ':''}`}>
             
             <main className='flex flex-col items-start lg:items-center gap-8 sm:gap-11 flex-wrap'>
 
@@ -135,7 +136,7 @@ function Header(){
               <Link href='/payppy-india' prefetch={true} className={`common-h3-heading  text-left lg:text-center payppy-header-links ${senseiStudioState?' text-opacity ':' text-custom-almostwhite '} `} onClick={()=>{toRefreshPage('/payppy-india')}}>Payppy.app</Link>
             </main>
 
-            <footer className="payppy-homepage-header-footer  pt-5 pb-5 lg:pb-0  flex flex-col gap-4 sm:flex-row justify-between items-start sm:items-center ">
+            <footer className="payppy-homepage-header-footer  pt-5 pb-8 lg:pb-0  flex flex-col gap-4 sm:flex-row justify-between items-start sm:items-center ">
               <div className='flex gap-1.5 relative'>
                 <p className="common-paragraph text-custom-ghostgrey">Contact us:</p>
                 <p className="common-paragraph text-custom-white font-bold">hello@payppy.co</p>

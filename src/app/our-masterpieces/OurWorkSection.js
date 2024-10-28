@@ -31,7 +31,7 @@ function OurWorkSection({apidata})
 
     let[btnActiveIndex,setBtnActiveIndex]=useState(0);
 
-    let[apiallData,setAllApiData]=useState(apidata);
+    let[apiallData,setAllApiData]=useState(apidata || []);
     let[apiTempData,setApiTempData]=useState(apidata);
 
     let parameters=useSearchParams();
@@ -52,7 +52,7 @@ function OurWorkSection({apidata})
         if(catagory in btnIndexObj&&btnContainer.current)
             {
                 handleFilter(btnIndexObj[catagory],catagory);
-                btnContainer.current.scrollIntoView({behavior:'smooth'});
+                btnContainer.current.scrollIntoView();
             }
     },[parameters])
 
@@ -65,7 +65,7 @@ function OurWorkSection({apidata})
             return;
         }
 
-        let filteredData=apiallData.filter((element)=>{
+        let filteredData=apiallData.length>0&&apiallData.filter((element)=>{
             //if any other filter is clicked based on that filter catagory i will filter that data but first need to convert 
             //both filter catagory and api caseStudyCatagory in lowercase 
             //example  catagory - Website && apiCaseStudyCatagory - WEBSITE

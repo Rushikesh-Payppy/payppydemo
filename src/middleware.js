@@ -25,3 +25,6 @@ export   {middleware};
 export let config={
     matcher:['/about/:path*','/student/:path*'],
 }
+
+
+

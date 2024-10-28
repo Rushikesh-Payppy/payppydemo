@@ -35,7 +35,7 @@ function Section() {
                     
                     <div className="payppy-app-content-container flex flex-col justify-center items-center gap-7 lg:gap-12 relative absolute">
                         <div className="payppy-store-img-container relative">
-                            <Image src={PayppyStore} width={300} height={368} alt="img" className="max-w-none relative for-center-content payppy-store-img-container"/>
+                            <Image src={PayppyStore} width={300} height={368} alt="img" className="max-w-none relative for-center-content payppy-store-img-container" quality={100}/>
                             {/* <div className="green-gradient-1 absolute "></div>
                             <div className="green-gradient-2 absolute "></div> */}
                             <div className="green-gradient absolute"></div>
@@ -58,7 +58,7 @@ function Section() {
                     
                     <div className="sensei-studio-main-outer-container flex flex-col justify-center items-center gap-7 lg:gap-12 relative absolute">
                         <div className="payppy-store-img-container relative">
-                            <Image src={SenseiStudio} width={300} height={368} alt="img" className="max-w-none relative for-center-content"/>
+                            <Image src={SenseiStudio} width={300} height={368} alt="img" className="max-w-none relative for-center-content" quality={100}/>
                             {/* <div className="blue-gradient-1 absolute "></div> */}
                             {/* <div className="blue-gradient-2 absolute "></div> */}
                             <div className="blue-gradient absolute"></div>
@@ -71,7 +71,7 @@ function Section() {
 
                     </div>
                     
-                    <Image src={Arrow} width={40} height={40} alt="img" className="homepage-top-arrow absolute top-6 sm:top-8 right-8 hidden sm:block"/>
+                    <Image src={Arrow} width={40} height={40} alt="img" className="homepage-top-arrow absolute top-6 sm:top-8 right-8 hidden sm:block" quality={100}/>
 
                </div>
 

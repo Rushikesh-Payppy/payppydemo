@@ -91,7 +91,7 @@ function StudioPageSection() {
                 alt="img"
                 className='design-branding-img'/>
             </div> */}
-            <div className="flex flex-col lg:flex-row justify-center strategic-product-design-and-get-in-touch-parent-container">
+            <div className="flex flex-col lg:flex-row justify-center strategic-product-design-and-get-in-touch-parent-container pb-20 lg:pb-0">
                 <div className='strategic-product-design-subheading-container flex items-center justify-start lg:justify-center'>
                     <h2 className='common-h2-heading studio-page-subheading text-custom-almostblack' data-aos="fade-up">Strategic product design and branding for global brands</h2>
                 </div>
@@ -101,7 +101,7 @@ function StudioPageSection() {
                         <p className="common-paragraph studio-section-one-para text-custom-darkgrey" data-aos="fade-up">We're the geeks behind mind-blowing Brand Identities and game-changing Experience designs for cutting-edge companies worldwide. </p>
                         <p className="common-paragraph studio-section-one-para text-custom-darkgrey"  data-aos="fade-up">Ready for the coolest vibes?  👊</p>
                     </div>
-                    <a href='mailto:hello@payppy.co'  className='flex flex-row get-in-touh-btn ' data-aos="fade-up">
+                    <a href='mailto:hello@payppy.co'  className='flex flex-row get-in-touh-btn mx-auto sm:mx-10 lg:mx-20' data-aos="fade-up">
                         <span className='get-in-touch-txt grow text-center flex justify-center items-center common-all-caps'>GET IN TOUCH</span>
                         <div className='get-in-touch-img-div relative'>
                             <Image src={Arrow} 
@@ -109,6 +109,7 @@ function StudioPageSection() {
                             height={28}
                             alt="img"
                             className='get-in-touch-arrow-img absolute top-6 right-6'
+                            quality={100}
                             />
                         </div>
                     </a>
@@ -126,6 +127,7 @@ function StudioPageSection() {
                 alt="img"
                 data-aos="fade-up"
                 className='our-client-pragilis-img'
+                quality={100}
                 />
 
                 <Image src={TriperiSmith}
@@ -134,6 +136,7 @@ function StudioPageSection() {
                 alt="img"
                 data-aos="fade-up"
                 className='our-client-tripersmith-img'
+                quality={100}
                 />
 
                 <Image src={Payglocal}
@@ -142,6 +145,7 @@ function StudioPageSection() {
                 alt="img"
                 data-aos="fade-up"
                 className='our-client-payglocal-img'
+                quality={100}
                 />
 
                 <Image src={Merloa}
@@ -150,6 +154,7 @@ function StudioPageSection() {
                 alt="img"
                 data-aos="fade-up"
                 className='our-client-merola-img'
+                quality={100}
                 />
             </div>
         </section>
@@ -189,6 +194,7 @@ function StudioPageSection() {
                 height={100}
                 data-aos="fade-up"
                 alt="img"
+                quality={100}
                 />
                 <h3 className="common-h5-heading text-custom-primary brand-title " data-aos="fade-up">Brand Identity</h3>
                 <p className="common-paragraph brand-section-para text-custom-darkgrey" data-aos="fade-up">Research , Strategy and Brand Identity Design</p>
@@ -207,6 +213,7 @@ function StudioPageSection() {
                 height={100}
                 data-aos="fade-up"
                 alt="img"
+                quality={100}
                 />
                 <h3 className="common-h5-heading brand-title text-custom-primary" data-aos="fade-up">Pitch Decks</h3>
                 <p className="common-paragraph brand-section-para text-custom-darkgrey" data-aos="fade-up">Research , Content, Design and Pitch Deck with Google Slides</p>
@@ -225,6 +232,7 @@ function StudioPageSection() {
                 height={100}
                 alt="img"
                 data-aos="fade-up"
+                quality={100}
                 />
                 <h3 className="common-h5-heading brand-title text-custom-primary" data-aos="fade-up">Websites</h3>
                 <p className="common-paragraph brand-section-para text-custom-darkgrey" data-aos="fade-up">Design & Development, Wordpress / Webflow / Shopify.</p>
@@ -243,6 +251,7 @@ function StudioPageSection() {
                 height={100}
                 alt="img"
                 data-aos="fade-up"
+                quality={100}
                 />
                 <h3 className="common-h5-heading brand-title text-custom-primary" data-aos="fade-up">Product Design</h3>
                 <p className="common-paragraph brand-section-para text-custom-darkgrey" data-aos="fade-up">Research, UX + UI design for your Mobile, Tablet or Web app</p>
@@ -260,6 +269,7 @@ function StudioPageSection() {
                 data-aos="fade-up"
                 alt="img"
                 className='our-client-backed-tiget-global-img sm:mx-2'
+                quality={100}
                 />
 
                 <Image src={Siquoia}
@@ -268,6 +278,7 @@ function StudioPageSection() {
                 data-aos="fade-up"
                 alt="img"
                 className='our-client-backed-siquoia-img sm:mx-2'
+                quality={100}
                 />
 
                 <Image src={Beenext}
@@ -276,6 +287,7 @@ function StudioPageSection() {
                 data-aos="fade-up"
                 alt="img"
                 className='our-client-backed-beenext-img sm:mx-2'
+                quality={100}
                 />
 
               
@@ -433,6 +445,7 @@ function CraetiveDesignBlogs()          //we want this blogs on case study so ha
                     alt="img"
                     data-aos="fade-up"
                     className='creative-design-blog-img'
+                    quality={100}
                     />
                     <div className="flex flex-col gap-4">     
                         <h3 className="common-h5-heading creative-design-blog-title text-custom-almostblack" data-aos="fade-up">Merlot Marketing, USA</h3>
@@ -451,6 +464,7 @@ function CraetiveDesignBlogs()          //we want this blogs on case study so ha
                     alt="img"
                     data-aos="fade-up"
                     className='creative-design-blog-img'
+                    quality={100}
                     />
                     <div className="flex flex-col gap-4">     
                         <h3 className="common-h5-heading creative-design-blog-title text-custom-almostblack" data-aos="fade-up">Pragilis Change Management, CA</h3>
@@ -469,6 +483,7 @@ function CraetiveDesignBlogs()          //we want this blogs on case study so ha
                     alt="img"
                     data-aos="fade-up"
                     className='creative-design-blog-img'
+                    quality={100}
                     />
                     <div className="flex flex-col gap-4">     
                         <h3 className="common-h5-heading creative-design-blog-title text-custom-almostblack" data-aos="fade-up">Tripepi Smith, USA</h3>
@@ -487,6 +502,7 @@ function CraetiveDesignBlogs()          //we want this blogs on case study so ha
                     alt="img"
                     data-aos="fade-up"
                     className='creative-design-blog-img'
+                    quality={100}
                     />
                     <div className="flex flex-col gap-4">     
                         <h3 className="common-h5-heading creative-design-blog-title text-custom-almostblack" data-aos="fade-up">PayGlocal, IN</h3>

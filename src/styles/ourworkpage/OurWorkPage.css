@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 640px) {
   .our-work-header-title {
-    max-width: 13.625rem;
+    min-width: 100%;
   }
   .our-work-header-para {
     max-width: 20rem;

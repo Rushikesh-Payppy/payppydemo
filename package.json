@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@gsap/react": "^2.1.1",
     "@strapi/blocks-react-renderer": "^1.0.1",
     "@studio-freight/lenis": "^1.0.42",
     "animate.css": "^4.1.1",

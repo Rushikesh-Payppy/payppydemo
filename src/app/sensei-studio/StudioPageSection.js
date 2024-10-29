@@ -101,9 +101,10 @@ function StudioPageSection() {
                         <p className="common-paragraph studio-section-one-para text-custom-darkgrey" data-aos="fade-up">We're the geeks behind mind-blowing Brand Identities and game-changing Experience designs for cutting-edge companies worldwide. </p>
                         <p className="common-paragraph studio-section-one-para text-custom-darkgrey"  data-aos="fade-up">Ready for the coolest vibes?  👊</p>
                     </div>
-                    <a href='mailto:hello@payppy.co'  className='flex flex-row get-in-touh-btn mx-auto sm:mx-10 lg:mx-20' data-aos="fade-up">
-                        <span className='get-in-touch-txt grow text-center flex justify-center items-center common-all-caps'>GET IN TOUCH</span>
-                        <div className='get-in-touch-img-div relative'>
+                    <div className='text-center sm:text-left sm:px-10 lg:px-20 ' data-aos="fade-up">
+                    <a href='mailto:hello@payppy.co'  className='inline-flex flex-row get-in-touh-btn ' >
+                        <span className='get-in-touch-txt grow text-center flex justify-center items-center common-all-caps py-5 px-7'>GET IN TOUCH</span>
+                        <div className='get-in-touch-img-div relative py-5 px-7'>
                             <Image src={Arrow} 
                             width={28}
                             height={28}
@@ -113,6 +114,7 @@ function StudioPageSection() {
                             />
                         </div>
                     </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -297,20 +299,24 @@ function StudioPageSection() {
         {/* section 6 creative design  */}
         <section className={'creative-design-section '+plus_jakarta_sans.className}>
             <div className={"reative-designs-content-storytelling-box flex justify-start items-start sm:justify-center sm:items-center  pt-14 pb-14 px-5 sm:pt-20 sm:pb-20 sm:px-10 md:pt-36 md:pb-24 md:px-12 "+plus_jakarta_sans.className}>
-                <div className="creative-design-section-inner-container flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start  gap-4 sm:gap-12">
-                    <h5 className="common-all-caps" data-aos="fade-up">Creative Designs, Content & Storytelling  </h5>
-                    <h2 className='common-h2-heading creative-design-section-title text-custom-almostblack' data-aos="fade-up">Work that changed the world... ours and theirs </h2>
-                    <Link href='/our-masterpieces' className='flex flex-row our-work-lets-talk-btn get-in-touh-btn ' data-aos="fade-up">
-                        <span className='our-work-lets-talk-text get-in-touch-txt  grow text-center flex justify-center items-center common-all-caps '>See Our Work</span>
-                        <div className='get-in-touch-img-div relative'>
-                            <Image src={Arrow} 
-                            width={28}
-                            height={28}
-                            alt='img'
-                            className='get-in-touch-arrow-img absolute top-6 right-6'
-                            />
-                        </div>
-                    </Link>
+                <div className="creative-design-section-inner-container flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start  gap-10 sm:gap-12">
+                    <div className="flex flex-col gap-4 sm:gap-8 sm:justify-center sm:items-center xl:justify-start xl:items-start">
+                        <h5 className="common-all-caps" data-aos="fade-up">Creative Designs, Content & Storytelling  </h5>
+                        <h2 className='common-h2-heading creative-design-section-title text-custom-almostblack' data-aos="fade-up">Work that changed the world... ours and theirs </h2>
+                    </div>
+                    <div>
+                        <Link href='/our-masterpieces' className='inline-flex flex-row  get-in-touh-btn ' data-aos="fade-up">
+                            <span className='our-work-lets-talk-text get-in-touch-txt   text-center flex justify-center items-center common-all-caps  py-5 px-7'>See Our Work</span>
+                            <div className='get-in-touch-img-div relative py-5 px-7'>
+                                <Image src={Arrow} 
+                                width={28}
+                                height={28}
+                                alt='img'
+                                className='get-in-touch-arrow-img absolute top-6 right-6'
+                                />
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
 

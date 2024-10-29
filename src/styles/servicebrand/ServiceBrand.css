@@ -137,10 +137,12 @@
     max-width: 18.375rem;
   }
   .brand-identity-process-title {
-    max-width: 18.375rem;
+    min-width: 100%;
+    max-width: 100%;
   }
   .brand-product-strategy-subtitle {
-    max-width: 18.375rem;
+    min-width: 100%;
+    max-width: 100%;
   }
   .grid-box {
     height: 13.5rem;

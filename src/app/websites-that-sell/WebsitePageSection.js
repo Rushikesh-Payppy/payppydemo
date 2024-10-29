@@ -41,7 +41,7 @@ function WebsitePageSection()
         <section className={"brand-identity-section "+plus_jakarta_sans.className}>
             <div className="flex justify-center flex-col lg:flex-row brand-black-box-and-right-box-container">
                 <div className="brand-identity-process-box flex justify-center items-center py-14 px-4 md:py-20 md:px-10 lg:py-28 lg:px-24 ">
-                    <h4 className='brand-identity-process-title common-h3-heading text-custom-white' data-aos="fade-up" >Website Process</h4>
+                    <h4 className='brand-identity-process-title common-h3-heading text-custom-white text-center lg:text-left' data-aos="fade-up" >Website Process</h4>
                 </div>
                 <div>
                     <div className='py-14 px-10  md:py-24 md:px-20 flex justify-center items-center brand-product-strategy-box'>

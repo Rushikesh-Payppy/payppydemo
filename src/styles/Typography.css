@@ -38,6 +38,10 @@
   background-color: #BBBBBB;
 }
 
+.bg-custom-charcolgrey {
+  background-color: #4A5056;
+}
+
 .text-custom-primary {
   color: #0057FF;
 }
@@ -76,6 +80,10 @@
 
 .text-custom-ghostgrey {
   color: #BBBBBB;
+}
+
+.text-custom-charcolgrey {
+  color: #4A5056;
 }
 
 .common-h1-heading {
@@ -301,4 +309,29 @@
 
 .font-weight-bold {
   font-weight: bold;
+}
+
+.common-display-text {
+  font-size: 4.75rem;
+  line-height: 6.25rem;
+  letter-spacing: -0.125rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .common-display-text {
+    font-size: 4.75rem;
+    line-height: 6.25rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .common-display-text {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+}
+.reveal-type {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }/*# sourceMappingURL=Typography.css.map */

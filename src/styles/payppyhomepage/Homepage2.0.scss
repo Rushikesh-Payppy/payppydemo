@@ -1,95 +1,107 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-@mixin for-fonts{
+
+@mixin for-fonts {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 2rem;
 }
 
-.payppy-homepage-2-main-container{
+.payppy-homepage-2-main-container {
     min-height: 100vh;
     max-height: 100vh;
     background: #111111;
 }
-                                                                //header
 
-.homepage-2-header{
+//header
+
+.homepage-2-header {
     // background-color: #111111;
     border-bottom: 1px solid #414141;
-    transition:  background-color .5s cubic-bezier(.25,.46,.45,.94);
+    transition: background-color .5s cubic-bezier(.25, .46, .45, .94);
 }
-.payppy-logo-2-container{
+
+.payppy-logo-2-container {
     padding: 0px 50px 0px 50px;
     // padding: 5px 50px 5px 50px;
-    height:80px;
+    height: 80px;
     width: 50%;
 }
 
 //navbar toggle content
-.toggler-icon-container{
+.toggler-icon-container {
     width: 50%;
     padding: 0px 40px 0px 40px;
     // padding: 8px 40px 8px 40px;
 }
 
-.hamburger-react div:nth-child(2){
+.hamburger-react div:nth-child(2) {
     width: 18px !important;
     margin-left: 6px !important;
 }
-.payppyhomepage-header-section{
+
+.payppyhomepage-header-section {
     top: 80px;
     left: 0;
     z-index: -1;
     background-color: #111111;
     width: 100%;
-    min-height: calc( 100vh - 80px);
-    max-height: calc( 100vh - 80px);
+    min-height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
     opacity: 0;
-    transition: z-index cubic-bezier(.25,.46,.45,.94) .3s,opacity cubic-bezier(.25,.46,.45,.94) .3s, background-color .3s cubic-bezier(.25,.46,.45,.94);
+    transition: z-index cubic-bezier(.25, .46, .45, .94) .3s, opacity cubic-bezier(.25, .46, .45, .94) .3s, background-color .3s cubic-bezier(.25, .46, .45, .94);
     overflow: hidden;
 }
 
-.payppy-header-with-height{
+.payppy-header-with-height {
     opacity: 1;
     z-index: 4;
-    transition:  z-index cubic-bezier(.25,.46,.45,.94) .3s,opacity .3s cubic-bezier(.25,.46,.45,.94) .3s, background-color .3s cubic-bezier(.25,.46,.45,.94);
+    transition: z-index cubic-bezier(.25, .46, .45, .94) .3s, opacity .3s cubic-bezier(.25, .46, .45, .94) .3s, background-color .3s cubic-bezier(.25, .46, .45, .94);
 }
-.payppy-bg-custom-primary{
-    background-color:#0057FF;
-    transition:  background-color .5s cubic-bezier(.25,.46,.45,.94);
+
+.payppy-bg-custom-primary {
+    background-color: #0057FF;
+    transition: background-color .5s cubic-bezier(.25, .46, .45, .94);
 }
-.studio-circle-arrow{
+
+.studio-circle-arrow {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    transition: transform .5s cubic-bezier(.25,.46,.45,.94);
+    transition: transform .5s cubic-bezier(.25, .46, .45, .94);
 }
-.brand-web-app-deck-box-hidden{
+
+.brand-web-app-deck-box-hidden {
     max-height: 0px;
     overflow: hidden;
-    transition: max-height .5s cubic-bezier(.25,.46,.45,.94);
+    transition: max-height .5s cubic-bezier(.25, .46, .45, .94);
 }
-.brand-web-app-deck-box{
+
+.brand-web-app-deck-box {
     max-height: 19.75rem;
-    overflow:visible;
-    transition: max-height .5s cubic-bezier(.25,.46,.45,.94);
+    overflow: visible;
+    transition: max-height .5s cubic-bezier(.25, .46, .45, .94);
 
 }
-.copytoclipboard-btn{
+
+.copytoclipboard-btn {
     width: 24px;
     height: 26px;
 }
-.payppy-header-links{
+
+.text-opacity {
+    color: #fafafa59;
+}
+
+.payppy-header-links {
     position: relative;
     display: inline-block;
 }
-.text-opacity{
-    color: #fafafa59;
-}
-.payppy-header-links::after{
+
+.payppy-header-links::after {
     content: '';
     position: absolute;
     bottom: -0.838rem;
@@ -100,50 +112,85 @@
     z-index: 4;
     transition: 0.25s ease;
 }
+
+
+.payppy-header-payppy-app-links {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+        color: #00FF95 !important;
+    }
+}
+
+.payppy-header-payppy-app-links::after {
+    content: '';
+    position: absolute;
+    bottom: -0.838rem;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #00FF95;
+    z-index: 4;
+    transition: 0.25s ease;
+}
+
+.payppy-header-payppy-app-links:hover::after {
+    width: 100% !important;
+}
+
 // .border-bottom-white::after{
 //     width: 100%;
 // }
 
-.payppy-header-links:hover::after{
-    width: 100% !important;
-}
-.payppy-homepage-header-footer{
+.payppy-homepage-header-footer {
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, 0.492);
 }
-.text-opacity.payppy-header-links:hover::after{             //if the text color opacity is low after clicking on sensei-studio 
+
+.payppy-header-links:hover::after {
+    width: 100% !important;
+}
+
+.text-opacity.payppy-header-links:hover::after {
+    //if the text color opacity is low after clicking on sensei-studio 
     opacity: 0.4;
 }
 
 
-.header-bottom-logos-container{
+.header-bottom-logos-container {
     // border: 1px solid blue;
     border-radius: 50%;
     padding: 0.9em;
-    &:hover{
+
+    &:hover {
         background-color: #ffffff19;
     }
 }
+
 @media screen and (max-width:1024px) {
-    .payppyhomepage-header-section{
-        overflow-y: auto ;
+    .payppyhomepage-header-section {
+        overflow-y: auto;
     }
 }
 
 @media screen and (max-width:640px) {
-    .payppy-logo-2-container{
+    .payppy-logo-2-container {
         padding-left: 20px;
         height: 72px;
     }
-    .payppy-logo-2{
+
+    .payppy-logo-2 {
         width: 166px;
         max-width: none;
     }
-    .toggler-icon-container{
-         padding: 0 20px 0 20px;
+
+    .toggler-icon-container {
+        padding: 0 20px 0 20px;
         //  padding: 35px 20px 35px 20px;
     }
-    .toggler-icon-2{
+
+    .toggler-icon-2 {
         width: 24px;
         height: 24px;
         padding: 4px 2.63px 4px 0px;
@@ -151,45 +198,52 @@
     }
 
     //navbar toggle content
-    .payppyhomepage-header-section{
+    .payppyhomepage-header-section {
         top: 72px;
-        min-height: calc( 100vh - 72px);
-        max-height: calc( 100vh - 72px);
+        min-height: calc(100vh - 72px);
+        max-height: calc(100vh - 72px);
         overflow: auto;
     }
-    .studio-circle-arrow{
+
+    .studio-circle-arrow {
         width: 26px;
         height: 26px;
     }
 }
-                                                                //section                                            
 
-.payppy-homepage-main-section{
+//section                                            
+
+.payppy-homepage-main-section {
     min-height: calc(100vh - 80px - 72px);
 }
 
-.homepage-top-arrow{
+.homepage-top-arrow {
     transition: 0.3s;
 }
-.payppy-store-img-container{
+
+.payppy-store-img-container {
     width: 300px;
     max-width: none;
 }
-.green-gradient,.blue-gradient{
+
+.green-gradient,
+.blue-gradient {
     width: 82.626rem;
     height: 37.244rem;
     left: -32rem;
     bottom: -18.5rem;
     background-image: url("../../Images/payppyhomepage/green-gradient.png");
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: contain;
     opacity: 0.5;
     transition: opacity 0.3s;
 }
-.blue-gradient{
+
+.blue-gradient {
     background-image: url("../../Images/payppyhomepage/blue-gradient.png");
 }
+
 // .green-gradient-1,.green-gradient-2,.blue-gradient-1,.blue-gradient-2{
 //     width: 41.313rem;
 //     height: 37.244rem;
@@ -224,41 +278,47 @@
 // }
 
 
-.payppy-app-main-outer-container{
+.payppy-app-main-outer-container {
     border-right: 1px solid #414141;
     overflow: hidden;
     border-bottom: 1px solid #414141;
     width: 50%;
-    &:hover .homepage-top-arrow{
+
+    &:hover .homepage-top-arrow {
         top: 20px;
         right: 20px;
         // filter: brightness(100);
     }
+
     // &:hover .green-gradient-1, &:hover  .green-gradient-2, &:hover  .blue-gradient-2, &:hover  .blue-gradient-1{
     //     opacity: 1;
     // }
-    &:hover .green-gradient,&:hover .blue-gradient{
+    &:hover .green-gradient,
+    &:hover .blue-gradient {
         opacity: 1;
     }
-    &:nth-child(2)
-    {
+
+    &:nth-child(2) {
         border-right: none;
     }
-   
+
 }
-.for-center-content{
+
+.for-center-content {
     z-index: 1;
 }
-.payppy-app-content-container{
+
+.payppy-app-content-container {
     max-width: 21.688rem;
 }
 
 
-.sensei-studio-main-outer-container{
+.sensei-studio-main-outer-container {
     border-right: none;
     max-width: 24.938rem;
 }
-.learn-more-link{
+
+.learn-more-link {
     padding: 4px 0px 4px 0px;
     color: #E4E0DA;
     font-size: 0.75rem;
@@ -272,45 +332,50 @@
     // .payppy-homepage-main-section{
     //     min-height: 100vh;
     // }
-   
-    .payppy-homepage-main-section{
+
+    .payppy-homepage-main-section {
         flex-direction: column-reverse !important;
     }
-   
-    .sensei-studio-main-outer-container,.payppy-app-content-container{
+
+    .sensei-studio-main-outer-container,
+    .payppy-app-content-container {
         max-width: 20rem;
     }
-   
-    .payppy-app-main-outer-container{
+
+    .payppy-app-main-outer-container {
         border-right: none;
-        width: 100% ;
-        &:hover .homepage-top-arrow{
+        width: 100%;
+
+        &:hover .homepage-top-arrow {
             top: 15px;
         }
-      
+
     }
-   
+
 }
 
-                                                                //footer
+//footer
 
-.payppy-homepage-2-footer{
+.payppy-homepage-2-footer {
     flex-grow: 1;
     background: #111111;
     // padding: 20px 136px 20px 154px;
 }
-.copyright-2-text{
+
+.copyright-2-text {
     @include for-fonts();
     color: #7A7A7A;
 }
-.footer-2-links{
+
+.footer-2-links {
     gap: 20px;
 }
 
-.footer-2-link{
+.footer-2-link {
     @include for-fonts();
     text-decoration: none;
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
         color: white;
     }
@@ -321,22 +386,26 @@
     //     padding: 20px 40px  ;
     // }
 }
+
 @media screen and (max-width:640px) {
-    .payppy-homepage-2-footer{
+    .payppy-homepage-2-footer {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
-    .copyright-2-text{
+
+    .copyright-2-text {
         font-size: 0.75rem;
         line-height: 1.5rem;
     }
-    .footer-2-link{
+
+    .footer-2-link {
         font-size: 0.75rem;
         line-height: 1.75rem;
     }
-    .footer-2-links{
+
+    .footer-2-links {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;

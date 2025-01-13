@@ -816,6 +816,10 @@ body {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .max-h-none {
   max-height: none;
 }
@@ -978,14 +982,6 @@ body {
   gap: 2rem;
 }
 
-.gap-\[70px\] {
-  gap: 70px;
-}
-
-.gap-\[50px\] {
-  gap: 50px;
-}
-
 .gap-x-14 {
   -moz-column-gap: 3.5rem;
        column-gap: 3.5rem;
@@ -1055,6 +1051,11 @@ body {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .object-contain {
@@ -1161,14 +1162,9 @@ body {
   padding-bottom: 2rem;
 }
 
-.py-\[120px\] {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pb-10 {
@@ -1516,6 +1512,11 @@ body {
     padding-bottom: 2.5rem;
   }
 
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .sm\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -1539,11 +1540,6 @@ body {
   .sm\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-  }
-
-  .sm\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .sm\:pb-10 {
@@ -1584,14 +1580,6 @@ body {
 
   .sm\:pt-32 {
     padding-top: 8rem;
-  }
-
-  .sm\:pb-5 {
-    padding-bottom: 1.25rem;
-  }
-
-  .sm\:pb-8 {
-    padding-bottom: 2rem;
   }
 
   .sm\:text-left {
@@ -1787,12 +1775,12 @@ body {
     max-width: 80rem;
   }
 
-  .lg\:max-w-\[866px\] {
-    max-width: 866px;
-  }
-
   .lg\:max-w-\[387px\] {
     max-width: 387px;
+  }
+
+  .lg\:max-w-\[866px\] {
+    max-width: 866px;
   }
 
   .lg\:grid-cols-2 {
@@ -1916,9 +1904,39 @@ body {
     padding-bottom: 7rem;
   }
 
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .lg\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:py-\[300px\] {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+
+  .lg\:py-\[200px\] {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .lg\:py-\[100px\] {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .lg\:py-\[110px\] {
+    padding-top: 110px;
+    padding-bottom: 110px;
   }
 
   .lg\:py-24 {
@@ -1926,9 +1944,9 @@ body {
     padding-bottom: 6rem;
   }
 
-  .lg\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  .lg\:py-36 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
   }
 
   .lg\:pb-0 {

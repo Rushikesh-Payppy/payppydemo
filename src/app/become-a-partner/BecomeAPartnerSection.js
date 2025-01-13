@@ -119,7 +119,8 @@ const BecomeAPartnerSection = () => {
                 {/* hero section */}
 
                 <section className={'pt-20 px-5 pb-24 sm:pt-32 sm:px-10 lg:pt-32 lg:gap-10 bg-custom-almostblack flex flex-col justify-center items-center  relative overflow-hidden'}>
-                    <Image src={Background} width={1440} height={901} alt='img' quality={100} className='z-0 fixed top-12 left-0' />
+                    {/* <Image src={Background} width={1440} height={901} alt='img' quality={100} className='z-0 fixed top-12 left-0' /> */}
+                    <Image src={Background} alt='img' quality={100} className='z-0 fixed top-12 left-0  w-auto h-auto' />
 
                     <div className=' relative gap-10 sm:gap-16 text-center flex flex-col justify-center items-center lg:items-start lg:text-left sm:max-w-xl lg:max-w-2xl w-full'>
 
@@ -177,7 +178,7 @@ const BecomeAPartnerSection = () => {
                             </div>
 
                             <div className=" gap-2 flex flex-col items-center lg:items-start"   >
-                                <div className=" gap-3 common-all-caps text-custom-ghostgrey" data-aos="fade-up"> <span className=" lg:hidden">Sales Contact</span> <span className=" hidden lg:inline-block">Contact Sales</span> </div>
+                                <div className=" gap-3 common-all-caps text-custom-ghostgrey" data-aos="fade-up"> <span> Contact Sales</span> </div>
                                 <span className="text-custom-almostwhite common-paragraph text-center px-12 lg:px-0 z-[1]" data-aos="fade-up">+91 98786 19561 <span className=" hidden sm:inline-block">&nbsp; | &nbsp;</span> <Link href="mailto:sales@payppy.co">sales@payppy.co</Link> </span>
                             </div>
                         </div>

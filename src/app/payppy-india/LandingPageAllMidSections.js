@@ -44,8 +44,8 @@ import PayppyCard from "@/Images/landingpage/pep-score-icon.svg";
 // import FeatureCard from '@/components/FeatureCard';
 import NavigationButton from '@/components/NavigationButton';
 import NavigationButtonSmallWhite from '@/components/NavigationButtonSmallWhite';
-import TextRevealComponent from '../TextRevealComponent';
 import NavigationButtonSmall from '@/components/NavigationButtonSmall';
+import TextRevealComponent from '../TextRevealComponent';
 
 
 //font
@@ -87,16 +87,9 @@ function LandingPageAllMidSections() {
         <div className={' w-full h-full ' + plus_jakarta_sans.className}>
             {/* section1 */}
             <section className={'landing-page-section-one landing-page-section-two flex   items-center justify-center  w-full ' + plus_jakarta_sans.className}>
-                <div className=' flex flex-col-reverse lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px] lg:p-20 '>
+                <div className=' flex flex-col-reverse lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px]'>
                     <main className='landing-section-one-info flex flex-col gap-3 md:gap-6 items-center lg:items-start'>
-                        <Image src={Section1Icon}
-                            width={80}
-                            height={80}
-                            alt="img"
-                            data-aos="fade-up"
-                            className='earn-reward-icon'
-                            quality={100}
-                        />
+                        <Image src={Section1Icon} width={80} height={80} alt="img" quality={100} className='earn-reward-icon' data-aos="fade-up" />
                         <div className=' gap-2.5 flex flex-col items-center lg:items-start'>
                             <h5 className="landing-page-section-heading  common-h5-heading text-cutom-almostblack text-center lg:text-left" data-aos="fade-up">{section1Title}</h5>
                             <p className="landing-page-section-two-para common-paragraph text-custom-graphite-grey text-center lg:text-left" data-aos="fade-up">{section1Decription}</p>
@@ -106,42 +99,21 @@ function LandingPageAllMidSections() {
                         </div>
                     </main>
                     <main className='landing-section-one-img-box'>
-                        <Image src={Section1Img}
-                            width={648}
-                            height={648}
-                            alt="img"
-                            data-aos="fade-up"
-                            className='earn-reward-img'
-                            quality={100}
-                        />
+                        <Image src={Section1Img} width={648} height={648} alt="img" quality={100} className='earn-reward-img' data-aos="fade-up" />
                     </main>
                 </div>
             </section>
 
             {/* section2 */}
             <section className={'landing-page-section-one landing-page-section-two flex flex-col lg:flex-row  items-center justify-center w-full ' + plus_jakarta_sans.className}>
-                <div className=' flex flex-col lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px] lg:p-20 w-full '>
+                <div className=' flex flex-col lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px]  w-full '>
 
                     <main className='landing-section-one-img-box '>
-                        <Image src={Section2Img}
-                            width={648}
-                            height={648}
-                            alt="img"
-                            data-aos="fade-up"
-                            className='earn-reward-img'
-                            quality={100}
-                        />
+                        <Image src={Section2Img} width={648} height={648} alt="img" quality={100} className='earn-reward-img' data-aos="fade-up" />
                     </main>
 
                     <main className='landing-section-one-info flex flex-col gap-3 md:gap-6 items-center lg:items-start'>
-                        <Image src={Section2Icon}
-                            width={80}
-                            height={80}
-                            alt="img"
-                            data-aos="fade-up"
-                            className='earn-reward-icon'
-                            quality={100}
-                        />
+                        <Image src={Section2Icon} width={80} height={80} alt="img" quality={100} className='earn-reward-icon' data-aos="fade-up" />
                         <div className=' gap-2.5 flex flex-col items-center lg:items-start'>
                             <h5 className="landing-page-section-heading  common-h5-heading text-cutom-almostblack text-center lg:text-left" data-aos="fade-up">{section2Title}</h5>
                             <p className="landing-page-section-two-para common-paragraph text-custom-graphite-grey text-center lg:text-left" data-aos="fade-up">{section2Decription}</p>
@@ -154,7 +126,7 @@ function LandingPageAllMidSections() {
 
             {/* section3 */}
             <section className={'landing-page-section-one landing-page-section-two flex flex-col lg:flex-row  items-center justify-center w-full ' + plus_jakarta_sans.className}>
-                <div className=' flex flex-col-reverse lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px] lg:p-20'>
+                <div className=' flex flex-col-reverse lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px] w-full '>
                     <main className='landing-section-one-info flex flex-col gap-3 md:gap-6 items-center lg:items-start'>
                         <Image src={Section3Icon}
                             width={80}
@@ -186,7 +158,7 @@ function LandingPageAllMidSections() {
 
             {/* section4 */}
             <section className={'landing-page-section-one landing-page-section-two flex flex-col lg:flex-row  items-center justify-center w-full ' + plus_jakarta_sans.className}>
-                <div className=' flex flex-col lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px] lg:p-20 w-full '>
+                <div className=' flex flex-col lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px]  w-full '>
 
                     <main className='landing-section-one-img-box '>
                         <Image src={Section4Img}
@@ -221,7 +193,7 @@ function LandingPageAllMidSections() {
 
             {/* section5 */}
             <section className={'landing-page-section-one landing-page-section-two flex flex-col lg:flex-row  items-center justify-center w-full ' + plus_jakarta_sans.className}>
-                <div className=' flex flex-col-reverse   lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px] lg:p-20'>
+                <div className=' flex flex-col-reverse lg:flex-row items-center justify-between lg:max-w-7xl gap-20 md:gap-28 py-20 lg:gap-[120px] '>
                     <main className='landing-section-one-info flex flex-col gap-3 md:gap-6 items-center lg:items-start'>
                         <Image src={Section5Icon}
                             width={80}

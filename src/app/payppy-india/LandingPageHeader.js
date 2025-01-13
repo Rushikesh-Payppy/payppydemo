@@ -22,9 +22,10 @@ const plus_jakarta_sans = Plus_Jakarta_Sans({
 function LandingPageHeader() {
     return (
         <>
-            <header className={"landing-page-header bg-custom-almostblack px-5 py-20 sm:py-16 md:px-10 lg:gap-20  lg:py-24 lg:px-[150px] md:pt-32 flex flex-col justify-center items-center "}>
+            <header className={"landing-page-header bg-custom-almostblack px-5 py-20 gap-20 sm:py-16 md:px-10 lg:px-[150px] lg:py-40 md:pt-32 flex flex-col justify-center items-center "}>
+                
                 {/* Hero Section */}
-                <section className={"w-full gap-10 flex flex-col text-center items-center sm:pb-20 lg:gap-10 " + plus_jakarta_sans.className}>
+                <section className={"w-full gap-10 flex flex-col text-center items-center sm:pb-20 lg:gap-10 lg:pb-0 " + plus_jakarta_sans.className}>
                     <div className=" flex flex-col items-center lg:gap-6">
                         <span className="common-all-caps text-center text-custom-ghostgrey" data-aos="fade-up">FOR GEN Z AND MILLENNIALS</span>
                         <h1 className="experience-seamless-title common-h1-heading pb-3 " data-aos="fade-up">Shopping and Payments made rewarding</h1>
@@ -32,9 +33,10 @@ function LandingPageHeader() {
                     </div>
 
                     <NavigationButton buttonName="Install Payppy.app" href="https://payppy.app/" data-aos="fade-up" />
-
                 </section>
+
             </header>
+            
             <TextRevealComponent />
         </>
     )

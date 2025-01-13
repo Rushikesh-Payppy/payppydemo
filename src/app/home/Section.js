@@ -2,7 +2,8 @@
 // import "@/styles/Homepage.css";
 import Image from "next/image";
 import SenseiStudio from '@/Images/payppyhomepage/senseiStudio.svg';
-import PayppyStore from '@/Images/payppyhomepage/payppyStore.svg';
+// import PayppyStore from '@/Images/payppyhomepage/payppyStore.svg';
+import PayppyStore from '@/Images/payppyhomepage/payppy.app-min.png';
 import Arrow from '@/Images/payppyhomepage/arrow.svg';
 import { Plus_Jakarta_Sans } from "next/font/google";
 import '@/styles/Typography.css';

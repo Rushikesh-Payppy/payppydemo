@@ -119,7 +119,8 @@ const BecomeAPartnerSection = () => {
                 {/* hero section */}
 
                 <section className={'pt-20 px-5 pb-24 sm:pt-32 sm:px-10 lg:pt-32 lg:gap-10 bg-custom-almostblack flex flex-col justify-center items-center  relative overflow-hidden'}>
-                    <Image src={Background} width={1440} height={901} alt='img' quality={100} className='z-0 fixed top-12 left-0' />
+                    {/* <Image src={Background} width={1440} height={901} alt='img' quality={100} className='z-0 fixed top-12 left-0' /> */}
+                    <Image src={Background} alt='img' quality={100} className='z-0 fixed top-12 left-0  w-auto h-auto' />
 
                     <div className=' relative gap-10 sm:gap-16 text-center flex flex-col justify-center items-center lg:items-start lg:text-left sm:max-w-xl lg:max-w-2xl w-full'>
 

@@ -1,52 +1,61 @@
 // @import '../TitleAndPara';               //partials for header main heading and page paragraphs
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 
-                                            //header
+//header
 
-
-
-.landing-page-header{
+.landing-page-header {
     background: #111111;
 }
-.experience-seamless-title{
+
+.experience-seamless-title {
     max-width: 66.375rem;
 }
-.landing-page-para{
+
+.landing-page-para {
     max-width: 34.239rem;
+    // height: 4rem;
     margin: auto;
 }
-.visit-payppy-btn{
+
+.visit-payppy-btn {
     background: #FFFFFF;
     // z-index: 2;
 }
-.visit-payppy-txt{
+
+.visit-payppy-txt {
+    gap: 50px;
+    text-transform: uppercase;
+    color: #111111;
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 2.25rem;
-    letter-spacing: 0.063rem;
+    letter-spacing: 0.0625rem;
     padding: 22px 28px 22px 28px;
     border-right: 2px solid #111111;
 }
-.btn-arrow-img-box{
+
+.btn-arrow-img-box {
     width: 76px;
 }
-.btn-arrow-img{
+
+.btn-arrow-img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     transition: 0.4s;
 }
 
 .visit-payppy-btn:hover {
     background: #00FF95;
-} 
-.visit-payppy-btn:hover .btn-arrow-img{
+}
+
+.visit-payppy-btn:hover .btn-arrow-img {
     top: -8px;
     left: 45px;
 }
@@ -54,31 +63,36 @@
 // .landing-page-header-img-box{
 //     width: 1063.25px;
 // }
-.landing-head-store-small-img{
+.landing-head-store-small-img {
     display: none;
 }
 
 @media screen and (max-width:1024px) {
-    .experience-seamless-title{
+    .experience-seamless-title {
         max-width: 41.5rem;
     }
-    .landing-head-store-img{
+
+    .landing-head-store-img {
         width: 664px;
         height: 402.07px;
-        
+
     }
 }
+
 @media screen and (max-width:640px) {
-    .experience-seamless-title{
+    .experience-seamless-title {
         max-width: 20rem;
     }
-    .landing-page-para{
+
+    .landing-page-para {
         max-width: 20rem;
     }
-    .landing-head-store-img{
+
+    .landing-head-store-img {
         display: none;
     }
-    .landing-head-store-small-img{
+
+    .landing-head-store-small-img {
         display: block;
     }
 }
@@ -86,287 +100,307 @@
 
 
 
-                                            //three sections
+//three sections
 
-                                            //section one
+//section one
 
-.landing-page-section-one{
-    border-bottom:1px solid #DDDDDD;
+.landing-page-section-one {
+    border-bottom: 1px solid #DDDDDD;
 }
-.landing-section-one-info{
+
+.landing-section-one-info {
     width: 32.625rem;
 }
-.landing-page-section-one-para{
+
+.landing-page-section-one-para {
     max-width: 18.688rem;
 }
-.visit-payppy-app-section-btn{
-    width: 10.75rem;
-    // height: 52px;
-    padding: 10px 0;
-    border-bottom: 2px solid #111111;
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 2.25rem;
-    letter-spacing: 0.063rem;
-    text-align: left;   
-    transition: 0.4s;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    text-wrap:nowrap;
-}
-.visit-payppy-app-section-btn::before{
-   content: '';
-   position: absolute;
-   top: 100%;
-   right: 100%;
-   width: 100%;
-   background: linear-gradient(to top right,#111111,#111111);
-   z-index: -1;
-   transition:  .3s ease-in-out;
-   height: 100%;
-}
-.visit-payppy-section-btn-arrow{
-    transform: translate(-100%,100%);
-    transition:  .3s ease-in-out;
-}
-.visit-payppy-app-section-btn:hover::before{
-    top: 0;
-    right: 0;
-}
-.visit-payppy-app-section-btn:hover{
-    padding: 10px 12px;
-    color: #FFFFFF !important;
-    width: 228px;
-    transition: .3s ease-in-out;
-}
-.visit-payppy-app-section-btn:hover .visit-payppy-section-btn-arrow{
-    transform: translate(0,0);
 
-}
+
 
 @media screen and (max-width:1024px) {
-   
-    .landing-page-section-one-para{
+
+    .landing-page-section-one-para {
         max-width: 32.625rem;
     }
-    .fav-brand-icon{
+
+    .fav-brand-icon {
         width: 80px;
         height: 80px;
         padding: 12.4px 3px 11.34px 3.72px;
     }
-   .fav-brands-img{
-    width: 100vw !important;
-    height: auto;
-   }
+
+    .fav-brands-img {
+        width: 100vw !important;
+        height: auto;
+    }
 }
 
 @media screen and (max-width:640px) {
-    .landing-page-section-heading{
+    .landing-page-section-heading {
         max-width: 20rem;
     }
-    .landing-section-one-info{
+
+    .landing-section-one-info {
         width: 100%;
 
     }
-    .landing-page-section-one-para{
+
+    .landing-page-section-one-para {
         max-width: 18.25rem;
     }
-    .fav-brand-icon{
+
+    .fav-brand-icon {
         width: 80px;
         height: 80px;
         padding: 12.4px 3px 11.34px 3.72px;
     }
-    .visit-payppy-app-section-btn{
+
+    .visit-payppy-app-section-btn {
         font-size: 16px;
     }
-    .landing-page-section-one{
+
+    .landing-page-section-one {
         width: 100%;
         overflow: hidden;
     }
-    .visit-payppy-app-section-btn{
-        width: 155px;
+
+    .visit-payppy-app-section-btn {
+        max-width: auto;
     }
 }
 
-                                            //section two
+//section two
 
-.landing-page-section-two-para{
+.landing-page-section-two-para {
     max-width: 26.375rem;
 }
 
 @media screen and (max-width:1024px) {
-    .earn-reward-img{
-     width: 100vw;
-     height: auto;        
+    .earn-reward-img {
+        width: 100vw;
+        height: auto;
     }
-   
+
 }
 
 @media screen and (max-width:640px) {
-    .landing-page-section-two-para{
+    .landing-page-section-two-para {
         max-width: 22.2rem;
     }
-    .earn-reward-icon{
+
+    .earn-reward-icon {
         width: 72px;
         height: 72px;
     }
-}           
-                      
+}
 
-                                            //section three
 
-.landing-page-section-three-para{
+//section three
+
+.landing-page-section-three-para {
     max-width: 21.719rem;
 }
 
 @media screen and (max-width:1024px) {
-    .landing-page-section-three-para{
+    .landing-page-section-three-para {
         max-width: 31.375rem;
     }
-    .refer-friend-img{
+
+    .refer-friend-img {
         width: 100vw;
-        height: auto;        
+        height: auto;
     }
-   
+
 }
+
 @media screen and (max-width:640px) {
-    .landing-page-section-three-para{
+    .landing-page-section-three-para {
         max-width: 20rem !important;
     }
 }
-                                            //section four
 
-.landing-page-section-four {
-    border-bottom:1px solid #DDDDDD;
-}
-.landing-page-section-four-inner-container{
+//section four
+
+.landing-page-section-four-inner-container {
     max-width: 80rem;
 }
-.bookmark-title{
+
+.bookmark-title {
     max-width: 15.5rem;
 }
+
 // .bookmark-para,.delivery-para,.sustainability-para{
 //     max-width: 23rem;
 // }
-.delivery-title{
-    max-width: 16.606rem;
+.delivery-title {
+    max-width: 18rem;
 }
-.sustainability-title{
-    max-width: 15.962rem;
+
+.sustainability-title {
+    max-width: 15.96rem;
 }
 
 @media screen and (min-width:1023px) and (max-width:1340px) {
-    .landing-page-section-four{
+    .landing-page-section-four {
         flex-wrap: wrap;
         justify-content: flex-start !important;
-        align-items: flex-start ;
+        align-items: flex-start;
         padding: 120px 80px !important;
+        gap: 80px ;
     }
 }
-@media screen  and (max-width:1023px) {   
-    .bookmark-title{
+
+@media screen and (max-width:1023px) {
+    .bookmark-title {
         max-width: 15.5rem;
         margin: 0 auto;
-    }   
-    .bookmark-para{
+    }
+
+    .bookmark-para {
         max-width: 22.875rem;
         margin: 0 auto;
     }
-    .delivery-title{
+
+    .delivery-title {
         max-width: 17.75rem;
         margin: 0 auto;
     }
-    .delivery-para{
+
+    .delivery-para {
         max-width: 22rem;
         margin: 0 auto;
     }
-    .sustainability-title{
+
+    .sustainability-title {
         max-width: 41.5rem;
         margin: 0 auto;
     }
-    .sustainability-para{
+
+    .sustainability-para {
         max-width: 20.125rem;
         margin: 0 auto;
     }
 
 }
-@media screen  and (max-width:640px) {   
-    .bookmark-title, .delivery-title{
+
+@media screen and (max-width:640px) {
+
+    .bookmark-title,
+    .delivery-title {
         max-width: 15.5rem;
-    }   
-    .bookmark-para,.delivery-para,.sustainability-title,.sustainability-para{
+    }
+
+    .bookmark-para,
+    .delivery-para,
+    .sustainability-title,
+    .sustainability-para {
         max-width: 20rem;
     }
 
 }
 
-                                            //section five
+//section five
 
 
 // .landing-page-section-five{
-    // border-bottom:1px solid #DDDDDD;
-    // padding: 200px 160px 200px 160px ; 
+// border-bottom:1px solid #DDDDDD;
+// padding: 200px 160px 200px 160px ; 
 // }
-.section-five-title,.scrolling-game-para{
+.section-five-title,
+.scrolling-game-para {
     max-width: 25rem;
 }
-.left-border-div{
+
+.left-border-div {
     border-left: 1px solid #7A7A7A;
     height: 80px;
 }
-.insta-img-container{
+
+.insta-img-container {
     width: 400px;
     height: 602.3px;
     overflow: hidden;
 }
-.landingpage-insta-twitter-links{
+
+.landingpage-insta-twitter-links {
     border-radius: 50%;
     border: 1px solid #7A7A7A;
-    &:hover{
-        background-color:#faf7f7;
+
+    &:hover {
+        background-color: #faf7f7;
     }
 }
 
 
 @media screen and (max-width:1024px) {
-    .landing-page-section-five{
+    .landing-page-section-five {
         width: 100%;
         // overflow: hidden;
     }
-    .section-five-title,.scrolling-game-para{
+
+    .section-five-title,
+    .scrolling-game-para {
         max-width: 25rem;
     }
 
-    .left-border-div{
+    .left-border-div {
         border-left: none;
         border-bottom: 1px solid #7A7A7A;
         width: 60px;
         height: 1px;
     }
-   
+
 }
+
 @media screen and (max-width:640px) {
-    .section-five-title{
+    .section-five-title {
         max-width: 18.25rem;
     }
-    .landing-page-section-three-para{
+
+    .landing-page-section-three-para {
         max-width: 20rem !important;
     }
-    .refer-friend-img{
+
+    .refer-friend-img {
         width: 360px !important;
         height: 500px;
         object-fit: cover;
     }
-    .insta-img-container{
+
+    .insta-img-container {
         width: 280px;
         height: 422px;
     }
-    .insta-img{
+
+    .insta-img {
         width: 280px;
         height: 425.81px;
     }
 }
 
+.custom-payppy-co-links {
+    position: relative;
+    display: inline-block;
 
+    &:hover {
+        color: #00FF95 !important;
+    }
+}
 
+.custom-payppy-co-links::after {
+    content: '';
+    position: absolute;
+    // bottom: -0.838rem;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00FF95;
+    z-index: 4;
+    transition: 0.25s ease;
+}
+
+.custom-payppy-co-links:hover::after {
+    width: 100% !important;
+}

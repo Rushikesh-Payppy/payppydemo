@@ -64,7 +64,7 @@ $all-caps-mobile-lineheight: 1.5rem; // 24px
 
 
 
-// display-text for merchant page
+// display-text for become-a-partner page
 $display-text-desktop-size: 4.75rem; //76px
 $display-text-desktop-lineheight: 6.25rem; //100px
 $display-text-desktop-letter-spacing: -0.125rem; //-2px
@@ -87,7 +87,11 @@ $DarkGrey: #414141;
 $Placeholder: #6E757C;
 $MediumGrey: #7A7A7A;
 $GhostGrey: #BBBBBB;
-$charcol-grey:#4A5056;
+$charcol-grey: #4A5056;
+$graphite-grey: #3D3E40;
+$silver-grey: #B2B0AE;
+$eerie-black : #1E1E1E;
+
 
 
 //background-color
@@ -181,9 +185,23 @@ $charcol-grey:#4A5056;
     color: $charcol-grey;
 }
 
+.text-custom-graphite-grey {
+    color: $graphite-grey;
+}
+
+.text-custom-silver-grey {
+    color: $silver-grey;
+}
+
+.text-custom-eerie-black {
+    color: $eerie-black;
+}
+
+
 
 
 //mixins
+
 @mixin for-page-small-para {
     font-size: 18px;
     font-weight: 400;
@@ -481,7 +499,7 @@ $charcol-grey:#4A5056;
 //to prevent overflow from scroll when navbar open
 
 .body-scroll-none {
-    overflow: hidden ;
+    overflow: hidden;
 }
 
 .font-weight-bold {

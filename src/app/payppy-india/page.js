@@ -5,12 +5,12 @@ import LandingPageAllMidSections from './LandingPageAllMidSections';
 import LandingPageHeader from './LandingPageHeader';
 
 function Page() {
-    return(
+    return (
         <>
-            <Header/>
-            <LandingPageHeader/>
-            <LandingPageAllMidSections/>
-            <Footer/>
+            <Header />
+            <LandingPageHeader />
+            <LandingPageAllMidSections />
+            <Footer />
         </>
     )
 }

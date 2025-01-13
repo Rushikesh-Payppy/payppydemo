@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .payppy-homepage-2-main-container {
@@ -13,7 +12,6 @@
 
 .homepage-2-header {
   border-bottom: 1px solid #414141;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -42,7 +40,6 @@
   min-height: calc(100vh - 80px);
   max-height: calc(100vh - 80px);
   opacity: 0;
-  -webkit-transition: z-index cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: z-index cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   overflow: hidden;
 }
@@ -50,13 +47,11 @@
 .payppy-header-with-height {
   opacity: 1;
   z-index: 4;
-  -webkit-transition: z-index cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: z-index cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .payppy-bg-custom-primary {
   background-color: #0057FF;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -64,23 +59,18 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: -webkit-transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .brand-web-app-deck-box-hidden {
   max-height: 0px;
   overflow: hidden;
-  -webkit-transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .brand-web-app-deck-box {
   max-height: 19.75rem;
   overflow: visible;
-  -webkit-transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -107,7 +97,6 @@
   height: 4px;
   background: white;
   z-index: 4;
-  -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
 
@@ -128,7 +117,6 @@
   height: 4px;
   background: #00FF95;
   z-index: 4;
-  -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
 
@@ -195,7 +183,6 @@
 }
 
 .homepage-top-arrow {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -215,7 +202,6 @@
   background-position: center;
   background-size: contain;
   opacity: 0.5;
-  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -265,10 +251,7 @@
 
 @media screen and (max-width: 1024px) {
   .payppy-homepage-main-section {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
   }
   .sensei-studio-main-outer-container,
   .payppy-app-content-container {
@@ -283,9 +266,7 @@
   }
 }
 .payppy-homepage-2-footer {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   background: #111111;
 }
 
@@ -313,16 +294,9 @@
 
 @media screen and (max-width: 640px) {
   .payppy-homepage-2-footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
   }
   .copyright-2-text {
@@ -334,13 +308,8 @@
     line-height: 1.75rem;
   }
   .footer-2-links {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=Homepage2.0.css.map */

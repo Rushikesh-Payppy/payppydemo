@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .not-found-center-img {
@@ -13,7 +12,6 @@
 }
 
 .not-found-go-to-home-link {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .not-found-go-to-home-link:hover {

@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .landing-page-header {
@@ -23,10 +22,13 @@
 }
 
 .visit-payppy-txt {
+  gap: 50px;
+  text-transform: uppercase;
+  color: #111111;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 2.25rem;
-  letter-spacing: 0.063rem;
+  letter-spacing: 0.0625rem;
   padding: 22px 28px 22px 28px;
   border-right: 2px solid #111111;
 }
@@ -39,9 +41,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: 0.4s;
+  transform: translate(-50%, -50%);
   transition: 0.4s;
 }
 
@@ -93,62 +93,6 @@
   max-width: 18.688rem;
 }
 
-.visit-payppy-app-section-btn {
-  width: 10.75rem;
-  padding: 10px 0;
-  border-bottom: 2px solid #111111;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 2.25rem;
-  letter-spacing: 0.063rem;
-  text-align: left;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  text-wrap: nowrap;
-}
-
-.visit-payppy-app-section-btn::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  right: 100%;
-  width: 100%;
-  background: -webkit-gradient(linear, left bottom, right top, from(#111111), to(#111111));
-  background: linear-gradient(to top right, #111111, #111111);
-  z-index: -1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  height: 100%;
-}
-
-.visit-payppy-section-btn-arrow {
-  -webkit-transform: translate(-100%, 100%);
-          transform: translate(-100%, 100%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.visit-payppy-app-section-btn:hover::before {
-  top: 0;
-  right: 0;
-}
-
-.visit-payppy-app-section-btn:hover {
-  padding: 10px 12px;
-  color: #FFFFFF !important;
-  width: 228px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.visit-payppy-app-section-btn:hover .visit-payppy-section-btn-arrow {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
 @media screen and (max-width: 1024px) {
   .landing-page-section-one-para {
     max-width: 32.625rem;
@@ -186,7 +130,7 @@
     overflow: hidden;
   }
   .visit-payppy-app-section-btn {
-    width: 155px;
+    max-width: auto;
   }
 }
 .landing-page-section-two-para {
@@ -226,10 +170,6 @@
     max-width: 20rem !important;
   }
 }
-.landing-page-section-four {
-  border-bottom: 1px solid #DDDDDD;
-}
-
 .landing-page-section-four-inner-container {
   max-width: 80rem;
 }
@@ -239,24 +179,20 @@
 }
 
 .delivery-title {
-  max-width: 16.606rem;
+  max-width: 18rem;
 }
 
 .sustainability-title {
-  max-width: 15.962rem;
+  max-width: 15.96rem;
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1340px) {
   .landing-page-section-four {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    align-items: flex-start;
     padding: 120px 80px !important;
+    gap: 80px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -286,14 +222,19 @@
   }
 }
 @media screen and (max-width: 640px) {
-  .bookmark-title, .delivery-title {
+  .bookmark-title,
+  .delivery-title {
     max-width: 15.5rem;
   }
-  .bookmark-para, .delivery-para, .sustainability-title, .sustainability-para {
+  .bookmark-para,
+  .delivery-para,
+  .sustainability-title,
+  .sustainability-para {
     max-width: 20rem;
   }
 }
-.section-five-title, .scrolling-game-para {
+.section-five-title,
+.scrolling-game-para {
   max-width: 25rem;
 }
 
@@ -320,7 +261,8 @@
   .landing-page-section-five {
     width: 100%;
   }
-  .section-five-title, .scrolling-game-para {
+  .section-five-title,
+  .scrolling-game-para {
     max-width: 25rem;
   }
   .left-border-div {
@@ -351,4 +293,27 @@
     width: 280px;
     height: 425.81px;
   }
+}
+.custom-payppy-co-links {
+  position: relative;
+  display: inline-block;
+}
+.custom-payppy-co-links:hover {
+  color: #00FF95 !important;
+}
+
+.custom-payppy-co-links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00FF95;
+  z-index: 4;
+  transition: 0.25s ease;
+}
+
+.custom-payppy-co-links:hover::after {
+  width: 100% !important;
 }/*# sourceMappingURL=LandingPage.css.map */

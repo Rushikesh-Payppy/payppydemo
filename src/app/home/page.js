@@ -7,11 +7,11 @@ import Footer from './Footer';
 function Page() {
   return (
     <>
-    <div className="payppy-homepage-2-main-container">
-            <Header/>
-            <Section/>
-            <Footer/>
-    </div>
+      <div className="payppy-homepage-2-main-container">
+        <Header />
+        <Section />
+        <Footer />
+      </div>
     </>
   )
 }

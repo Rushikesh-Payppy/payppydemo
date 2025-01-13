@@ -86,6 +86,18 @@
   color: #4A5056;
 }
 
+.text-custom-graphite-grey {
+  color: #3D3E40;
+}
+
+.text-custom-silver-grey {
+  color: #B2B0AE;
+}
+
+.text-custom-eerie-black {
+  color: #1E1E1E;
+}
+
 .common-h1-heading {
   font-size: 5.25rem;
   font-weight: 500;
@@ -93,7 +105,6 @@
   letter-spacing: -0.1875rem;
   text-align: center;
   margin: auto;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(#A9A9A9));
   background: linear-gradient(90deg, #FFFFFF 50%, #A9A9A9 100%);
   color: transparent;
   -webkit-background-clip: text;
@@ -282,17 +293,7 @@
   left: -20%;
   top: 0px;
   background: linear-gradient(87deg, rgba(0, 0, 0, 0) 0%, #0057FF 40%, #0057FF 60%, rgba(0, 0, 0, 0) 100%);
-  -webkit-animation: light 1s infinite ease-in-out;
-          animation: light 1s infinite ease-in-out;
-}
-
-@-webkit-keyframes light {
-  from {
-    left: -30%;
-  }
-  to {
-    left: 100%;
-  }
+  animation: light 1s infinite ease-in-out;
 }
 
 @keyframes light {

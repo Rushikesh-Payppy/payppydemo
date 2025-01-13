@@ -1,36 +1,41 @@
 'use client';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import LOGO from '@/Images/payppyhomepage/navbarPayppyLogo.svg';
-import TogglerIcon from '@/Images/payppyhomepage/navbarTogglerIcon.svg';
-import "@/styles/payppyhomepage/Homepage2.0.css";
-import { useEffect } from "react";
-import '@/styles/Typography.css';
-
+import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import { Turn as Hamburger, Turn } from 'hamburger-react'
 import { Plus_Jakarta_Sans } from 'next/font/google';
+
+//Images
+import LOGO from '@/Images/payppyhomepage/navbarPayppyLogo.svg';
 import Copy from '@/Images/payppyhomepage/file-copy-line.png';
 import LinkedIn from '@/Images/payppyhomepage/mdi_linkedin.svg';
 import Instagram from '@/Images/payppyhomepage/instagram.svg';
 import Twitter from '@/Images/payppyhomepage/twitter.svg';
 import Map from '@/Images/payppyhomepage/map.svg';
 import Arrow from '@/Images/payppyhomepage/arrow-down-s-line.png';
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
-import { Turn as Hamburger, Turn } from 'hamburger-react'
+import TogglerIcon from '@/Images/payppyhomepage/navbarTogglerIcon.svg';
 
+//Components
 import { toast, Bounce } from 'react-toastify';
-const ToastContainer = dynamic(() => import('react-toastify').then(obj => obj.ToastContainer), { ssr: false });
-
-import 'react-toastify/dist/ReactToastify.css';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 
+//css
+import '@/styles/Typography.css';
+import "@/styles/payppyhomepage/Homepage2.0.css";
+import 'react-toastify/dist/ReactToastify.css';
+
+
+const ToastContainer = dynamic(() => import('react-toastify').then(obj => obj.ToastContainer), { ssr: false });
+
+//font
 const plus_jakarta_sans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   display: 'swap'
-})
-function Header() {
+});
 
+function Header() {
 
   let [togglerState, setToglerState] = useState(false);
   let [senseiStudioState, setSenseiStudioState] = useState(false);
@@ -140,7 +145,7 @@ function Header() {
 
 
           {/* center Payppy.co content  */}
-          <section className={`flex flex-col gap-4 sm:gap-5 ${senseiStudioState? "opacity-30" :" opacity-100"}`} >
+          <section className={`flex flex-col gap-4 sm:gap-5 ${senseiStudioState ? "opacity-30" : " opacity-100"}`} >
             <div className="flex gap-x-5 items-baseline justify-start lg:justify-center">
               <h3 prefetch={true} className={`common-h3-heading cursor-pointer text-custom-almostwhite text-left lg:text-center payppy-header-links`} onClick={() => { toRefreshPage('/payppy-india') }}>Payppy.app</h3>
               <Image src={Arrow}
@@ -212,10 +217,6 @@ function Header() {
                 />
               </div>
             </Link>
-
-
-
-
           </div>
         </footer>
 
@@ -227,3 +228,4 @@ function Header() {
 
 
 export default Header;
+

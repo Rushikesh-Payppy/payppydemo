@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation-button-small-white {
+    // width: 10.75rem;
+    // height: 52px;
+    padding: 10px 0;
+    border-bottom: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: 0.063rem;
+    text-align: left;
+    transition: 0.4s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.navigation-button-small-white::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 100%;
+    background: linear-gradient(to top right, #FFFFFF, #FFFFFF);
+    z-index: -1;
+    transition: .3s ease-in-out;
+    height: 100%;
+}
+
+.visit-payppy-section-btn-arrow {
+    transform: translate(-100%, 100%);
+    transition: .3s ease-in-out;
+    display: none;
+}
+
+.navigation-button-small-white:hover::before {
+    top: 0;
+    right: 0;
+}
+
+.navigation-button-small-white:hover {
+    // padding: 10px 12px;
+    padding: 10px 20px;
+    color: #111111;
+    // width: 228px;
+    transition: .3s ease-in-out;
+}
+
+.navigation-button-small-white:hover .visit-payppy-section-btn-arrow {
+    transform: translate(0, 0);
+    display: block;
+}

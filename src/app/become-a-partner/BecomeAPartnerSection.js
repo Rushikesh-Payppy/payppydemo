@@ -178,7 +178,7 @@ const BecomeAPartnerSection = () => {
                             </div>
 
                             <div className=" gap-2 flex flex-col items-center lg:items-start"   >
-                                <div className=" gap-3 common-all-caps text-custom-ghostgrey" data-aos="fade-up"> <span className=" lg:hidden">Sales Contact</span> <span className=" hidden lg:inline-block">Contact Sales</span> </div>
+                                <div className=" gap-3 common-all-caps text-custom-ghostgrey" data-aos="fade-up"> <span> Contact Sales</span> </div>
                                 <span className="text-custom-almostwhite common-paragraph text-center px-12 lg:px-0 z-[1]" data-aos="fade-up">+91 98786 19561 <span className=" hidden sm:inline-block">&nbsp; | &nbsp;</span> <Link href="mailto:sales@payppy.co">sales@payppy.co</Link> </span>
                             </div>
                         </div>
